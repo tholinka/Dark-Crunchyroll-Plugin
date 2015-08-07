@@ -1,9 +1,8 @@
 ﻿{
   "manifest_version": 2,
   "name": "Dark Skin for Crunchyroll",
-  "version": "1.0.0",
-  "default_locale" : "en"
-  "description": "Makes Crunchyroll go dark-side",
+  "version": "1.0.1",
+  "description" : "Makes Crunchyroll go dark-side",
   
   "permissions": [
     "http://www.crunchyroll.com/"
