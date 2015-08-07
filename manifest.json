@@ -1,0 +1,37 @@
+﻿{
+  "manifest_version": 2,
+  "name": "Dark Skin for Crunchyroll",
+  "version": "1.0.0",
+  "default_locale" : "en"
+  "description": "Makes Crunchyroll go dark-side",
+  
+  "permissions": [
+    "http://www.crunchyroll.com/"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.crunchyroll.com/*"],
+      "js": ["crunchyroll.js"],
+      "run_at": "document_start",
+	  "all_frames": true
+    }
+  ],
+  "background": {
+    "page": "background.html",
+    "persistent": false
+  },
+  "browser_action": {
+    "default_icon": "images/dark_crunchyroll_19.png",
+    "default_title": "Toggle the dark skin"
+  },
+  "icons": {
+  	"16": "images/dark_crunchyroll_16.png",
+    "48": "images/dark_crunchyroll_48.png",
+    "128": "images/dark_crunchyroll.png"
+  },
+  "web_accessible_resources": [
+    "dark.css",
+    "images/arrows.png"
+  ],
+  "homepage_url" : "https://github.com/link07/Dark-Crunchyroll-plugin-chrome"
+}
