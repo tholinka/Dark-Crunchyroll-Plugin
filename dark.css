@@ -1,0 +1,447 @@
+#header_beta .logo-enUS,
+.guestbook .guestbook-links a img
+{
+	-webkit-filter: grayscale(1) invert(1);
+}
+
+body.main-page,
+#template_container.template-container,
+#template_body.old-template-body
+{
+	background-color: #1b1b1b;
+	color: #eee;
+}
+
+#header_menubar_beta li a, #header_userpanel_beta .login a, #header_userpanel_beta .signup a
+{
+	color: #eee;
+}
+
+#template_body.old-template-body
+{
+border: 1px solid #666;
+}
+.new-template-body
+{
+	color: #eee;
+}
+
+.message-container
+{
+	background-color: #3E4C54;
+	border-color: #587C90;
+}
+
+#header_beta, #footer_menu
+{
+	background-color: #2F2F2F;
+	color: #eee;
+}
+
+#header_searchpanel_beta #header_search_input,
+.header-searchbox-submit,
+#main_content textarea
+ {
+    background-color: #494949;
+    border: 1px solid #666;
+    border-top: 1px solid #656565;
+    color: #eee;
+    text-shadow: 0 1px 1px #666;
+}
+
+a.default-button, span.default-button, input.default-button, .default-button
+{
+	background-color: #585858;
+	color: #eee;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	background-image: none;
+	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
+	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45);
+}
+
+a.dark-button:active, a.dark-button.selected, span.dark-button:active, span.dark-button.selected, input.dark-button:active, input.dark-button.selected, .dark-button:active, .dark-button.selected,
+
+{
+	background-color #545454;
+}
+
+#main_content_white, 
+.white-wrapper
+{
+	background-color: #2F2F2F;
+	color: #eee;
+}
+
+.collection-carousel-arrow 
+{
+	background: url("chrome-extension://__MSG_@@extension_id__/images/arrows.png") no-repeat -40px 42px; /* Just the same image with no background */
+}
+
+a.block-link, .old-template-body a.block-link, .new-template-body a.block-link /* Next Episode Links */,
+.guestbook-spoiler-checkbox
+{
+	color: #eee;
+}
+
+.guestbook-sort-bar, .comments .more-replies 
+{
+	background-color: #2D2D2D;
+	border-color: #666
+}
+
+.guestbook .guestbook-list-hidden
+{
+	opacity: 1;]
+}
+
+.guestbook-list 
+{
+	border-color: #666;
+}
+
+/* Remove Emoji borders */
+.bb-smilie-smile, .bb-smilie-sad, .bb-static-smilie 
+{
+	border: none;
+}
+
+#footer .footer-column a {
+	color: #eee;
+
+}
+
+#footer .footer-language .selected, #footer .footer-column a:hover, a 
+{
+	color: #0A6DA4;
+}
+
+/* -------------------------
+----------Main page --------
+---------------------------*/
+.welcome-simulcasts .welcome-simulcasts-collection a, .welcome-simulcasts .welcome-simulcasts-episode,  .welcome-title-list h1 a, .welcome-block h1 a, .welcome-crnews-title, .welcome-news-title, .welcome-latest-videos .name, .welcome-latest-videos .series
+{ 
+color: #eee;
+}
+
+.welcome-countdown-items a:hover,
+.welcome-pulse-box a:hover,
+.welcome-simulcasts .welcome-simulcasts-episode:hover,
+.landscape-grid .wrapper:hover,
+body .wrapper .landscape-element:active,
+.wrapper .portrait-element:active
+{
+	background-color: #454545 !important;
+}
+
+/* -------------------------
+----------Show page --------
+---------------------------*/
+#tabs, .main-tabs a.selected, .main-tabs a.selected:hover,
+#source_showview .season-dropdown.open,
+#source_showview .season-dropdown
+{
+	background-color: #454545;
+	color: #eee;
+}
+
+.portrait-element
+{
+	background-color: #2d2d2d;
+}
+
+.paginator-lite
+{
+	background-color: #454545;
+	color: #eee;
+}
+
+.paginator-lite-disabled, .paginator-lite-selected, .paginator-lite:hover
+{
+	background-color: #2d2d2d;
+	color: #eee;
+}
+#store_items li 
+{
+	background-color: #2d2d2d;
+}
+
+/* -------------------------
+----------User page --------
+---------------------------*/
+.text-input[type="text"], .text-input[type="password"], textarea.text-input,
+input[type=text], input[type=email], input[type=password], textarea
+{
+	background-color: #454545;
+	color: #eee;
+}
+
+input.user-status-new-form
+{
+	background-color: transparent;
+	border: none;
+	color: #eee;
+}
+
+input.user-status-new-form-selected, input.user-status-new-form-mouseover
+{
+	background-color: #454545;
+	color: #eee;
+	border: none;
+}
+.library-share-link input
+{
+	background-color: #454545;
+	border: none;
+	color: #eee;
+}
+
+.user-profile-link
+{
+	background-color: #454545;
+	color: #eee;
+}
+
+.user-profile-link:hover, .user-profile-link:hover img
+{
+	background-color: #2d2d2d;
+}
+
+.library-tab-widget .tab a
+{
+	background-color: #454545;
+	color: #eee;
+	border-color: #666
+}
+
+.library-tab-widget .tab-container .tab a:hover
+{
+	opacity: 1;
+	background-color: #2d2d2d;
+}
+
+.submitbtn
+{
+	background-color: #454545;
+	color: #eee;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	background-image: none;
+	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
+	box-shadow: inset 0px 1px 0px rgba(31, 31, 31, .45);
+	border-color: #666;
+}
+
+.submitbtn:active, .submitbtn:hover, .submitbtn_hover
+{
+	background-color: #2d2d2d !important;
+	border-color: #666 !important;
+}
+
+.user-profile-entity-page-create-container
+{
+	background-color: #454545;
+}
+
+.user-profile-header a 
+{
+	color: #eee;
+}
+
+/* -------------------------
+---------Forums page -------
+---------------------------*/
+/* Get rid of white background image, replace with this */
+.forum_main-topic-desc
+{
+	background-image: none;
+	background-color: #454545;
+}
+
+a.forum_main-topic-desc-title 
+{
+	color: #eee;
+}
+
+.topbar-nav-trail a
+{
+	color: #eee;
+}
+
+.topbar-nav-trail a:hover
+{
+	color: #969696;
+}
+
+.search-submit-button
+{
+	-webkit-filter: grayscale(1) invert(1);
+}
+
+#template_action_button a, .action-button
+{
+	background-color: #454545;
+	color: #eee;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	background-image: none;
+	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
+	box-shadow: inset 0px 1px 0px rgba(31, 31, 31, .45);
+	border-color: #666;
+}
+
+#template_action_button a:hover
+{
+	background-color: #2d2d2d;
+	border-color: #666;
+}
+
+a.forum_main-topic-desc-numcomments
+{
+	background-image: none;
+	color: #eee;
+}
+
+/* Get rid of orange comment box, replace it with this */
+a.forum_main-topic-desc-numcomments:after
+{
+	content: "Comments";
+	color: #eee;
+	font-size:70%;
+}
+
+.group-card
+{
+	background-image: none;
+	background-color: #454545;
+}
+
+.group-card-name,
+.group-card-headline,
+.group-card-details,
+.widget-forumcategory-display-title a
+{
+	color: #eee;
+}
+
+.widget-forumnav-current
+{
+	background-color: #2d2d2d;
+}
+
+.widget-forumnav-current:before, .widget-forumnav-current:after
+{
+	border-left-color: #454545 !important;
+}
+
+.widget-forumnav-ancestor:before
+{
+	border-left-color: #2d2d2d;
+}
+/* Category Page */
+.widget-forumnav .widget-forumnav-children
+{
+	background-color: #454545;
+	color: #eee;
+}
+
+.widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover,
+.widget-forumnav .widget-forumnav-children:hover
+{
+	background-color: #2d2d2d;
+	color: #eee;
+}
+
+
+
+/* Thread Page */
+.showforumtopic-messages td,
+.bb-spoiler-highlight
+{
+	background-color: #2d2d2d;
+}
+
+.showforumtopic-message-user-name a,
+.showforumtopic-message-user-details
+{
+	color: #eee;
+}
+
+.bb-spoiler
+{
+	background-color: #454545;
+}
+
+a.bbtool img
+{
+	background-color: transparent;
+	border-color: #666;
+}
+
+.showforumtopic-message-footer,
+.showforumtopic-message-user-thumblink img,
+.showforumtopic-message-user
+{
+	border-color: #666;
+}
+
+.showforumtopic-fblike
+{
+	background-color: transparent;
+}
+/* -------------------------
+---------Calendar page -------
+---------------------------*/
+.calendar-month-notcurrent, .calendar-month-date-events-today
+{
+	background-color: #1d1d1d;
+	border-color: #666;
+}
+
+.calendar-month-date-events-today
+{
+	border-color: #619BDF;
+}
+
+.calendar-month-days, .calendar-month-date
+{
+	background-color: #2d2d2d;
+	border-color: #666;
+	color: #eee;
+}
+
+
+/* Forgot when I coded this that the colors arn't every other one,
+   but based on if they are released to premium or free,
+   leaving this here incase I get around to doing this through
+   Javascript
+.calendar-month-date-events div a:nth-of-type(odd),
+#launch_calendar_legend div:nth-last-of-type(1)
+{
+	background-color: #7B925A !important;
+	border-color: #7B925A !important;
+}
+
+.calendar-month-date-events div a:nth-of-type(even),
+#launch_calendar_legend div:nth-last-of-type(even)
+{
+	background-color: #809FA9 !important;
+	border-color: #809FA9 !important;
+}
+
+.calendar-month-date-event
+{
+	color: #eee;
+} */
+
+#launch_calendar_legend div
+{
+	color: #000;
+}
+
+#launch_calendar_header img
+{
+	display: none;
+}
+
+#launch_calendar_header
+{
+	color: #eee;
+}
