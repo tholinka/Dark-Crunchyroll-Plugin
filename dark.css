@@ -1,7 +1,13 @@
-#header_beta .logo-enUS,
-.guestbook .guestbook-links a img
+#header_beta .logo-enUS, .interstitial-header .logo-enUS
 {
 	-webkit-filter: grayscale(1) invert(1);
+}
+
+.guestbook .guestbook-links a img,
+.searchbox-focus,
+.search-submit-button
+{
+	-webkit-filter: grayscale(1);
 }
 
 body.main-page,
@@ -40,7 +46,8 @@ border: 1px solid #666;
 
 #header_searchpanel_beta #header_search_input,
 .header-searchbox-submit,
-#main_content textarea
+#main_content textarea,
+.features-input input[type=text], .email-subscribe input[type=text] /* Store Page */
  {
     background-color: #494949;
     border: 1px solid #666;
@@ -49,20 +56,14 @@ border: 1px solid #666;
     text-shadow: 0 1px 1px #666;
 }
 
-a.default-button, span.default-button, input.default-button, .default-button
+#header_searchpanel_beta #header_search_input:focus
 {
-	background-color: #585858;
 	color: #eee;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-	background-image: none;
-	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
-	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45);
 }
 
-a.dark-button:active, a.dark-button.selected, span.dark-button:active, span.dark-button.selected, input.dark-button:active, input.dark-button.selected, .dark-button:active, .dark-button.selected,
-
+.searchbox-focus
 {
-	background-color #545454;
+	border-color: #666;
 }
 
 #main_content_white, 
@@ -91,7 +92,7 @@ a.block-link, .old-template-body a.block-link, .new-template-body a.block-link /
 
 .guestbook .guestbook-list-hidden
 {
-	opacity: 1;]
+	opacity: 1;
 }
 
 .guestbook-list 
@@ -99,20 +100,45 @@ a.block-link, .old-template-body a.block-link, .new-template-body a.block-link /
 	border-color: #666;
 }
 
-/* Remove Emoji borders */
-.bb-smilie-smile, .bb-smilie-sad, .bb-static-smilie 
+/* Remove Certain Image (emoji) borders */
+.bb-smilie-smile, .bb-smilie-sad, .bb-static-smilie ,
+#footer .footer-column .icon
 {
 	border: none;
 }
 
 #footer .footer-column a {
 	color: #eee;
-
 }
 
 #footer .footer-language .selected, #footer .footer-column a:hover, a 
 {
 	color: #0A6DA4;
+}
+
+#template_action_button a, .action-button, /* Forum Buttons */
+a.default-button, span.default-button, input.default-button,  /* General Buttons */
+.default-button
+{
+	background-color: #3d3d3d;
+	color: #eee;
+	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	background-image: none;
+	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
+	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45);
+	border-color: #666;
+}
+
+#template_action_button a:hover, /* Forum Button */
+a.dark-button:active, a.dark-button.selected, span.dark-button:active,  /* General Buttons */
+span.dark-button.selected, input.dark-button:active,
+input.dark-button.selected, .dark-button:active, .dark-button.selected,
+a.default-button:active, a.default-button.selected, span.default-button:active,
+span.default-button.selected, input.default-button:active, input.default-button.selected,
+.default-button:active, .default-button.selected
+{
+	background-color: #2d2d2d;
+	border-color: #666;
 }
 
 /* -------------------------
@@ -155,10 +181,17 @@ body .wrapper .landscape-element:active,
 	color: #eee;
 }
 
-.paginator-lite-disabled, .paginator-lite-selected, .paginator-lite:hover
+#paginator_bar a.disabled:hover
+{
+	border-color: #666;
+}
+
+.paginator-lite-disabled, .paginator-lite-selected, .paginator-lite:hover,
+#paginator_bar a.disabled
 {
 	background-color: #2d2d2d;
 	color: #eee;
+	border-color: #666;
 }
 #store_items li 
 {
@@ -226,7 +259,7 @@ input.user-status-new-form-selected, input.user-status-new-form-mouseover
 	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
 	background-image: none;
 	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
-	box-shadow: inset 0px 1px 0px rgba(31, 31, 31, .45);
+	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45);
 	border-color: #666;
 }
 
@@ -269,28 +302,6 @@ a.forum_main-topic-desc-title
 .topbar-nav-trail a:hover
 {
 	color: #969696;
-}
-
-.search-submit-button
-{
-	-webkit-filter: grayscale(1) invert(1);
-}
-
-#template_action_button a, .action-button
-{
-	background-color: #454545;
-	color: #eee;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-	background-image: none;
-	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
-	box-shadow: inset 0px 1px 0px rgba(31, 31, 31, .45);
-	border-color: #666;
-}
-
-#template_action_button a:hover
-{
-	background-color: #2d2d2d;
-	border-color: #666;
 }
 
 a.forum_main-topic-desc-numcomments
@@ -349,8 +360,6 @@ a.forum_main-topic-desc-numcomments:after
 	color: #eee;
 }
 
-
-
 /* Thread Page */
 .showforumtopic-messages td,
 .bb-spoiler-highlight
@@ -407,7 +416,6 @@ a.bbtool img
 	color: #eee;
 }
 
-
 /* Forgot when I coded this that the colors arn't every other one,
    but based on if they are released to premium or free,
    leaving this here incase I get around to doing this through
@@ -443,5 +451,143 @@ a.bbtool img
 
 #launch_calendar_header
 {
+	color: #eee;
+}
+
+/* -------------------------
+---------Search page -------
+---------------------------*/
+ul.search-tabs a:hover, ul.search-tabs .highlight a,
+.search-results a:hover
+{
+	background-color: #1d1d1d;
+}
+
+.search-video-thumbs .name,
+.search-video-thumbs .series,
+.search-results .name,
+ul.search-tabs a
+{
+	color: #eee;
+}
+
+/* -------------------------
+---------Store page -------
+---------------------------*/
+.daily-deal,
+.email-subscribe, .promotion,
+.store-items li .price,
+.store-items li .product-info,
+.white-banner h2,
+#main_image_container
+{
+	background-color: #2d2d2d;
+	border-color: #666;
+}
+
+.daily-deal a h3,
+#product_pricing .member-discount,
+.selectboxit-list .selectboxit-option-anchor, /* Vendor page */
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor /* Vendor page current selected */
+{
+	color: #eee;
+}
+
+#deal_overlay .overlay-button-left:hover, #deal_overlay .overlay-button-right:hover
+{
+	background-color: transparent;
+}
+
+.store-items li .price:before
+{
+	border-right-color: #2d2d2d;
+}
+
+.white-banner:before
+{
+	border-top-color: #2d2d2d;
+	border-bottom-color: #2d2d2d;
+}
+
+.selectboxit-container .selectboxit,
+#vendor_informations
+{
+	color: #eee;
+	background-color: #2d2d2d;
+}
+
+.selectboxit-btn.selectboxit-enabled:hover, .selectboxit-btn.selectboxit-enabled:focus, .selectboxit-btn.selectboxit-enabled:active
+{
+	color: #eee;
+	background-color: #3d3d3d;
+}
+
+.selectboxit-list,
+.store-sub-menu ul li.selectboxit-option
+{
+	background-color: #2d2d2d;
+	border-color: #666;
+	color: #eee;
+}
+
+.store-sub-menu h2.store-sub-menu-header
+{
+	background-color: #2d2d2d;
+	
+}
+
+/* -------------------------
+---------Manga Page -------
+---------------------------*/
+#source_manga_showview #main_content .landscape-grid li .wrapper,
+#main_content .landscape-element,
+.landscape-grid .wrapper:hover
+{
+	background-color: #2d2d2d !important; /* Important needed for the hover */
+}
+
+.short-desc
+{
+	color: #eee;
+}
+
+.detail-heading, .secondary
+{
+	color: #9C9C9C;
+}
+
+/* -------------------------
+---------News Page -------
+---------------------------*/
+ul.news-top-stories-row li a,
+ul.news li.news-item
+{
+	border-color: #666;
+	color: #eee;
+	background-color: #1d1d1d;
+}
+
+ul.news h2 a,
+.news-header-right a,
+.showcrunchynews h1 a,
+ul.newsfeed h2 a
+{
+	color: #eee;
+}
+
+ul.news h3 a,
+ul.news-abbr h2 a,
+ul.news-abbr .byline,
+ul.newsfeed .news-date-label,
+ul.news .news-date-label,
+.showcrunchynews h2,
+ul.newsfeed h3 a
+{
+	color: #ABABAB;
+}
+
+.showcrunchynews .top-news
+{
+	border-color: #666;
 	color: #eee;
 }
