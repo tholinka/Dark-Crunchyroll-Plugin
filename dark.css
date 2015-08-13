@@ -1,593 +1,313 @@
-#header_beta .logo-enUS, .interstitial-header .logo-enUS
+#header_beta .logo-enUS,.interstitial-header .logo-enUS
 {
-	-webkit-filter: grayscale(1) invert(1);
+  -webkit-filter:grayscale(1) invert(1);
 }
 
-.guestbook .guestbook-links a img,
-.searchbox-focus,
-.search-submit-button
+.guestbook .guestbook-links a img,.searchbox-focus,.search-submit-button
 {
-	-webkit-filter: grayscale(1);
+  -webkit-filter:grayscale(1);
 }
 
-body.main-page,
-#template_container.template-container,
-#template_body.old-template-body
+body.main-page,#template_container.template-container,#template_body.old-template-body
 {
-	background-color: #1b1b1b;
-	color: #eee;
-}
-
-#header_menubar_beta li a, #header_userpanel_beta .login a, #header_userpanel_beta .signup a
-{
-	color: #eee;
+  background-color:#1b1b1b;
+  color:#eee;
 }
 
 #template_body.old-template-body
 {
-border: 1px solid #666;
-}
-.new-template-body
-{
-	color: #eee;
+  border:1px solid #666;
 }
 
 .message-container
 {
-	background-color: #3E4C54;
-	border-color: #587C90;
+  background-color:#3E4C54;
+  border-color:#587C90;
 }
 
-#header_beta, #footer_menu
+#header_searchpanel_beta #header_search_input,.header-searchbox-submit,#main_content textarea,.features-input input[type=text],.email-subscribe input[type=text] /* Store Page */
 {
-	background-color: #2F2F2F;
-	color: #eee;
+  background-color:#494949;
+  border:1px solid #666;
+  border-top:1px solid #656565;
+  color:#eee;
+  text-shadow:0 1px 1px #666;
 }
 
-#header_searchpanel_beta #header_search_input,
-.header-searchbox-submit,
-#main_content textarea,
-.features-input input[type=text], .email-subscribe input[type=text] /* Store Page */
- {
-    background-color: #494949;
-    border: 1px solid #666;
-    border-top: 1px solid #656565;
-    color: #eee;
-    text-shadow: 0 1px 1px #666;
-}
-
-#header_searchpanel_beta #header_search_input:focus
+.collection-carousel-arrow
 {
-	color: #eee;
+  background:url(chrome-extension://__MSG_@@extension_id__/images/arrows.png) no-repeat -40px 42px;
 }
 
-.searchbox-focus
+.guestbook-sort-bar,.comments .more-replies
 {
-	border-color: #666;
-}
-
-#main_content_white, 
-.white-wrapper
-{
-	background-color: #2F2F2F;
-	color: #eee;
-}
-
-.collection-carousel-arrow 
-{
-	background: url("chrome-extension://__MSG_@@extension_id__/images/arrows.png") no-repeat -40px 42px; /* Just the same image with no background */
-}
-
-a.block-link, .old-template-body a.block-link, .new-template-body a.block-link /* Next Episode Links */,
-.guestbook-spoiler-checkbox
-{
-	color: #eee;
-}
-
-.guestbook-sort-bar, .comments .more-replies 
-{
-	background-color: #2D2D2D;
-	border-color: #666
+  background-color:#2D2D2D;
+  border-color:#666;
 }
 
 .guestbook .guestbook-list-hidden
 {
-	opacity: 1;
+  opacity:1;
 }
 
-.guestbook-list 
+.bb-smilie-smile,.bb-smilie-sad,.bb-static-smilie,#footer .footer-column .icon
 {
-	border-color: #666;
+  border:none;
 }
 
-/* Remove Certain Image (emoji) borders */
-.bb-smilie-smile, .bb-smilie-sad, .bb-static-smilie ,
-#footer .footer-column .icon
+#footer .footer-language .selected,#footer .footer-column a:hover,a
 {
-	border: none;
+  color:#0A6DA4;
 }
 
-#footer .footer-column a {
-	color: #eee;
-}
-
-#footer .footer-language .selected, #footer .footer-column a:hover, a 
-{
-	color: #0A6DA4;
-}
-
-#template_action_button a, .action-button, /* Forum Buttons */
-a.default-button, span.default-button, input.default-button,  /* General Buttons */
+#template_action_button a,.action-button,/* Forum Buttons */
+a.default-button,span.default-button,input.default-button,/* General Buttons */
 .default-button
 {
-	background-color: #3d3d3d;
-	color: #eee;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-	background-image: none;
-	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
-	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45);
-	border-color: #666;
+  background-color:#3d3d3d;
+  color:#eee;
+  text-shadow:0 1px 0 rgba(0,0,0,0.45);
+  background-image:none;
+  -webkit-box-shadow:inset 0 1px 0 rgba(31,31,31,.45);
+  box-shadow:inset 0 1px 0 rgba(31,31,31,.45);
+  border-color:#666;
 }
 
-#template_action_button a:hover, /* Forum Button */
-a.dark-button:active, a.dark-button.selected, span.dark-button:active,  /* General Buttons */
-span.dark-button.selected, input.dark-button:active,
-input.dark-button.selected, .dark-button:active, .dark-button.selected,
-a.default-button:active, a.default-button.selected, span.default-button:active,
-span.default-button.selected, input.default-button:active, input.default-button.selected,
-.default-button:active, .default-button.selected
+.welcome-countdown-items a:hover,.welcome-pulse-box a:hover,.welcome-simulcasts .welcome-simulcasts-episode:hover,.landscape-grid .wrapper:hover,body .wrapper .landscape-element:active,.wrapper .portrait-element:active
 {
-	background-color: #2d2d2d;
-	border-color: #666;
+  background-color:#454545!important;
 }
 
-/* -------------------------
-----------Main page --------
----------------------------*/
-.welcome-simulcasts .welcome-simulcasts-collection a, .welcome-simulcasts .welcome-simulcasts-episode,  .welcome-title-list h1 a, .welcome-block h1 a, .welcome-crnews-title, .welcome-news-title, .welcome-latest-videos .name, .welcome-latest-videos .series
-{ 
-color: #eee;
-}
-
-.welcome-countdown-items a:hover,
-.welcome-pulse-box a:hover,
-.welcome-simulcasts .welcome-simulcasts-episode:hover,
-.landscape-grid .wrapper:hover,
-body .wrapper .landscape-element:active,
-.wrapper .portrait-element:active
+.paginator-lite-disabled,.paginator-lite-selected,.paginator-lite:hover,#paginator_bar a.disabled
 {
-	background-color: #454545 !important;
-}
-
-/* -------------------------
-----------Show page --------
----------------------------*/
-#tabs, .main-tabs a.selected, .main-tabs a.selected:hover,
-#source_showview .season-dropdown.open,
-#source_showview .season-dropdown
-{
-	background-color: #454545;
-	color: #eee;
-}
-
-.portrait-element
-{
-	background-color: #2d2d2d;
-}
-
-.paginator-lite
-{
-	background-color: #454545;
-	color: #eee;
-}
-
-#paginator_bar a.disabled:hover
-{
-	border-color: #666;
-}
-
-.paginator-lite-disabled, .paginator-lite-selected, .paginator-lite:hover,
-#paginator_bar a.disabled
-{
-	background-color: #2d2d2d;
-	color: #eee;
-	border-color: #666;
-}
-#store_items li 
-{
-	background-color: #2d2d2d;
-}
-
-/* -------------------------
-----------User page --------
----------------------------*/
-.text-input[type="text"], .text-input[type="password"], textarea.text-input,
-input[type=text], input[type=email], input[type=password], textarea
-{
-	background-color: #454545;
-	color: #eee;
+  background-color:#2d2d2d;
+  color:#eee;
+  border-color:#666;
 }
 
 input.user-status-new-form
 {
-	background-color: transparent;
-	border: none;
-	color: #eee;
+  background-color:transparent;
+  border:none;
+  color:#eee;
 }
 
-input.user-status-new-form-selected, input.user-status-new-form-mouseover
+input.user-status-new-form-selected,input.user-status-new-form-mouseover
 {
-	background-color: #454545;
-	color: #eee;
-	border: none;
+  background-color:#454545;
+  color:#eee;
+  border:none;
 }
+
 .library-share-link input
 {
-	background-color: #454545;
-	border: none;
-	color: #eee;
-}
-
-.user-profile-link
-{
-	background-color: #454545;
-	color: #eee;
-}
-
-.user-profile-link:hover, .user-profile-link:hover img
-{
-	background-color: #2d2d2d;
+  background-color:#454545;
+  border:none;
+  color:#eee;
 }
 
 .library-tab-widget .tab a
 {
-	background-color: #454545;
-	color: #eee;
-	border-color: #666
+  background-color:#454545;
+  color:#eee;
+  border-color:#666;
 }
 
 .library-tab-widget .tab-container .tab a:hover
 {
-	opacity: 1;
-	background-color: #2d2d2d;
+  opacity:1;
+  background-color:#2d2d2d;
 }
 
 .submitbtn
 {
-	background-color: #454545;
-	color: #eee;
-	text-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
-	background-image: none;
-	-webkit-box-shadow: inset 0 1px 0 rgba(31,31,31,.45);
-	box-shadow: inset 0 1px 0 rgba(31, 31, 31, .45);
-	border-color: #666;
+  background-color:#454545;
+  color:#eee;
+  text-shadow:0 1px 0 rgba(0,0,0,0.45);
+  background-image:none;
+  -webkit-box-shadow:inset 0 1px 0 rgba(31,31,31,.45);
+  box-shadow:inset 0 1px 0 rgba(31,31,31,.45);
+  border-color:#666;
 }
 
-.submitbtn:active, .submitbtn:hover, .submitbtn_hover
+.submitbtn:active,.submitbtn:hover,.submitbtn_hover
 {
-	background-color: #2d2d2d !important;
-	border-color: #666 !important;
-}
-
-.user-profile-entity-page-create-container
-{
-	background-color: #454545;
-}
-
-.user-profile-header a 
-{
-	color: #eee;
-}
-
-/* -------------------------
----------Forums page -------
----------------------------*/
-/* Get rid of white background image, replace with this */
-.forum_main-topic-desc
-{
-	background-image: none;
-	background-color: #454545;
-}
-
-a.forum_main-topic-desc-title 
-{
-	color: #eee;
-}
-
-.topbar-nav-trail a
-{
-	color: #eee;
+  background-color:#2d2d2d!important;
+  border-color:#666!important;
 }
 
 .topbar-nav-trail a:hover
 {
-	color: #969696;
+  color:#969696;
 }
 
 a.forum_main-topic-desc-numcomments
 {
-	background-image: none;
-	color: #eee;
+  background-image:none;
+  color:#eee;
 }
 
-/* Get rid of orange comment box, replace it with this */
 a.forum_main-topic-desc-numcomments:after
 {
-	content: "Comments";
-	color: #eee;
-	font-size:70%;
+  content:"Comments";
+  color:#eee;
+  font-size:70%;
 }
 
-.group-card
+.widget-forumnav-current:before,.widget-forumnav-current:after
 {
-	background-image: none;
-	background-color: #454545;
-}
-
-.group-card-name,
-.group-card-headline,
-.group-card-details,
-.widget-forumcategory-display-title a
-{
-	color: #eee;
-}
-
-.widget-forumnav-current
-{
-	background-color: #2d2d2d;
-}
-
-.widget-forumnav-current:before, .widget-forumnav-current:after
-{
-	border-left-color: #454545 !important;
+  border-left-color:#454545!important;
 }
 
 .widget-forumnav-ancestor:before
 {
-	border-left-color: #2d2d2d;
-}
-/* Category Page */
-.widget-forumnav .widget-forumnav-children
-{
-	background-color: #454545;
-	color: #eee;
+  border-left-color:#2d2d2d;
 }
 
-.widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover,
-.widget-forumnav .widget-forumnav-children:hover
+.widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover,.widget-forumnav .widget-forumnav-children:hover
 {
-	background-color: #2d2d2d;
-	color: #eee;
-}
-
-/* Thread Page */
-.showforumtopic-messages td,
-.bb-spoiler-highlight
-{
-	background-color: #2d2d2d;
-}
-
-.showforumtopic-message-user-name a,
-.showforumtopic-message-user-details
-{
-	color: #eee;
-}
-
-.bb-spoiler
-{
-	background-color: #454545;
+  background-color:#2d2d2d;
+  color:#eee;
 }
 
 a.bbtool img
 {
-	background-color: transparent;
-	border-color: #666;
+  background-color:transparent;
+  border-color:#666;
 }
 
-.showforumtopic-message-footer,
-.showforumtopic-message-user-thumblink img,
-.showforumtopic-message-user
+.calendar-month-notcurrent,.calendar-month-date-events-today
 {
-	border-color: #666;
-}
-
-.showforumtopic-fblike
-{
-	background-color: transparent;
-}
-/* -------------------------
----------Calendar page -------
----------------------------*/
-.calendar-month-notcurrent, .calendar-month-date-events-today
-{
-	background-color: #1d1d1d;
-	border-color: #666;
+  background-color:#1d1d1d;
+  border-color:#666;
 }
 
 .calendar-month-date-events-today
 {
-	border-color: #619BDF;
+  border-color:#619BDF;
 }
-
-.calendar-month-days, .calendar-month-date
-{
-	background-color: #2d2d2d;
-	border-color: #666;
-	color: #eee;
-}
-
-/* Forgot when I coded this that the colors arn't every other one,
-   but based on if they are released to premium or free,
-   leaving this here incase I get around to doing this through
-   Javascript
-.calendar-month-date-events div a:nth-of-type(odd),
-#launch_calendar_legend div:nth-last-of-type(1)
-{
-	background-color: #7B925A !important;
-	border-color: #7B925A !important;
-}
-
-.calendar-month-date-events div a:nth-of-type(even),
-#launch_calendar_legend div:nth-last-of-type(even)
-{
-	background-color: #809FA9 !important;
-	border-color: #809FA9 !important;
-}
-
-.calendar-month-date-event
-{
-	color: #eee;
-} */
 
 #launch_calendar_legend div
 {
-	color: #000;
+  color:#000;
 }
 
 #launch_calendar_header img
 {
-	display: none;
+  display:none;
 }
 
-#launch_calendar_header
+ul.search-tabs a:hover,ul.search-tabs .highlight a,.search-results a:hover
 {
-	color: #eee;
-}
-
-/* -------------------------
----------Search page -------
----------------------------*/
-ul.search-tabs a:hover, ul.search-tabs .highlight a,
-.search-results a:hover
-{
-	background-color: #1d1d1d;
-}
-
-.search-video-thumbs .name,
-.search-video-thumbs .series,
-.search-results .name,
-ul.search-tabs a
-{
-	color: #eee;
-}
-
-/* -------------------------
----------Store page -------
----------------------------*/
-.daily-deal,
-.email-subscribe, .promotion,
-.store-items li .price,
-.store-items li .product-info,
-.white-banner h2,
-#main_image_container
-{
-	background-color: #2d2d2d;
-	border-color: #666;
-}
-
-.daily-deal a h3,
-#product_pricing .member-discount,
-.selectboxit-list .selectboxit-option-anchor, /* Vendor page */
-.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor /* Vendor page current selected */
-{
-	color: #eee;
-}
-
-#deal_overlay .overlay-button-left:hover, #deal_overlay .overlay-button-right:hover
-{
-	background-color: transparent;
+  background-color:#1d1d1d;
 }
 
 .store-items li .price:before
 {
-	border-right-color: #2d2d2d;
+  border-right-color:#2d2d2d;
 }
 
 .white-banner:before
 {
-	border-top-color: #2d2d2d;
-	border-bottom-color: #2d2d2d;
+  border-top-color:#2d2d2d;
+  border-bottom-color:#2d2d2d;
 }
 
-.selectboxit-container .selectboxit,
-#vendor_informations
+.selectboxit-container .selectboxit,#vendor_informations
 {
-	color: #eee;
-	background-color: #2d2d2d;
+  color:#eee;
+  background-color:#2d2d2d;
 }
 
-.selectboxit-btn.selectboxit-enabled:hover, .selectboxit-btn.selectboxit-enabled:focus, .selectboxit-btn.selectboxit-enabled:active
+.selectboxit-btn.selectboxit-enabled:hover,.selectboxit-btn.selectboxit-enabled:focus,.selectboxit-btn.selectboxit-enabled:active
 {
-	color: #eee;
-	background-color: #3d3d3d;
+  color:#eee;
+  background-color:#3d3d3d;
 }
 
-.selectboxit-list,
-.store-sub-menu ul li.selectboxit-option
+#source_manga_showview #main_content .landscape-grid li .wrapper,#main_content .landscape-element,.landscape-grid .wrapper:hover
 {
-	background-color: #2d2d2d;
-	border-color: #666;
-	color: #eee;
+  background-color:#2d2d2d!important;
 }
 
-.store-sub-menu h2.store-sub-menu-header
+.detail-heading,.secondary
 {
-	background-color: #2d2d2d;
-	
+  color:#9C9C9C;
 }
 
-/* -------------------------
----------Manga Page -------
----------------------------*/
-#source_manga_showview #main_content .landscape-grid li .wrapper,
-#main_content .landscape-element,
-.landscape-grid .wrapper:hover
+ul.news-top-stories-row li a,ul.news li.news-item
 {
-	background-color: #2d2d2d !important; /* Important needed for the hover */
+  color:#eee;
+  background-color:#1d1d1d;
+  border-color:#666;
 }
 
-.short-desc
+ul.news h3 a,ul.news-abbr h2 a,ul.news-abbr .byline,ul.newsfeed .news-date-label,ul.news .news-date-label,.showcrunchynews h2,ul.newsfeed h3 a
 {
-	color: #eee;
-}
-
-.detail-heading, .secondary
-{
-	color: #9C9C9C;
-}
-
-/* -------------------------
----------News Page -------
----------------------------*/
-ul.news-top-stories-row li a,
-ul.news li.news-item
-{
-	border-color: #666;
-	color: #eee;
-	background-color: #1d1d1d;
-}
-
-ul.news h2 a,
-.news-header-right a,
-.showcrunchynews h1 a,
-ul.newsfeed h2 a
-{
-	color: #eee;
-}
-
-ul.news h3 a,
-ul.news-abbr h2 a,
-ul.news-abbr .byline,
-ul.newsfeed .news-date-label,
-ul.news .news-date-label,
-.showcrunchynews h2,
-ul.newsfeed h3 a
-{
-	color: #ABABAB;
+  color:#ABABAB;
 }
 
 .showcrunchynews .top-news
 {
-	border-color: #666;
-	color: #eee;
+  color:#eee;
+  border-color:#666;
+}
+
+#header_menubar_beta li a,#header_userpanel_beta .login a,#header_userpanel_beta .signup a,.new-template-body,#header_searchpanel_beta #header_search_input:focus,a.block-link,.old-template-body a.block-link,.new-template-body a.block-link /* Next Episode Links */,.guestbook-spoiler-checkbox,#footer .footer-column a,.welcome-simulcasts .welcome-simulcasts-collection a,.welcome-simulcasts .welcome-simulcasts-episode,.welcome-title-list h1 a,.welcome-block h1 a,.welcome-crnews-title,.welcome-news-title,.welcome-latest-videos .name,.welcome-latest-videos .series,.user-profile-header a,a.forum_main-topic-desc-title,.topbar-nav-trail a,.group-card-name,.group-card-headline,.group-card-details,.widget-forumcategory-display-title a,.showforumtopic-message-user-name a,.showforumtopic-message-user-details,#launch_calendar_header,.search-video-thumbs .name,.search-video-thumbs .series,.search-results .name,ul.search-tabs a,.daily-deal a h3,#product_pricing .member-discount,.selectboxit-list .selectboxit-option-anchor,/* Vendor page */
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor /* Vendor page current selected */,.short-desc,ul.news h2 a,.news-header-right a,.showcrunchynews h1 a,ul.newsfeed h2 a
+{
+  color:#eee;
+}
+
+#header_beta,#footer_menu,#main_content_white,.white-wrapper
+{
+  background-color:#2F2F2F;
+  color:#eee;
+}
+
+.searchbox-focus,.guestbook-list,#paginator_bar a.disabled:hover,.showforumtopic-message-footer,.showforumtopic-message-user-thumblink img,.showforumtopic-message-user
+{
+  border-color:#666;
+}
+
+#template_action_button a:hover,/* Forum Button */
+a.dark-button:active,a.dark-button.selected,span.dark-button:active,/* General Buttons */
+span.dark-button.selected,input.dark-button:active,input.dark-button.selected,.dark-button:active,.dark-button.selected,a.default-button:active,a.default-button.selected,span.default-button:active,span.default-button.selected,input.default-button:active,input.default-button.selected,.default-button:active,.default-button.selected,.daily-deal,.email-subscribe,.promotion,.store-items li .price,.store-items li .product-info,.white-banner h2,#main_image_container
+{
+  background-color:#2d2d2d;
+  border-color:#666;
+}
+
+#tabs,.main-tabs a.selected,.main-tabs a.selected:hover,#source_showview .season-dropdown.open,#source_showview .season-dropdown,.paginator-lite,.text-input[type="text"],.text-input[type="password"],textarea.text-input,input[type=text],input[type=email],input[type=password],textarea,.user-profile-link,.widget-forumnav .widget-forumnav-children
+{
+  background-color:#454545;
+  color:#eee;
+}
+
+.portrait-element,#store_items li,.user-profile-link:hover,.user-profile-link:hover img,.widget-forumnav-current,.showforumtopic-messages td,.bb-spoiler-highlight,.store-sub-menu h2.store-sub-menu-header
+{
+  background-color:#2d2d2d;
+}
+
+.user-profile-entity-page-create-container,.bb-spoiler
+{
+  background-color:#454545;
+}
+
+.forum_main-topic-desc,.group-card
+{
+  background-image:none;
+  background-color:#454545;
+}
+
+.showforumtopic-fblike,#deal_overlay .overlay-button-left:hover,#deal_overlay .overlay-button-right:hover
+{
+  background-color:transparent;
+}
+
+.calendar-month-days,.calendar-month-date,.selectboxit-list,.store-sub-menu ul li.selectboxit-option
+{
+  background-color:#2d2d2d;
+  color:#eee;
+  border-color:#666;
 }
