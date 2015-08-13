@@ -39,6 +39,18 @@ body.main-page,#template_container.template-container,#template_body.old-templat
   background:url(chrome-extension://__MSG_@@extension_id__/images/arrows.png) no-repeat -40px 42px;
 }
 
+.bb-quoters-end
+{
+  background:url(chrome-extension://__MSG_@@extension_id__/images/quote_end.png) no-repeat;
+  -webkit-filter:invert(1) grayscale(1);
+}
+
+.bb-quoters
+{
+  background:url(chrome-extension://__MSG_@@extension_id__/images/quote_start.png) no-repeat;
+  -webkit-filter:invert(1) grayscale(1);
+}
+
 .guestbook-sort-bar,.comments .more-replies
 {
   background-color:#2D2D2D;
@@ -76,13 +88,6 @@ a.default-button,span.default-button,input.default-button,/* General Buttons */
 .welcome-countdown-items a:hover,.welcome-pulse-box a:hover,.welcome-simulcasts .welcome-simulcasts-episode:hover,.landscape-grid .wrapper:hover,body .wrapper .landscape-element:active,.wrapper .portrait-element:active
 {
   background-color:#454545!important;
-}
-
-.paginator-lite-disabled,.paginator-lite-selected,.paginator-lite:hover,#paginator_bar a.disabled
-{
-  background-color:#2d2d2d;
-  color:#eee;
-  border-color:#666;
 }
 
 input.user-status-new-form
@@ -152,6 +157,12 @@ a.forum_main-topic-desc-numcomments:after
   content:"Comments";
   color:#eee;
   font-size:70%;
+}
+
+.bb-quote
+{
+  color:#eee;
+  background-color:#1b1b1b;
 }
 
 .widget-forumnav-current:before,.widget-forumnav-current:after
@@ -305,7 +316,7 @@ span.dark-button.selected,input.dark-button:active,input.dark-button.selected,.d
   background-color:transparent;
 }
 
-.calendar-month-days,.calendar-month-date,.selectboxit-list,.store-sub-menu ul li.selectboxit-option
+.paginator-lite-disabled,.paginator-lite-selected,.paginator-lite:hover,#paginator_bar a.disabled,.calendar-month-days,.calendar-month-date,.selectboxit-list,.store-sub-menu ul li.selectboxit-option
 {
   background-color:#2d2d2d;
   color:#eee;
