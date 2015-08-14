@@ -7,12 +7,15 @@ Changes Crunchyroll's theme to a dark one.  Better for the eyes when it's dark.
 
 Changelog:
 
-* v1.1.0:
+* v1.1.1 - 8/14/2015:
+  * Many Small Changes, most notibly: button redesign, logo color change, fix last bit of unreadable text on show page - @link07
+
+* v1.1.0 - 8/12/2015:
   * Add Theme for Manga page, News page, Store page, Search page. - @link07
   * General Code Cleanup - @link07
 
-* v1.0.1:
+* v1.0.1 - 8/7/2015:
   * Fix Manifest. - @link07
 
-* v1.0.0
+* v1.0.0 - 8/6/2015:
   * First Version. - @link07
