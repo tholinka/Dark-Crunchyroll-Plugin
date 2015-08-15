@@ -74,7 +74,8 @@ body.main-page,#template_container.template-container,#template_body.old-templat
 
 #template_action_button a,.action-button,/* Forum Buttons */
 a.default-button,span.default-button,input.default-button,/* General Buttons */
-.default-button,.submitbtn /* User Page */
+.default-button,.submitbtn /* User Page */,
+.big-btn /* New Forum Post */
 {
   background-color:#2d2d2d;
   color:#eee;
@@ -97,21 +98,14 @@ input#status_div,input.user-status-new-form /* User Page Quote */
   color:#eee;
 }
 
-input.user-status-new-form-selected,input.user-status-new-form-mouseover
+input.user-status-new-form-selected,input.user-status-new-form-mouseover,.library-share-link input
 {
   background-color:#454545;
   color:#eee;
   border:none;
 }
 
-.library-share-link input
-{
-  background-color:#454545;
-  border:none;
-  color:#eee;
-}
-
-.library-tab-widget .tab a
+.library-tab-widget .tab a, .bbcode-preview-container
 {
   background-color:#454545;
   color:#eee;
@@ -236,7 +230,7 @@ ul.news h3 a,ul.news-abbr h2 a,ul.news-abbr .byline,ul.newsfeed .news-date-label
 }
 
 #header_menubar_beta li a,#header_userpanel_beta .login a,#header_userpanel_beta .signup a,.new-template-body,#header_searchpanel_beta #header_search_input:focus,a.block-link,.old-template-body a.block-link,.new-template-body a.block-link /* Next Episode Links */,.guestbook-spoiler-checkbox,#footer .footer-column a,.welcome-simulcasts .welcome-simulcasts-collection a,.welcome-simulcasts .welcome-simulcasts-episode,.welcome-title-list h1 a,.welcome-block h1 a,.welcome-crnews-title,.welcome-news-title,.welcome-latest-videos .name,.welcome-latest-videos .series,.user-profile-header a,a.forum_main-topic-desc-title,.topbar-nav-trail a,.group-card-name,.group-card-headline,.group-card-details,.widget-forumcategory-display-title a,.showforumtopic-message-user-name a,.showforumtopic-message-user-details,#launch_calendar_header,.search-video-thumbs .name,.search-video-thumbs .series,.search-results .name,ul.search-tabs a,.daily-deal a h3,#product_pricing .member-discount,.selectboxit-list .selectboxit-option-anchor,/* Vendor page */
-.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor /* Vendor page current selected */,.short-desc,ul.news h2 a,.news-header-right a,.showcrunchynews h1 a,ul.newsfeed h2 a,.user-profile-twitter-sync,#showmedia_about_info_details
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor /* Vendor page current selected */,.short-desc,ul.news h2 a,.news-header-right a,.showcrunchynews h1 a,ul.newsfeed h2 a,.user-profile-twitter-sync,.dimtext,#showmedia_about_info_details
 {
   color:#eee;
 }
@@ -252,7 +246,8 @@ ul.news h3 a,ul.news-abbr h2 a,ul.news-abbr .byline,ul.newsfeed .news-date-label
   border-color:#666;
 }
 
-#tabs,.main-tabs a.selected,.main-tabs a.selected:hover,#source_showview .season-dropdown.open,#source_showview .season-dropdown,.paginator-lite,.text-input[type="text"],.text-input[type="password"],textarea.text-input,input[type=text],input[type=email],input[type=password],textarea,.user-profile-link,.widget-forumnav .widget-forumnav-children
+#tabs,.main-tabs a.selected,.main-tabs a.selected:hover,#source_showview .season-dropdown.open,#source_showview .season-dropdown,.paginator-lite,.text-input[type="text"],.text-input[type="password"],textarea.text-input,input[type=text],input[type=email],input[type=password],textarea,.user-profile-link,.widget-forumnav .widget-forumnav-children,
+.old-template-body, .old-template-body input, .old-template-body select /* New Forum Post */
 {
   background-color:#454545;
   color:#eee;
@@ -278,7 +273,7 @@ ul.news h3 a,ul.news-abbr h2 a,ul.news-abbr .byline,ul.newsfeed .news-date-label
 
 #template_action_button a:hover,/* Forum Button */
 a.dark-button:active,a.dark-button.selected,span.dark-button:active,/* General Buttons */
-span.dark-button.selected,input.dark-button:active,input.dark-button.selected,.dark-button:active,.dark-button.selected,a.default-button:active,a.default-button.selected,span.default-button:active,span.default-button.selected,input.default-button:active,input.default-button.selected,.default-button:active,.default-button.selected,.daily-deal,.email-subscribe,.promotion,.store-items li .price,.store-items li .product-info,.white-banner h2,#main_image_container,/*submitbtn user page */.submitbtn:active,.submitbtn:hover,.submitbtn_hover,.calendar-month-notcurrent,.calendar-month-date-events-today
+span.dark-button.selected,input.dark-button:active,input.dark-button.selected,.dark-button:active,.dark-button.selected,a.default-button:active,a.default-button.selected,span.default-button:active,span.default-button.selected,input.default-button:active,input.default-button.selected,.default-button:active,.default-button.selected,.daily-deal,.email-subscribe,.promotion,.store-items li .price,.store-items li .product-info,.white-banner h2,#main_image_container,/*submitbtn user page */.submitbtn:active,.submitbtn:hover,.submitbtn_hover,.calendar-month-notcurrent,.calendar-month-date-events-today, .big-btn:hover
 {
   background-color:#1d1d1d;
   border-color:#666;
