@@ -1,14 +1,14 @@
-#header_beta .logo-enUS,.interstitial-header .logo-enUS
+#header_beta .logo-enUS, .interstitial-header .logo-enUS
 {
   -webkit-filter:grayscale(1) invert(.5);
 }
 
-.guestbook .guestbook-links a img,.searchbox-focus,.search-submit-button
+.guestbook .guestbook-links a img, .searchbox-focus, .search-submit-button
 {
   -webkit-filter:grayscale(1);
 }
 
-body.main-page,#template_container.template-container,#template_body.old-template-body
+body.main-page, #template_container.template-container, #template_body.old-template-body
 {
   background-color:#1b1b1b;
   color:#eee;
@@ -25,7 +25,7 @@ body.main-page,#template_container.template-container,#template_body.old-templat
   border-color:#587C90;
 }
 
-#header_searchpanel_beta #header_search_input,.header-searchbox-submit,#main_content textarea,.features-input input[type=text],.email-subscribe input[type=text] /* Store Page */
+#header_searchpanel_beta #header_search_input, .header-searchbox-submit, #main_content textarea, .features-input input[type=text], .email-subscribe input[type=text] /* Store Page */
 {
   background-color:#494949;
   border:1px solid #666;
@@ -51,7 +51,7 @@ body.main-page,#template_container.template-container,#template_body.old-templat
   -webkit-filter:invert(1) grayscale(1);
 }
 
-.guestbook-sort-bar,.comments .more-replies
+.guestbook-sort-bar, .comments .more-replies
 {
   background-color:#2D2D2D;
   border-color:#666;
@@ -62,43 +62,43 @@ body.main-page,#template_container.template-container,#template_body.old-templat
   opacity:1;
 }
 
-.bb-smilie-smile,.bb-smilie-sad,.bb-static-smilie,#footer .footer-column .icon
+.bb-smilie-smile, .bb-smilie-sad, .bb-static-smilie, #footer .footer-column .icon
 {
   border:none;
 }
 
-#footer .footer-language .selected,#footer .footer-column a:hover,a
+#footer .footer-language .selected, #footer .footer-column a:hover, a
 {
   color:#0A6DA4;
 }
 
-#template_action_button a,.action-button,/* Forum Buttons */
-a.default-button,span.default-button,input.default-button,/* General Buttons */
-.default-button,.submitbtn /* User Page */,
+#template_action_button a, .action-button, /* Forum Buttons */
+a.default-button, span.default-button, input.default-button, /* General Buttons */
+.default-button, .submitbtn /* User Page */,
 .big-btn /* New Forum Post */
 {
   background-color:#2d2d2d;
   color:#eee;
   text-shadow:0 1px 0 rgba(0,0,0,0.45);
   background-image:none;
-  -webkit-box-shadow:inset 0 1px 0 rgba(31,31,31,.45);
-  box-shadow:inset 0 1px 0 rgba(31,31,31,.45);
+  -webkit-box-shadow:inset 0 1px 0 rgba(31,31,31, .45);
+  box-shadow:inset 0 1px 0 rgba(31,31,31, .45);
   border-color:#666;
 }
 
-.welcome-countdown-items a:hover,.welcome-pulse-box a:hover,.welcome-simulcasts .welcome-simulcasts-episode:hover,.landscape-grid .wrapper:hover,body .wrapper .landscape-element:active,.wrapper .portrait-element:active
+.welcome-countdown-items a:hover, .welcome-pulse-box a:hover, .welcome-simulcasts .welcome-simulcasts-episode:hover, .landscape-grid .wrapper:hover, body .wrapper .landscape-element:active, .wrapper .portrait-element:active
 {
   background-color:#454545!important;
 }
 
-input#status_div,input.user-status-new-form /* User Page Quote */
+input#status_div, input.user-status-new-form /* User Page Quote */
 {
   background-color:transparent;
   border:none;
   color:#eee;
 }
 
-input.user-status-new-form-selected,input.user-status-new-form-mouseover,.library-share-link input
+input.user-status-new-form-selected, input.user-status-new-form-mouseover, .library-share-link input
 {
   background-color:#454545;
   color:#eee;
@@ -142,7 +142,7 @@ a.forum_main-topic-desc-numcomments:after
   background-color:#1b1b1b;
 }
 
-.widget-forumnav-current:before,.widget-forumnav-current:after
+.widget-forumnav-current:before, .widget-forumnav-current:after
 {
   border-left-color:#454545!important;
 }
@@ -173,7 +173,7 @@ a.bbtool img
   display:none;
 }
 
-ul.search-tabs a:hover,ul.search-tabs .highlight a,.search-results a:hover
+ul.search-tabs a:hover, ul.search-tabs .highlight a, .search-results a:hover
 {
   background-color:#1d1d1d;
 }
@@ -189,36 +189,36 @@ ul.search-tabs a:hover,ul.search-tabs .highlight a,.search-results a:hover
   border-bottom-color:#2d2d2d;
 }
 
-.selectboxit-container .selectboxit,#vendor_informations
+.selectboxit-container .selectboxit, #vendor_informations
 {
   color:#eee;
   background-color:#2d2d2d;
 }
 
-.selectboxit-btn.selectboxit-enabled:hover,.selectboxit-btn.selectboxit-enabled:focus,.selectboxit-btn.selectboxit-enabled:active
+.selectboxit-btn.selectboxit-enabled:hover, .selectboxit-btn.selectboxit-enabled:focus, .selectboxit-btn.selectboxit-enabled:active
 {
   color:#eee;
   background-color:#3d3d3d;
 }
 
-#source_manga_showview #main_content .landscape-grid li .wrapper,#main_content .landscape-element,.landscape-grid .wrapper:hover
+#source_manga_showview #main_content .landscape-grid li .wrapper, #main_content .landscape-element, .landscape-grid .wrapper:hover
 {
   background-color:#2d2d2d!important;
 }
 
-.detail-heading,.secondary
+.detail-heading, .secondary
 {
   color:#9C9C9C;
 }
 
-ul.news-top-stories-row li a,ul.news li.news-item
+ul.news-top-stories-row li a, ul.news li.news-item
 {
   color:#eee;
   background-color:#1d1d1d;
   border-color:#666;
 }
 
-ul.news h3 a,ul.news-abbr h2 a,ul.news-abbr .byline,ul.newsfeed .news-date-label,ul.news .news-date-label,.showcrunchynews h2,ul.newsfeed h3 a
+ul.news h3 a, ul.news-abbr h2 a, ul.news-abbr .byline, ul.newsfeed .news-date-label, ul.news .news-date-label, .showcrunchynews h2, ul.newsfeed h3 a
 {
   color:#ABABAB;
 }
@@ -229,8 +229,9 @@ ul.news h3 a,ul.news-abbr h2 a,ul.news-abbr .byline,ul.newsfeed .news-date-label
   border-color:#666;
 }
 
-#header_menubar_beta li a,#header_userpanel_beta .login a,#header_userpanel_beta .signup a,.new-template-body,#header_searchpanel_beta #header_search_input:focus,a.block-link,.old-template-body a.block-link,.new-template-body a.block-link /* Next Episode Links */,.guestbook-spoiler-checkbox,#footer .footer-column a,.welcome-simulcasts .welcome-simulcasts-collection a,.welcome-simulcasts .welcome-simulcasts-episode,.welcome-title-list h1 a,.welcome-block h1 a,.welcome-crnews-title,.welcome-news-title,.welcome-latest-videos .name,.welcome-latest-videos .series,.user-profile-header a,a.forum_main-topic-desc-title,.topbar-nav-trail a,.group-card-name,.group-card-headline,.group-card-details,.widget-forumcategory-display-title a,.showforumtopic-message-user-name a,.showforumtopic-message-user-details,#launch_calendar_header,.search-video-thumbs .name,.search-video-thumbs .series,.search-results .name,ul.search-tabs a,.daily-deal a h3,#product_pricing .member-discount,.selectboxit-list .selectboxit-option-anchor,/* Vendor page */
-.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor /* Vendor page current selected */,.short-desc,ul.news h2 a,.news-header-right a,.showcrunchynews h1 a,ul.newsfeed h2 a,.user-profile-twitter-sync,.dimtext,#showmedia_about_info_details
+#header_menubar_beta li a, #header_userpanel_beta .login a, #header_userpanel_beta .signup a, .new-template-body, #header_searchpanel_beta #header_search_input:focus, a.block-link, .old-template-body a.block-link, .new-template-body a.block-link /* Next Episode Links */, .guestbook-spoiler-checkbox, #footer .footer-column a, .welcome-simulcasts .welcome-simulcasts-collection a, .welcome-simulcasts .welcome-simulcasts-episode, .welcome-title-list h1 a, .welcome-block h1 a, .welcome-crnews-title, .welcome-news-title, .welcome-latest-videos .name, .welcome-latest-videos .series, .user-profile-header a, a.forum_main-topic-desc-title, .topbar-nav-trail a, .group-card-name, .group-card-headline, .group-card-details, .widget-forumcategory-display-title a, .showforumtopic-message-user-name a, .showforumtopic-message-user-details, #launch_calendar_header, .search-video-thumbs .name, .search-video-thumbs .series, .search-results .name, ul.search-tabs a, .daily-deal a h3, #product_pricing .member-discount, .selectboxit-list .selectboxit-option-anchor, /* Vendor page */
+.selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor /* Vendor page current selected */,
+.short-desc, ul.news h2 a, .news-header-right a, .showcrunchynews h1 a, ul.newsfeed h2 a, .user-profile-twitter-sync, .dimtext, #showmedia_about_info_details
 {
   color:#eee;
 }
@@ -241,56 +242,57 @@ ul.news h3 a,ul.news-abbr h2 a,ul.news-abbr .byline,ul.newsfeed .news-date-label
   font-weight:700;
 }
 
-.searchbox-focus,.guestbook-list,#paginator_bar a.disabled:hover,.showforumtopic-message-footer,.showforumtopic-message-user-thumblink img,.showforumtopic-message-user
+.searchbox-focus, .guestbook-list, #paginator_bar a.disabled:hover, .showforumtopic-message-footer, .showforumtopic-message-user-thumblink img, .showforumtopic-message-user
 {
   border-color:#666;
 }
 
-#tabs,.main-tabs a.selected,.main-tabs a.selected:hover,#source_showview .season-dropdown.open,#source_showview .season-dropdown,.paginator-lite,.text-input[type="text"],.text-input[type="password"],textarea.text-input,input[type=text],input[type=email],input[type=password],textarea,.user-profile-link,.widget-forumnav .widget-forumnav-children,
+#tabs, .main-tabs a.selected, .main-tabs a.selected:hover, #source_showview .season-dropdown.open, #source_showview .season-dropdown, .paginator-lite, .text-input[type="text"], .text-input[type="password"], textarea.text-input, input[type=text], input[type=email], input[type=password], textarea, .user-profile-link, .widget-forumnav .widget-forumnav-children,
 .old-template-body, .old-template-body input, .old-template-body select /* New Forum Post */
 {
   background-color:#454545;
   color:#eee;
 }
 
-.user-profile-entity-page-create-container,.bb-spoiler
+.user-profile-entity-page-create-container, .bb-spoiler
 {
   background-color:#454545;
 }
 
-.forum_main-topic-desc,.group-card
+.forum_main-topic-desc, .group-card
 {
   background-image:none;
   background-color:#454545;
 }
 
-.paginator-lite-disabled,.paginator-lite-selected,.paginator-lite:hover,#paginator_bar a.disabled,.calendar-month-days,.calendar-month-date,.selectboxit-list,.store-sub-menu ul li.selectboxit-option
+.paginator-lite-disabled, .paginator-lite-selected, .paginator-lite:hover, #paginator_bar a.disabled, .calendar-month-days, .calendar-month-date, .selectboxit-list, .store-sub-menu ul li.selectboxit-option
 {
   background-color:#2d2d2d;
   color:#eee;
   border-color:#666;
 }
 
-#template_action_button a:hover,/* Forum Button */
-a.dark-button:active,a.dark-button.selected,span.dark-button:active,/* General Buttons */
-span.dark-button.selected,input.dark-button:active,input.dark-button.selected,.dark-button:active,.dark-button.selected,a.default-button:active,a.default-button.selected,span.default-button:active,span.default-button.selected,input.default-button:active,input.default-button.selected,.default-button:active,.default-button.selected,.daily-deal,.email-subscribe,.promotion,.store-items li .price,.store-items li .product-info,.white-banner h2,#main_image_container,/*submitbtn user page */.submitbtn:active,.submitbtn:hover,.submitbtn_hover,.calendar-month-notcurrent,.calendar-month-date-events-today, .big-btn:hover
+#template_action_button a:hover, /* Forum Button */
+a.dark-button:active, a.dark-button.selected, span.dark-button:active, /* General Buttons */
+span.dark-button.selected, input.dark-button:active, input.dark-button.selected, .dark-button:active, .dark-button.selected, a.default-button:active, a.default-button.selected, span.default-button:active, span.default-button.selected, input.default-button:active, input.default-button.selected, .default-button:active, .default-button.selected, .daily-deal, .email-subscribe, .promotion, .store-items li .price, .store-items li .product-info, .white-banner h2, #main_image_container,
+.submitbtn:active, .submitbtn:hover, .submitbtn_hover, .calendar-month-notcurrent, .calendar-month-date-events-today, .big-btn:hover  /* User Page */
 {
   background-color:#1d1d1d;
   border-color:#666;
 }
 
-,.showforumtopic-fblike,#deal_overlay .overlay-button-left:hover,#deal_overlay .overlay-button-right:hover
+, .showforumtopic-fblike, #deal_overlay .overlay-button-left:hover, #deal_overlay .overlay-button-right:hover
 {
   background-color:transparent;
 }
 
-.widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover,.widget-forumnav .widget-forumnav-children:hover,#header_beta,#footer,#footer_menu,#main_content_white,.white-wrapper
+.widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover, .widget-forumnav .widget-forumnav-children:hover, #header_beta, #footer, #footer_menu, #main_content_white, .white-wrapper
 {
   background-color:#2d2d2d;
   color:#eee;
 }
 
-.portrait-element,#store_items li,.user-profile-link:hover,.user-profile-link:hover img,.widget-forumnav-current,.showforumtopic-messages td,.bb-spoiler-highlight,.store-sub-menu h2.store-sub-menu-header,.availability-notes-low
+.portrait-element, #store_items li, .user-profile-link:hover, .user-profile-link:hover img, .widget-forumnav-current, .showforumtopic-messages td, .bb-spoiler-highlight, .store-sub-menu h2.store-sub-menu-header, .availability-notes-low
 {
   background-color:#2d2d2d;
 }
