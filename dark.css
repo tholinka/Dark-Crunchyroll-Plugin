@@ -77,7 +77,7 @@ a.default-button, span.default-button, input.default-button, /* General Buttons 
 .default-button, .submitbtn /* User Page */,
 .big-btn /* New Forum Post */
 {
-  background-color:#2d2d2d;
+  background-color:#333;
   color:#eee;
   text-shadow:0 1px 0 rgba(0,0,0,0.45);
   background-image:none;
@@ -173,7 +173,8 @@ a.bbtool img
   display:none;
 }
 
-ul.search-tabs a:hover, ul.search-tabs .highlight a, .search-results a:hover
+ul.search-tabs a:hover, ul.search-tabs .highlight a, .search-results a:hover,
+.acct-guestpass-notice /* Settings -> Guest Pass Page */
 {
   background-color:#1d1d1d;
 }
@@ -275,7 +276,8 @@ ul.news h3 a, ul.news-abbr h2 a, ul.news-abbr .byline, ul.newsfeed .news-date-la
 #template_action_button a:hover, /* Forum Button */
 a.dark-button:active, a.dark-button.selected, span.dark-button:active, /* General Buttons */
 span.dark-button.selected, input.dark-button:active, input.dark-button.selected, .dark-button:active, .dark-button.selected, a.default-button:active, a.default-button.selected, span.default-button:active, span.default-button.selected, input.default-button:active, input.default-button.selected, .default-button:active, .default-button.selected, .daily-deal, .email-subscribe, .promotion, .store-items li .price, .store-items li .product-info, .white-banner h2, #main_image_container,
-.submitbtn:active, .submitbtn:hover, .submitbtn_hover, .calendar-month-notcurrent, .calendar-month-date-events-today, .big-btn:hover  /* User Page */
+.submitbtn:active, .submitbtn:hover, .submitbtn_hover, .calendar-month-notcurrent, .calendar-month-date-events-today, .big-btn:hover,  /* User Page */
+a.default-button:hover, span.default-button:hover, input.default-button:hover, .default-button:hover /* Settings Page */
 {
   background-color:#1d1d1d;
   border-color:#666;
@@ -295,4 +297,16 @@ span.dark-button.selected, input.dark-button:active, input.dark-button.selected,
 .portrait-element, #store_items li, .user-profile-link:hover, .user-profile-link:hover img, .widget-forumnav-current, .showforumtopic-messages td, .bb-spoiler-highlight, .store-sub-menu h2.store-sub-menu-header, .availability-notes-low
 {
   background-color:#2d2d2d;
+}
+
+div.acct-nav a /* Settings Page */
+{
+	color: #eee;
+	
+}
+
+.acct-nav a:hover, .acct-nav a.highlight /* Settings Page */
+{
+	background-color: #1d1d1d;
+	border-color: #666;
 }
