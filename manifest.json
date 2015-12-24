@@ -2,7 +2,7 @@
   "manifest_version": 2,
   "name": "Dark Skin for Crunchyroll",
   "short_name": "Dark CR",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description" : "Adds a toggleable dark theme to Crunchyroll.com",
   
   "permissions": [
@@ -39,7 +39,8 @@
     "dark.css",
     "images/arrows.png",
 	"images/quote_start.png",
-	"images/quote_end.png"
+	"images/quote_end.png",
+	"images/views-count-bubble.png"
   ],
   "homepage_url" : "https://github.com/link07/Dark-Crunchyroll-plugin-chrome"
 }
