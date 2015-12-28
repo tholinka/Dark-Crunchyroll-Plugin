@@ -1,12 +1,19 @@
-# Dark-Crunchyroll-plugin-chrome
-Dark youtube plugin for Google Chrome, idea based off of the [Dark Youtube Plugin](https://github.com/stormbreakerbg/Dark-youtube-plugin-chrome).
+# Dark Crunchyroll Plugin for Google Chrome
+This project is entirely based off of the [Dark Youtube Plugin](https://github.com/stormbreakerbg/Dark-youtube-plugin-chrome).
 
 The plugin can be downloaded from the Chrome Web Store [here](https://chrome.google.com/webstore/detail/dark-skin-for-crunchyroll/agjiicokbioponboibkfhfgmhcacafph?hl=en-US&gl=US).
 
-Changes Crunchyroll's theme to a dark one.  Better for the eyes when it's dark.
+This plugin aims to provide a quality dark theme for [Crunchyroll.com](http://crunchyroll.com).  This is primarly because dark themes are easier on the eye when in a darker environment.
+It also leaves a button in the addon bar to quickly disable and reenable the theme.
+
+If there are any unthemed pages, or other issues such as weird color choices, please report them!
 
 Changelog:
 
+* v1.1.5 - 12/28/2015:
+  * Themed Login page - @link07
+  * Themed Inbox page - @link07
+  
 * v1.1.4 - 12/23/2015:
   * Rethemed missing parts of front page - @link07
   * Themed new calendar / lineup page - @link07

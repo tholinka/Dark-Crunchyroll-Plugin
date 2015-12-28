@@ -290,7 +290,7 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
   color: #eee;
 }
 
-, .showforumtopic-fblike, #deal_overlay .overlay-button-left:hover, #deal_overlay .overlay-button-right:hover
+.showforumtopic-fblike, #deal_overlay .overlay-button-left:hover, #deal_overlay .overlay-button-right:hover
 {
   background-color:transparent;
 }
@@ -310,6 +310,11 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 {
   background-color:#1d1d1d;
   border-color:#666;
+}
+
+.topbar-nav-trail
+{
+	color: #aaa;
 }
 
 /* Front Page Welcome-Box message, will probably break pretty quickly, but honestly only way to accuratly select this element */
@@ -340,4 +345,31 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 .lineup-container
 {
   background-color:#2b2b2b;
+}
+
+/* /inbox */
+.tablelist_shadow, .inbox-nav-contents li.highlight a, .inbox-nav-contents li a:hover
+{
+	background-color: #454545;
+}
+
+a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
+{
+	color:#eee;
+}
+
+/* Login page */
+.site-header
+{
+	background-color:#2d2d2d;
+}
+
+#logo_beta svg
+{
+	-webkit-filter:invert(1)grayscale(1);
+}
+
+#RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right
+{
+	background-color:#1b1b1b; /* Background color of the website */
 }
