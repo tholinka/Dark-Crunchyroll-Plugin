@@ -202,7 +202,8 @@ ul.search-tabs a:hover, ul.search-tabs .highlight a, .search-results a:hover,
   background-color:#3d3d3d;
 }
 
-#source_manga_showview #main_content .landscape-grid li .wrapper, #main_content .landscape-element, .landscape-grid .wrapper:hover
+#source_manga_showview #main_content .landscape-grid li .wrapper, #main_content .landscape-element, .landscape-grid .wrapper:hover,
+#source_home #main_content .landscape-grid li .wrapper /* queue page */
 {
   background-color:#2d2d2d!important;
 }
@@ -372,4 +373,20 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 #RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right
 {
 	background-color:#1b1b1b; /* Background color of the website */
+}
+
+/* Queue Page */
+#source_home .queue-to-top
+{
+	background:url(chrome-extension://__MSG_@@extension_id__/images/queue_arrow.png) -3px 0 no-repeat;
+}
+
+#source_home .dropdown-collection
+{
+	background: url(chrome-extension://__MSG_@@extension_id__/images/queue_dropdown_arrow.png) 0 0 no-repeat;
+}
+
+body .landscape-grid .wrapper a:hover .short-desc
+{
+	color: #bbb
 }

@@ -38,6 +38,8 @@
   "web_accessible_resources": [
     "dark.css",
     "images/arrows.png",
+	"images/queue_arrow.png",
+	"images/queue_dropdown_arrow.png",
 	"images/quote_start.png",
 	"images/quote_end.png",
 	"images/views-count-bubble.png"
