@@ -10,6 +10,9 @@ If there are any unthemed pages, or other issues such as weird color choices, pl
 
 Changelog:
 
+* v1.1.6 - 10/14/2016:
+  * Themed Queue page - @link07
+
 * v1.1.5 - 12/28/2015:
   * Themed Login page - @link07
   * Themed Inbox page - @link07
