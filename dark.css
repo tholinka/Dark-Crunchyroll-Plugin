@@ -237,7 +237,8 @@ ul.news h3 a, ul.news-abbr h2 a, ul.news-abbr .byline, ul.newsfeed .news-date-la
 .welcome-forum-category a, /* Front Page Forum stuff category header */ .welcome-pulse-box a, /* Front Page Forum stuff topics */ .welcome-countdown-items a, /* Front Page now showing */
 div.acct-nav a, /* Settings Page */
 .simulcast-calendar, .calendar-day .day-switcher, .calendar h1 > a, /* /simulcast-calendar */
-.anime-lineup-blurb /* /lineup */
+.anime-lineup-blurb, /* /lineup */
+small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-signup-page .forms, .std-form input, .std-form select, .std-form textarea /* login page / general */
 {
   color:#eee;
 }
@@ -359,18 +360,27 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 	color:#eee;
 }
 
-/* Login page */
-.site-header
+/* Login page / new login page */
+.site-header,
+.isolated-page-footer, .isolated-page-header,
+.login-or-signup-page .forms, .std-form input, .std-form select, .std-form textarea
 {
 	background-color:#2d2d2d;
 }
 
-#logo_beta svg
+.login-or-signup-page .forms, .std-form fieldset, .std-form p, .std-form input, .std-form select, .std-form textarea
+{
+	color:#eee;
+}
+
+#logo_beta svg,
+.isolated-page-header svg
 {
 	-webkit-filter:invert(1)grayscale(1);
 }
 
-#RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right
+#RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right,
+.login-or-signup-page main
 {
 	background-color:#1b1b1b; /* Background color of the website */
 }
