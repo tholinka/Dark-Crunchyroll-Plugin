@@ -22,6 +22,7 @@
   },
   "browser_action": {
     "default_icon": {
+		"16": "images/dark_crunchyroll_16.png",
 		"19": "images/dark_crunchyroll_19.png",
 		"38": "images/dark_crunchyroll_38.png"
 	},
@@ -33,7 +34,7 @@
 	"38": "images/dark_crunchyroll_38.png",
     "48": "images/dark_crunchyroll_48.png",
 	"64": "images/dark_crunchyroll_64.png",
-    "128": "images/dark_crunchyroll.png"
+    "128": "images/dark_crunchyroll_128.png"
   },
   "web_accessible_resources": [
     "dark.css",
