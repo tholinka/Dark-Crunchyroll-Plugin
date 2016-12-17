@@ -7,11 +7,13 @@
 #header_beta .logo-enUS, .interstitial-header .logo-enUS
 {
   -webkit-filter:grayscale(1) invert(.5);
+  filter:grayscale(1) invert(0.5);
 }
 
 .guestbook .guestbook-links a img, .searchbox-focus, .search-submit-button
 {
   -webkit-filter:grayscale(1);
+  filter:grayscale(1);
 }
 
 body.main-page, #template_container.template-container, #template_body.old-template-body
@@ -49,12 +51,14 @@ body.main-page, #template_container.template-container, #template_body.old-templ
 {
   background:url(chrome-extension://__MSG_@@extension_id__/images/quote_end.png) no-repeat;
   -webkit-filter:invert(1) grayscale(1);
+  filter:invert(1) grayscale(1);
 }
 
 .bb-quoters
 {
   background:url(chrome-extension://__MSG_@@extension_id__/images/quote_start.png) no-repeat;
   -webkit-filter:invert(1) grayscale(1);
+  filter:invert(1) grayscale(1);
 }
 
 .guestbook-sort-bar, .comments .more-replies
@@ -382,7 +386,8 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 #logo_beta svg,
 .isolated-page-header svg
 {
-	-webkit-filter:invert(1)grayscale(1);
+	-webkit-filter:invert(1) grayscale(1);
+	filter:invert(1) grayscale(1);
 }
 
 #RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right,
