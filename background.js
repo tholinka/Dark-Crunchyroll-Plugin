@@ -31,6 +31,7 @@ function updateIcon()
 	{
 		localStorage.activated = "false";
 		chrome.browserAction.setIcon({path:"images/white_crunchyroll_19.png"});
+		chrome.browserAction.setIcon({path:"images/white_crunchyroll_38.png"});
 	}
 	else
 	{
