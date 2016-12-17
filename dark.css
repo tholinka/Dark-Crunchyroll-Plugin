@@ -1,3 +1,9 @@
+/*** general ***/
+/* replace all a's with a slightly ligher color */
+.new-template-body .block-link:hover, .new-template-body .pagination a, .new-template-body .para-div a, .new-template-body .sub-tabs .selectors a.text-link, .new-template-body .text-link, .new-template-body .wrapper a:hover a, .new-template-body a:hover h4, .new-template-body li a, .new-template-body p a, .new-template-body span a 
+{
+	color:#17abfd;
+}
 #header_beta .logo-enUS, .interstitial-header .logo-enUS
 {
   -webkit-filter:grayscale(1) invert(.5);
@@ -398,5 +404,29 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 
 body .landscape-grid .wrapper a:hover .short-desc
 {
-	color: #bbb
+	color: #bbb;
+}
+
+/* Freetrial page */
+.freetrial-page .form-area, .freetrial-page .premium-value-props, .freetrial-page main>footer
+{
+	color: #eee;
+	background:#3b3b3b;
+}
+
+input.validated-input:invalid, textarea.validated-input:invalid {
+	background: none;
+}
+
+/* premium comparison page */
+.comparison, #premium_container .highlighted .comparison {
+    background-color: #3b3b3b;
+}
+
+#premium_container .membership-crown {
+	background-color:#eee;
+}
+
+.membership-price-picker .membership-price {
+	color:#17abfd; /* same color as a tag */
 }
