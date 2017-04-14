@@ -8,38 +8,4 @@ It also leaves a button in the addon bar to quickly disable and reenable the the
 
 If there are any unthemed pages, or other issues such as weird color choices, please report them!
 
-Changelog:
-
-* v1.1.7 - 10/21/2016:
-  * Rethemed Login & Front page - @link07
-
-* v1.1.6 - 10/14/2016:
-  * Themed Queue page - @link07
-
-* v1.1.5 - 12/28/2015:
-  * Themed Login page - @link07
-  * Themed Inbox page - @link07
-  
-* v1.1.4 - 12/23/2015:
-  * Rethemed missing parts of front page - @link07
-  * Themed new calendar / lineup page - @link07
-  
-* v1.1.3 - 8/19/2015:
-  * Themed Settinsg Page.  Slightly changes how buttons work to make them noticble on Settings Page - @link07
-  * Changed Icon to match the new Chrome Store one - @link07
-  
-* v1.1.2 - 8/14/2015:
-  * Themed New Forum Post page - @link07
-
-* v1.1.1 - 8/13/2015:
-  * Many Small Changes, most notibly: button redesign, logo color change, fix last bit of unreadable text on show page - @link07
-
-* v1.1.0 - 8/12/2015:
-  * Add Theme for Manga page, News page, Store page, Search page. - @link07
-  * General Code Cleanup - @link07
-
-* v1.0.1 - 8/7/2015:
-  * Fix Manifest. - @link07
-
-* v1.0.0 - 8/6/2015:
-  * First Version. - @link07
+See [Releases](https://github.com/link07/Dark-Crunchyroll-Plugin-Chrome/releases) for changelog.
