@@ -16,6 +16,11 @@
   filter:grayscale(1);
 }
 
+body.main-page .ad-skin /* attempt to fix adblock or privacy badger conflict */
+{
+  background:transparent!important; /* inherit images (ads) */
+}
+
 body.main-page, #template_container.template-container, #template_body.old-template-body
 {
   background-color:#1b1b1b;
