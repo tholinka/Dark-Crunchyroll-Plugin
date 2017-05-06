@@ -47,11 +47,19 @@ small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-sig
 {
 	color:#68c9fd;
 }
-
-#header_beta .logo-enUS, .interstitial-header .logo-enUS
+/* header stuff */
+/* - make icons blue instead of orange - */
+.header-search-form:hover .header-searchbox-submit>svg, .header-searchbox:focus~.header-searchbox-submit>svg, /* search box */
+.header-userpanel .header-icon:hover, .header-userpanel .userpanel-item.state-selected .header-icon /* login / queue / random icons */
+{
+	fill:#0d91d9;
+	color:#0d91d9;
+}
+/* - logos - */
+#header_beta .header-logo, .interstitial-header .logo-enUS, #logo_beta svg, .isolated-page-header svg
 {
   -webkit-filter:grayscale(1) invert(.5);
-  filter:grayscale(1) invert(0.5);
+  filter:grayscale(1) invert(0.5) brightness(180%);
 }
 
 .guestbook .guestbook-links a img, .searchbox-focus, .search-submit-button
@@ -129,7 +137,8 @@ body.main-page, #template_container.template-container, #template_body.old-templ
 #template_action_button a, .action-button, /* Forum Buttons */
 a.default-button, span.default-button, input.default-button, /* General Buttons */
 .default-button, .submitbtn /* User Page */,
-.big-btn /* New Forum Post */
+.big-btn /* New Forum Post */,
+.header-searchbox /* search box in the header */
 {
   background-color:#333;
   color:#eee;
@@ -412,13 +421,6 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 .login-or-signup-page .forms, .std-form fieldset, .std-form p, .std-form input, .std-form select, .std-form textarea
 {
 	color:#eee;
-}
-
-#logo_beta svg,
-.isolated-page-header svg
-{
-	-webkit-filter:invert(1) grayscale(1);
-	filter:invert(1) grayscale(1);
 }
 
 #RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right,
