@@ -8,7 +8,9 @@ div.acct-nav a, /* Settings Page */
 .simulcast-calendar, .calendar-day .day-switcher, .calendar h1 > a, /* /simulcast-calendar */
 .anime-lineup-blurb, /* /lineup */
 small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-signup-page .forms, .std-form input, .std-form select, .std-form textarea, /* login page / general */
-#footer .footer-column h6
+#footer .footer-column h6,
+#tabs, #source_showview .season-dropdown.open, .main-tabs a.selected, #source_showview .season-dropdown, .paginator-lite, .text-input[type="text"], .text-input[type="password"], textarea.text-input, input[type=text], input[type=email], input[type=password], textarea, .user-profile-link, .widget-forumnav .widget-forumnav-children,
+.old-template-body, .old-template-body input, .old-template-body select /* New Forum Post */
 {
   color:#eee!important;
 }
@@ -35,12 +37,13 @@ small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-sig
 /* - hover - */
 /* -- for links that have to have !important -- */
 #footer .footer-language .selected, #footer .footer-column a:hover, /* footer */
-.welcome-recent-link a:hover, .welcome-recent-ep a:hover /* main page recently aired show box thing (at the bottom) */
+.welcome-recent-link a:hover, .welcome-recent-ep a:hover, /* main page recently aired show box thing (at the bottom) */
+#header_menubar_beta li a:hover, .new-template-body a.block-link:hover, .main-tabs a:hover, .welcome-block h1 a:hover
 {
 	color:#68c9fd!important;
 }
 /* -- all other links -- */
-.new-template-body .block-link:hover, .new-template-body .wrapper a:hover a, .new-template-body a:hover h4, a:hover
+.new-template-body .block-link:hover, .new-template-body .wrapper a:hover a, .new-template-body a:hover h4, a.block-link:hover
 {
 	color:#68c9fd;
 }
@@ -297,7 +300,6 @@ ul.news h3 a, ul.news-abbr h2 a, ul.news-abbr .byline, ul.newsfeed .news-date-la
 .old-template-body, .old-template-body input, .old-template-body select /* New Forum Post */
 {
   background-color:#454545!important;
-  color:#eee!important;
 }
 
 .user-profile-entity-page-create-container, .bb-spoiler
