@@ -23,8 +23,8 @@ body.main-page .ad-skin /* attempt to fix adblock or privacy badger conflict */
 
 body.main-page, #template_container.template-container, #template_body.old-template-body
 {
-  background-color:#1b1b1b;
-  color:#eee;
+  background-color:#1b1b1b!important;
+  color:#eee!important;
 }
 
 #template_body.old-template-body
@@ -255,7 +255,7 @@ div.acct-nav a, /* Settings Page */
 .anime-lineup-blurb, /* /lineup */
 small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-signup-page .forms, .std-form input, .std-form select, .std-form textarea /* login page / general */
 {
-  color:#eee;
+  color:#eee!important;
 }
 
 #showmedia_about_info_details span
@@ -272,8 +272,8 @@ small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-sig
 #tabs, .main-tabs a.selected, .main-tabs a.selected:hover, #source_showview .season-dropdown.open, #source_showview .season-dropdown, .paginator-lite, .text-input[type="text"], .text-input[type="password"], textarea.text-input, input[type=text], input[type=email], input[type=password], textarea, .user-profile-link, .widget-forumnav .widget-forumnav-children,
 .old-template-body, .old-template-body input, .old-template-body select /* New Forum Post */
 {
-  background-color:#454545;
-  color:#eee;
+  background-color:#454545!important;
+  color:#eee!important;
 }
 
 .user-profile-entity-page-create-container, .bb-spoiler
@@ -314,13 +314,13 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 
 .widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover, .widget-forumnav .widget-forumnav-children:hover, #header_beta, #footer, #footer_menu, #main_content_white, .white-wrapper
 {
-  background-color:#2d2d2d;
-  color:#eee;
+  background-color:#2d2d2d!important;
+  color:#eee!important;
 }
 
 .portrait-element, #store_items li, .user-profile-link:hover, .user-profile-link:hover img, .widget-forumnav-current, .showforumtopic-messages td, .bb-spoiler-highlight, .store-sub-menu h2.store-sub-menu-header, .availability-notes-low
 {
-  background-color:#2d2d2d;
+  background-color:#2d2d2d!important;
 }
 
 .acct-nav a:hover, .acct-nav a.highlight /* Settings Page */
