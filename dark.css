@@ -138,7 +138,7 @@ body.main-page, #template_container.template-container, #template_body.old-templ
 a.default-button, span.default-button, input.default-button, /* General Buttons */
 .default-button, .submitbtn /* User Page */,
 .big-btn /* New Forum Post */,
-.header-searchbox /* search box in the header */
+.header-searchbox, /* search box in the header */
 {
   background-color:#333;
   color:#eee;
@@ -466,4 +466,11 @@ input.validated-input:invalid, textarea.validated-input:invalid
 #premium_container .membership-crown
 {
 	background-color:#eee;
+}
+
+/* start trial page */
+.couponcode-redeem, .couponcode-redeem-form .submit .right
+{
+	/* make the color darker orange so text is readable */
+	background-color:#231e05;
 }
