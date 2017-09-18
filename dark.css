@@ -474,3 +474,14 @@ input.validated-input:invalid, textarea.validated-input:invalid
 	/* make the color darker orange so text is readable */
 	background-color:#231e05;
 }
+
+/* "Start your free trial" box on player page */
+#showmedia_free_trial_signup
+{
+	background-color:#2b2b2b;
+}
+
+.showmedia-free-trial-header
+{
+	background-color:#3b3b3b;
+}
