@@ -99,18 +99,18 @@ body.main-page, #template_container.template-container, #template_body.old-templ
 
 .collection-carousel-arrow
 {
-  background:url(chrome-extension://__MSG_@@extension_id__/images/arrows.png) no-repeat -40px 42px;
+  background:url(ms-browser-extension://__MSG_@@extension_id__/images/arrows.png) no-repeat -40px 42px;
 }
 
 .bb-quoters-end
 {
-  background:url(chrome-extension://__MSG_@@extension_id__/images/quote_end.png) no-repeat;
+  background:url(ms-browser-extension://__MSG_@@extension_id__/images/quote_end.png) no-repeat;
   filter:invert(1) grayscale(1);
 }
 
 .bb-quoters
 {
-  background:url(chrome-extension://__MSG_@@extension_id__/images/quote_start.png) no-repeat;
+  background:url(ms-browser-extension://__MSG_@@extension_id__/images/quote_start.png) no-repeat;
   filter:invert(1) grayscale(1);
 }
 
@@ -386,7 +386,7 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 .welcome-news-views
 {
   background-color:transparent;
-  background:url(chrome-extension://__MSG_@@extension_id__/images/views-count-bubble.png) no-repeat;
+  background:url(ms-browser-extension://__MSG_@@extension_id__/images/views-count-bubble.png) no-repeat;
 }
 
 /* New Calandar (http://www.crunchyroll.com/simulcastcalendar) */
@@ -451,12 +451,12 @@ body
 /* Queue Page */
 #source_home .queue-to-top
 {
-	background:url(chrome-extension://__MSG_@@extension_id__/images/queue_arrow.png) -3px 0 no-repeat;
+        background:url(ms-browser-extension://__MSG_@@extension_id__/images/queue_arrow.png) -3px 0 no-repeat;
 }
 
 #source_home .dropdown-collection
 {
-	background: url(chrome-extension://__MSG_@@extension_id__/images/queue_dropdown_arrow.png) 0 0 no-repeat;
+        background: url(ms-browser-extension://__MSG_@@extension_id__/images/queue_dropdown_arrow.png) 0 0 no-repeat;
 }
 
 body .landscape-grid .wrapper a:hover .short-desc
