@@ -369,10 +369,16 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 	color: #aaa;
 }
 
-/* Front Page Welcome-Box message, will probably break pretty quickly, but honestly only way to accuratly select this element */
-#ecom_deal_img_div  + div.welcome-block div
+
+#ecom_deal_img_div  + div.welcome-block div, /* Front Page Welcome-Box message, will probably break pretty quickly, but honestly only way to accuratly select this element */
+.availability-notes-high /* availability notes on anime pages (issue #5) */
 {
   background-color:#3A3218!important;
+}
+
+.availability-notes-high /* availability notes on anime page (issue #5) */
+{
+  border: 1px solid orange; /* same as the ecom_deal_img_div on the homepage */
 }
 
 /* Front Page View Count Bubble Transparency Fix */
