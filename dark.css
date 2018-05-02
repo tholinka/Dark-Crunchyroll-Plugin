@@ -435,6 +435,12 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 	background-color:#1b1b1b; /* Background color of the website */
 }
 
+/* set overall background to darker than 1b1b1b (mainly for login page) */
+body
+{
+  background-color:#0b0b0b;
+}
+
 /* Queue Page */
 #source_home .queue-to-top
 {
