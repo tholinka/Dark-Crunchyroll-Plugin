@@ -422,6 +422,12 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 	color:#eee;
 }
 
+.pm-new-subject
+{
+  color: #ccc;
+  font-weight: 800;
+}
+
 /* Login page / new login page */
 .site-header,
 .isolated-page-footer, .isolated-page-header,
