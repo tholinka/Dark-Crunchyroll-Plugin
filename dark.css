@@ -86,8 +86,8 @@ body.main-page, #template_container.template-container, #template_body.old-templ
 
 .message-container
 {
-  background-color:#3E4C54;
-  border-color:#587C90;
+  background-color:hsla(202, 15%, 15%, 1);
+  border-color:hsla(201, 24%, 40%, 1);
 }
 
 #header_searchpanel_beta #header_search_input, .header-searchbox-submit, #main_content textarea, .features-input input[type=text], .email-subscribe input[type=text] /* Store Page */
