@@ -334,12 +334,18 @@ a.dark-button:active, a.dark-button.selected, span.dark-button:active, /* Genera
 span.dark-button.selected, input.dark-button:active, input.dark-button.selected, .dark-button:active, .dark-button.selected, a.default-button:active, a.default-button.selected, span.default-button:active, span.default-button.selected, input.default-button:active, input.default-button.selected, .default-button:active, .default-button.selected, .daily-deal, .email-subscribe, .promotion, .store-items li .price, .store-items li .product-info, .white-banner h2, #main_image_container,
 .submitbtn:active, .submitbtn:hover, .submitbtn_hover, .calendar-month-notcurrent, .calendar-month-date-events-today, .big-btn:hover,  /* User Page */
 a.default-button:hover, span.default-button:hover, input.default-button:hover, .default-button:hover, /* Settings Page */
-.show-all-simulcasts-button /* Front Page Button */
+.show-all-simulcasts-button, /* Front Page Button */
+.showmedia-submenu .watch-dub-on-vrv /* Watch dub on VRV button on watch page */
 {
   background-image:none;
   background-color:#1d1d1d;
   border-color:#666;
   color: #eee;
+}
+
+.showmedia-submenu .watch-dub-on-vrv /* Watch dub on VRV button on watch page */
+{
+  box-shadow: none;
 }
 
 .showforumtopic-fblike, #deal_overlay .overlay-button-left:hover, #deal_overlay .overlay-button-right:hover
