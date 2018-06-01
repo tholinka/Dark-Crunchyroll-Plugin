@@ -58,13 +58,11 @@ small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-sig
 /* - logos - */
 #header_beta .header-logo, .interstitial-header .logo-enUS, #logo_beta svg, .isolated-page-header svg
 {
-  -webkit-filter:grayscale(1) invert(.5);
   filter:grayscale(1) invert(0.5) brightness(180%);
 }
 
 .guestbook .guestbook-links a img, .searchbox-focus, .search-submit-button
 {
-  -webkit-filter:grayscale(1);
   filter:grayscale(1);
 }
 
@@ -107,14 +105,12 @@ body.main-page, #template_container.template-container, #template_body.old-templ
 .bb-quoters-end
 {
   background:url(chrome-extension://__MSG_@@extension_id__/images/quote_end.png) no-repeat;
-  -webkit-filter:invert(1) grayscale(1);
   filter:invert(1) grayscale(1);
 }
 
 .bb-quoters
 {
   background:url(chrome-extension://__MSG_@@extension_id__/images/quote_start.png) no-repeat;
-  -webkit-filter:invert(1) grayscale(1);
   filter:invert(1) grayscale(1);
 }
 
@@ -144,7 +140,6 @@ a.default-button, span.default-button, input.default-button, /* General Buttons 
   color:#eee;
   text-shadow:0 1px 0 rgba(0,0,0,0.45);
   background-image:none;
-  -webkit-box-shadow:inset 0 1px 0 rgba(31,31,31, .45);
   box-shadow:inset 0 1px 0 rgba(31,31,31, .45);
   border-color:#666;
 }
