@@ -8,4 +8,4 @@ It also leaves a button in the addon bar to quickly disable and reenable the the
 
 If there are any unthemed pages, or other issues such as weird color choices, please report them!
 
-See [Releases](https://github.com/link07/Dark-Crunchyroll-Plugin-Chrome/releases) for changelog.
+See [Releases](https://github.com/tholinka/Dark-Crunchyroll-Plugin-Chrome/releases) for changelog.
