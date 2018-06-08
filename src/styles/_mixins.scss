@@ -1,0 +1,14 @@
+/* examples from dark-youtube-plugin-chrome
+@mixin labels {
+  &,
+  yt-formatted-string,
+  a,
+  .title {
+    @content;
+  }
+}
+*/
+
+@mixin invert {
+  filter: grayscale(100%) invert(100%);
+}

@@ -20,19 +20,19 @@ small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-sig
 #footer a, /* footer */
 .welcome-recent-link a /* main page recently aired show box thing (at the bottom) */
 {
-	color:#0d91d9!important;
+        color:#0d91d9!important;
 }
 /* -- all other links -- */
 .new-template-body .pagination a, .new-template-body .para-div a, .new-template-body .sub-tabs .selectors a.text-link, .new-template-body .text-link,
 .new-template-body li a, .new-template-body p a, .new-template-body span a, .membership-price-picker .membership-price, .sub-tabs-menu .calendar-link, a
 {
-	color:#0d91d9;
+        color:#0d91d9;
 }
 /* -- subsections, slightly darker color -- */
 /* --- for ones that need !important --- */
 .welcome-recent-ep a
 {
-	color:#0b81c1!important;
+        color:#0b81c1!important;
 }
 /* - hover - */
 /* -- for links that have to have !important -- */
@@ -40,20 +40,20 @@ small, .site-header, .isolated-page-footer, .isolated-page-header, .login-or-sig
 .welcome-recent-link a:hover, .welcome-recent-ep a:hover, /* main page recently aired show box thing (at the bottom) */
 #header_menubar_beta li a:hover, .new-template-body a.block-link:hover, .main-tabs a:hover, .welcome-block h1 a:hover
 {
-	color:#68c9fd!important;
+        color:#68c9fd!important;
 }
 /* -- all other links -- */
 .new-template-body .block-link:hover, .new-template-body .wrapper a:hover a, .new-template-body a:hover h4, a.block-link:hover
 {
-	color:#68c9fd;
+        color:#68c9fd;
 }
 /* header stuff */
 /* - make icons blue instead of orange - */
 .header-search-form:hover .header-searchbox-submit>svg, .header-searchbox:focus~.header-searchbox-submit>svg, /* search box */
 .header-userpanel .header-icon:hover, .header-userpanel .userpanel-item.state-selected .header-icon /* login / queue / random icons */
 {
-	fill:#0d91d9;
-	color:#0d91d9;
+        fill:#0d91d9;
+        color:#0d91d9;
 }
 /* - logos - */
 #header_beta .header-logo, .interstitial-header .logo-enUS, #logo_beta svg, .isolated-page-header svg
@@ -367,7 +367,7 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 
 .topbar-nav-trail
 {
-	color: #aaa;
+        color: #aaa;
 }
 
 
@@ -409,12 +409,12 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 /* /inbox */
 .tablelist_shadow, .inbox-nav-contents li.highlight a, .inbox-nav-contents li a:hover
 {
-	background-color: #454545;
+        background-color: #454545;
 }
 
 a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 {
-	color:#eee;
+        color:#eee;
 }
 
 .pm-new-subject
@@ -428,18 +428,18 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 .isolated-page-footer, .isolated-page-header,
 .login-or-signup-page .forms, .std-form input, .std-form select, .std-form textarea
 {
-	background-color:#2d2d2d;
+        background-color:#2d2d2d;
 }
 
 .login-or-signup-page .forms, .std-form fieldset, .std-form p, .std-form input, .std-form select, .std-form textarea
 {
-	color:#eee;
+        color:#eee;
 }
 
 #RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right,
 .login-or-signup-page main
 {
-	background-color:#1b1b1b; /* Background color of the website */
+        background-color:#1b1b1b; /* Background color of the website */
 }
 
 /* set overall background to darker than 1b1b1b (mainly for login page) */
@@ -451,29 +451,29 @@ body
 /* Queue Page */
 #source_home .queue-to-top
 {
-	background:url(chrome-extension://__MSG_@@extension_id__/images/queue_arrow.png) -3px 0 no-repeat;
+        background:url(chrome-extension://__MSG_@@extension_id__/images/queue_arrow.png) -3px 0 no-repeat;
 }
 
 #source_home .dropdown-collection
 {
-	background: url(chrome-extension://__MSG_@@extension_id__/images/queue_dropdown_arrow.png) 0 0 no-repeat;
+        background: url(chrome-extension://__MSG_@@extension_id__/images/queue_dropdown_arrow.png) 0 0 no-repeat;
 }
 
 body .landscape-grid .wrapper a:hover .short-desc
 {
-	color: #bbb;
+        color: #bbb;
 }
 
 /* Freetrial page */
 .freetrial-page .form-area, .freetrial-page .premium-value-props, .freetrial-page main>footer
 {
-	color: #eee;
-	background:#3b3b3b;
+        color: #eee;
+        background:#3b3b3b;
 }
 
 input.validated-input:invalid, textarea.validated-input:invalid
 {
-	background: none;
+        background: none;
 }
 
 /* premium comparison page */
@@ -484,20 +484,20 @@ input.validated-input:invalid, textarea.validated-input:invalid
 
 #premium_container .membership-crown
 {
-	background-color:#eee;
+        background-color:#eee;
 }
 
 /* start trial page */
 .couponcode-redeem, .couponcode-redeem-form .submit .right
 {
-	/* make the color darker orange so text is readable */
-	background-color:#231e05;
+        /* make the color darker orange so text is readable */
+        background-color:#231e05;
 }
 
 /* "Start your free trial" box on player page */
 #showmedia_free_trial_signup
 {
-	background-color:#2b2b2b;
+        background-color:#2b2b2b;
 }
 
 .showmedia-free-trial-header
