@@ -1,14 +1,18 @@
 /* examples from dark-youtube-plugin-chrome
 @mixin labels {
-  &,
-  yt-formatted-string,
-  a,
-  .title {
-    @content;
-  }
+    &,
+    yt-formatted-string,
+    a,
+    .title {
+      @content;
+    }
 }
 */
 
 @mixin invert {
-  filter: grayscale(100%) invert(100%);
+    filter: grayscale(1) invert(0.5);
+}
+
+@mixin bright-invert {
+    filter: grayscale(1) invert(0.5) brightness(180%);
 }

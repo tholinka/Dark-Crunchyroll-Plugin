@@ -1,0 +1,16 @@
+@import 'common';
+
+/* premium comparison page */
+/* https://www.crunchyroll.com/en/premium_comparison */
+.comparison
+{
+    background-color: $box-background-color;
+}
+
+#premium_container
+{
+    .membership-crown
+    {
+        background-color:$text-color;
+    }
+}

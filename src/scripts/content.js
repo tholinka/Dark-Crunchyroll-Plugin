@@ -6,7 +6,7 @@ class StyleSwitcher {
         this.link.id    = 'dark-crunchyroll-styles';
         this.link.rel   = 'stylesheet';
         this.link.type  = 'text/css';
-        this.link.href  = this.styleURL();
+        this.link.href  = chrome.extension.getURL('styles.css');
         this.link.media = 'screen';
 
         this.active = false;
@@ -35,14 +35,6 @@ class StyleSwitcher {
             this.activate();
         } else {
             this.deactivate();
-        }
-    }
-
-    styleURL() {
-        if (document.querySelector('ytd-app')) {
-            return chrome.extension.getURL('styles.css');
-        } else {
-            return chrome.extension.getURL('legacy_styles.css');
         }
     }
 }

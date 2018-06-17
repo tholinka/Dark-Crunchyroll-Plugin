@@ -9,7 +9,7 @@ messenger.onMessage((request) => {
 chrome.browserAction.onClicked.addListener(() => controller.toggleActive());
 
 controller.onUpdate((config) => {
-    var icon = config.active ? 'images/black_crunchyroll_19.png' : 'images/white_crunchyroll_19.png';
+    var icon = config.active ? 'images/dark_crunchyroll_128.png' : 'images/white_crunchyroll_128.png';
 
     chrome.browserAction.setIcon({path: icon});
 

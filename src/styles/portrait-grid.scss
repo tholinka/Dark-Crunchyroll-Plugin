@@ -1,0 +1,26 @@
+@import 'common';
+
+/* used on http://www.crunchyroll.com/home/history and the show page (e.g. http://www.crunchyroll.com/my-hero-academia) */
+.portrait-grid
+{
+    .portrait-element
+    {
+        background-color:$background-color-lighter;
+        color:$text-color;
+    }
+
+    .portrait-element:active
+    {
+        background-color:$background-color-lighter-lighter;
+    }
+
+    .portrait-element:hover
+    {
+        color:$link-color-hover;
+    }
+
+    .short-desc
+    {
+        color:$text-color-darker;
+    }
+}

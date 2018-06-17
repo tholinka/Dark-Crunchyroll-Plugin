@@ -1,0 +1,59 @@
+@import 'common';
+
+@mixin set-background-and-text
+{
+    background-color:$background-color-lighter-lighter;
+    color:$text-color;
+}
+
+/* various tabs, e.g. http://www.crunchyroll.com/videos/anime, http://www.crunchyroll.com/home/history */
+#tabs
+{
+    @include set-background-and-text;
+    background-color: $background-color-lighter;
+    .main-tabs
+    {
+        @include set-background-and-text;
+
+        a
+        {
+            @include set-background-and-text;
+        }
+
+        a:hover
+        {
+            color:$link-color-hover;
+        }
+
+        .selected, .selected:hover
+        {
+            background-color:$background-color-lighter;
+        }
+
+        .selected
+        {
+            color:$text-color;
+            border:0;
+            /* cheat to remove margin gap between .selected and .sub-tabs */
+            border-bottom:4px solid $background-color-lighter;
+        }
+    }
+
+    .sub-tabs-menu
+    {
+        a
+        {
+            color: $text-color;
+        }
+
+        a:hover
+        {
+            color:$link-color-hover;
+        }
+
+        .calendar-link
+        {
+            color:$link-color;
+        }
+    }
+}

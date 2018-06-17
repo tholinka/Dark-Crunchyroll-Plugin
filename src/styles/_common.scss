@@ -1,2 +1,5 @@
+/* Import old styles */
+@import 'chrome-extension://__MSG_@@extension_id__/legacy_styles.css';
+
 @import 'mixins';
 @import 'variables';
