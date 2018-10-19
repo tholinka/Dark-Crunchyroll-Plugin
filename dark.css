@@ -504,3 +504,9 @@ input.validated-input:invalid, textarea.validated-input:invalid
 {
 	background-color:#3b3b3b;
 }
+
+/* Publisher page (e.g. https://www.crunchyroll.com/publisher/Aniplex) */
+.publisher-title-container .link
+{
+	color:#eee
+}
