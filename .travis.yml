@@ -1,8 +1,19 @@
 language: node_js
-node_js: '6.1'
+node_js: '8'
+cache: npm
+
+ignore:
+  - README.md
+  - .gitattributes
+  - .gitignore
+  - .editorconfig
+  - build-check.sh
+
+git:
+    depth: 1
 
 install:
   - npm install -g gulp-cli
   - npm install
 
-script: gulp build
+script: gulp build && ./build-check.sh
