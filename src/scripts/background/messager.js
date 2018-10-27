@@ -1,8 +1,7 @@
 class Messenger {
     constructor(runtime) {
-        this.runtime  = runtime;
-        this.listener = () => {};
-        this.ports    = [];
+        this.runtime = runtime;
+        this.ports = [];
 
         this.runtime.onConnect.addListener((port) => this.handleConnect(port));
     }
@@ -30,8 +29,8 @@ class Messenger {
         this.ports.forEach((port) => {
             try {
                 port.postMessage(message);
-            } catch(e) {
-                console.error('Could not send message to port', e);
+            } catch (e) {
+                console.error("Could not send message to port", e);
             }
         });
     }

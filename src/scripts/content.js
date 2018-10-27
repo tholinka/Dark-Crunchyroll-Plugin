@@ -3,10 +3,10 @@ class StyleSwitcher {
         this.head = document.getElementsByTagName('head')[0];
         this.link = document.createElement('link');
 
-        this.link.id    = 'dark-crunchyroll-styles';
-        this.link.rel   = 'stylesheet';
-        this.link.type  = 'text/css';
-        this.link.href  = chrome.extension.getURL('styles.css');
+        this.link.id = 'dark-crunchyroll-styles';
+        this.link.rel = 'stylesheet';
+        this.link.type = 'text/css';
+        this.link.href = chrome.extension.getURL('styles.css');;
         this.link.media = 'screen';
 
         this.active = false;
@@ -39,7 +39,7 @@ class StyleSwitcher {
     }
 }
 
-const port = chrome.runtime.connect({name: 'dark-crunchyroll'});
+const port = chrome.runtime.connect({ name: 'dark-crunchyroll' });
 
 const interval = setInterval(() => {
     if (document.querySelector('body > *')) {
@@ -47,12 +47,12 @@ const interval = setInterval(() => {
             const styleSwitcher = new StyleSwitcher();
 
             port.onMessage.addListener((status) => {
-                if (typeof status.active !== 'undefined') {
-                    styleSwitcher.switch(status.active);
+                if (typeof status !== 'undefined') {
+                    styleSwitcher.switch(status);
                 }
             });
 
-            port.postMessage({method: 'notifyActiveStatus', args: {}});
+            port.postMessage({ method: 'notifyActiveStatus', args: {} });
         } finally {
             clearInterval(interval);
         }

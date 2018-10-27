@@ -1,3 +1,4 @@
+// handles localstorage
 class ConfigStore {
     defaults() {
         return {
