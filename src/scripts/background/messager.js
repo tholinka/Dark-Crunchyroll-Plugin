@@ -1,37 +1,37 @@
 class Messenger {
-    constructor(runtime) {
-        this.runtime = runtime;
-        this.ports = [];
+	constructor(runtime) {
+		this.runtime = runtime;
+		this.ports = [];
 
-        this.runtime.onConnect.addListener((port) => this.handleConnect(port));
-    }
+		this.runtime.onConnect.addListener((port) => this.handleConnect(port));
+	}
 
-    onMessage(listener) {
-        this.listener = listener;
-    }
+	onMessage(listener) {
+		this.listener = listener;
+	}
 
-    handleConnect(port) {
-        if (port.name !== 'dark-crunchyroll') {
-            return;
-        }
+	handleConnect(port) {
+		if (port.name !== 'dark-crunchyroll') {
+			return;
+		}
 
-        this.ports.push(port);
+		this.ports.push(port);
 
-        port.onMessage.addListener((request) => this.listener(request));
-        port.onDisconnect.addListener(() => this.removePort(port));
-    }
+		port.onMessage.addListener((request) => this.listener(request));
+		port.onDisconnect.addListener(() => this.removePort(port));
+	}
 
-    removePort(port) {
-        this.ports.splice(this.ports.indexOf(port), 1);
-    }
+	removePort(port) {
+		this.ports.splice(this.ports.indexOf(port), 1);
+	}
 
-    notify(message) {
-        this.ports.forEach((port) => {
-            try {
-                port.postMessage(message);
-            } catch (e) {
-                console.error("Could not send message to port", e);
-            }
-        });
-    }
+	notify(message) {
+		this.ports.forEach((port) => {
+			try {
+				port.postMessage(message);
+			} catch (e) {
+				console.error("Could not send message to port", e);
+			}
+		});
+	}
 }

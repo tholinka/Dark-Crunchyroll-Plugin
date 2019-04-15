@@ -4,26 +4,26 @@
 /* https://www.crunchyroll.com/en/premium_comparison */
 #top_background_box
 {
-    color:$text-color;
+	color:$text-color;
 }
 
 .comparison
 {
-    background-color: $box-background-color;
-    color:$text-color;;
+	background-color: $box-background-color;
+	color:$text-color;;
 
-    .membership-price-picker .membership-price, .premium-comparison-gift-link a
-    {
-        color:$link-color;
-    }
+	.membership-price-picker .membership-price, .premium-comparison-gift-link a
+	{
+		color:$link-color;
+	}
 
-    .premium-comparison-gift-link:hover a
-    {
-        color:$link-color-hover;
-    }
+	.premium-comparison-gift-link:hover a
+	{
+		color:$link-color-hover;
+	}
 }
 
 #premium_container .membership-crown
 {
-    background-color:$text-color;
+	background-color:$text-color;
 }

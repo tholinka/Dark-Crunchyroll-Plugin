@@ -2,91 +2,91 @@
 
 @mixin set-fill-and-color-hover
 {
-    fill:$link-color-hover;
-    color:$link-color-hover;
+	fill:$link-color-hover;
+	color:$link-color-hover;
 }
 
 @mixin set-fill-and-color
 {
-    fill:$link-color;
-    color:$link-color;
+	fill:$link-color;
+	color:$link-color;
 }
 
 #header_beta, .site-header, .isolated-page-header
 {
-    background-color: $background-color-lighter;
-    color: $text-color;
+	background-color: $background-color-lighter;
+	color: $text-color;
 }
 
 /* logo */
 #header_beta .header-logo, .interstitial-header .logo-enUS, #logo_beta svg, .isolated-page-header svg
 {
-    @include bright-invert;
+	@include bright-invert;
 }
 
 .header-navigation
 {
-    li
-    {
-        a, #header_profile_dropdown .caption
-        {
-            color:$text-color;
-        }
+	li
+	{
+		a, #header_profile_dropdown .caption
+		{
+			color:$text-color;
+		}
 
-        a:hover, #header_profile_dropdown:hover .caption
-        {
-            color: $link-color-hover;
-        }
-    }
+		a:hover, #header_profile_dropdown:hover .caption
+		{
+			color: $link-color-hover;
+		}
+	}
 
-    .state-selected .header-icon
-    {
-        @include set-fill-and-color;
-    }
+	.state-selected .header-icon
+	{
+		@include set-fill-and-color;
+	}
 
-    .header-icon:hover
-    {
-        @include set-fill-and-color-hover;
-    }
+	.header-icon:hover
+	{
+		@include set-fill-and-color-hover;
+	}
 }
 
 .header-search-form
 {
-    .header-searchbox
-    {
-        background-color:$background-color-input;
-        background-image:none;
-        box-shadow:none;
-        border-color:$border-color;
-    }
+	.header-searchbox
+	{
+		background-color:$background-color-input;
+		background-image:none;
+		box-shadow:none;
+		border-color:$border-color;
+	}
 
-    .header-searchbox, .header-searchbox::placeholder
-    {
-        color:$text-color;
-        text-shadow:0 1px 0 $transparent-black;
-    }
+	.header-searchbox, .header-searchbox::placeholder
+	{
+		color:$text-color;
+		text-shadow:0 1px 0 $transparent-black;
+	}
 
-    .header-searchbox-submit
-    {
-        background-color:$background-color-lighter-lighter;
-        border-left: 1px solid $border-color;
+	.header-searchbox-submit
+	{
+		background-color:$background-color-lighter-lighter;
+		border-left: 1px solid $border-color;
 
-        svg
-        {
-            @include bright-invert;
-            @include set-fill-and-color;
-        }
-    }
+		svg
+		{
+			@include bright-invert;
+			@include set-fill-and-color;
+		}
+	}
 
-    :focus .header-searchbox-submit svg, :hover .header-searchbox-submit svg
-    {
-        @include set-fill-and-color-hover;
-        filter: none;
-    }
+	:focus .header-searchbox-submit svg, :hover .header-searchbox-submit svg
+	{
+		@include set-fill-and-color-hover;
+		filter: none;
+	}
 
-    :active .header-searchbox-submit svg
-    {
-        @include set-fill-and-color;
-        filter:none;
-    }
+	:active .header-searchbox-submit svg
+	{
+		@include set-fill-and-color;
+		filter:none;
+	}
 }

@@ -1,30 +1,30 @@
 // handles localstorage
 class ConfigStore {
-    defaults() {
-        return {
-            active: true
-        };
-    }
+	defaults() {
+		return {
+			active: true
+		};
+	}
 
-    get() {
-        var config = localStorage.getItem('crunchyroll_skin');
+	get() {
+		var config = localStorage.getItem('crunchyroll_skin');
 
-        if (!config) {
-            return this.defaults();
-        }
+		if (!config) {
+			return this.defaults();
+		}
 
-        return JSON.parse(config);
-    }
+		return JSON.parse(config);
+	}
 
-    set(config) {
-        var current = this.get();
+	set(config) {
+		var current = this.get();
 
-        Object.keys(config).forEach((key) => { current[key] = config[key]; });
+		Object.keys(config).forEach((key) => { current[key] = config[key]; });
 
-        this.replace(config);
-    }
+		this.replace(config);
+	}
 
-    replace(config) {
-        localStorage.setItem('crunchyroll_skin', JSON.stringify(config));
-    }
+	replace(config) {
+		localStorage.setItem('crunchyroll_skin', JSON.stringify(config));
+	}
 }

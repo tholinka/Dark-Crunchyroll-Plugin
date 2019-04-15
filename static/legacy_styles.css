@@ -12,7 +12,7 @@ small, .login-or-signup-page .forms, /* login page / general */
 #source_showview .season-dropdown.open, #source_showview .season-dropdown, .paginator-lite, .text-input[type="text"], .text-input[type="password"], textarea.text-input, input[type=text], input[type=email], input[type=password], textarea, .user-profile-link, .widget-forumnav .widget-forumnav-children,
 .old-template-body, .old-template-body input, .old-template-body select /* New Forum Post */
 {
-  color:#eee!important;
+	color:#eee!important;
 }
 /* replace links with a slightly ligher color */
 /* - non hover - */
@@ -20,19 +20,19 @@ small, .login-or-signup-page .forms, /* login page / general */
 #footer a, /* footer */
 .welcome-recent-link a /* main page recently aired show box thing (at the bottom) */
 {
-        color:#0d91d9!important;
+		color:#0d91d9!important;
 }
 /* -- all other links -- */
 .new-template-body .pagination a, .new-template-body .para-div a, , .new-template-body .text-link,
 .new-template-body li a, .new-template-body p a, .new-template-body span a, .membership-price-picker .membership-price, a
 {
-        color:#0d91d9;
+		color:#0d91d9;
 }
 /* -- subsections, slightly darker color -- */
 /* --- for ones that need !important --- */
 .welcome-recent-ep a
 {
-        color:#0b81c1!important;
+		color:#0b81c1!important;
 }
 /* - hover - */
 /* -- for links that have to have !important -- */
@@ -40,61 +40,61 @@ small, .login-or-signup-page .forms, /* login page / general */
 .welcome-recent-link a:hover, .welcome-recent-ep a:hover, /* main page recently aired show box thing (at the bottom) */
 .new-template-body a.block-link:hover, .welcome-block h1 a:hover
 {
-        color:#68c9fd!important;
+		color:#68c9fd!important;
 }
 /* -- all other links -- */
 .new-template-body .block-link:hover, .new-template-body .wrapper a:hover a, .new-template-body a:hover h4, a.block-link:hover
 {
-        color:#68c9fd;
+		color:#68c9fd;
 }
 
 /* forums */
 .guestbook .guestbook-links a img, .searchbox-focus, .search-submit-button
 {
-  filter:grayscale(1);
+	filter:grayscale(1);
 }
 
 .message-container
 {
-  background-color:hsla(202, 15%, 15%, 1);
-  border-color:hsla(201, 24%, 40%, 1);
+	background-color:hsla(202, 15%, 15%, 1);
+	border-color:hsla(201, 24%, 40%, 1);
 }
 
 #main_content textarea, .features-input input[type=text], .email-subscribe input[type=text] /* Store Page */
 {
-  background-color:#494949;
-  border:1px solid #666;
-  border-top:1px solid #656565;
-  color:#eee;
-  text-shadow:0 1px 1px #666;
+	background-color:#494949;
+	border:1px solid #666;
+	border-top:1px solid #656565;
+	color:#eee;
+	text-shadow:0 1px 1px #666;
 }
 
 .bb-quoters-end
 {
-  background:url(chrome-extension://__MSG_@@extension_id__/images/quote_end.png) no-repeat;
-  filter:invert(1) grayscale(1);
+	background:url(chrome-extension://__MSG_@@extension_id__/images/quote_end.png) no-repeat;
+	filter:invert(1) grayscale(1);
 }
 
 .bb-quoters
 {
-  background:url(chrome-extension://__MSG_@@extension_id__/images/quote_start.png) no-repeat;
-  filter:invert(1) grayscale(1);
+	background:url(chrome-extension://__MSG_@@extension_id__/images/quote_start.png) no-repeat;
+	filter:invert(1) grayscale(1);
 }
 
 .guestbook-sort-bar, .comments .more-replies
 {
-  background-color:#2D2D2D;
-  border-color:#666;
+	background-color:#2D2D2D;
+	border-color:#666;
 }
 
 .guestbook .guestbook-list-hidden
 {
-  opacity:1;
+	opacity:1;
 }
 
 .bb-smilie-smile, .bb-smilie-sad, .bb-static-smilie, #footer .footer-column .icon
 {
-  border:none;
+	border:none;
 }
 
 #template_action_button a, .action-button, /* Forum Buttons */
@@ -102,191 +102,191 @@ a.default-button, span.default-button, input.default-button, /* General Buttons 
 .default-button, .submitbtn /* User Page */,
 .big-btn /* New Forum Post */
 {
-  background-color:#333;
-  color:#eee;
-  text-shadow:0 1px 0 rgba(0,0,0,0.45);
-  background-image:none;
-  box-shadow:inset 0 1px 0 rgba(31,31,31, .45);
-  border-color:#666;
+	background-color:#333;
+	color:#eee;
+	text-shadow:0 1px 0 rgba(0,0,0,0.45);
+	background-image:none;
+	box-shadow:inset 0 1px 0 rgba(31,31,31, .45);
+	border-color:#666;
 }
 
 .welcome-countdown-items a:hover, .welcome-pulse-box a:hover, .welcome-simulcasts .welcome-simulcasts-episode:hover, .landscape-grid .wrapper:hover, body .wrapper .landscape-element:active
 {
-  background-color:#454545!important;
+	background-color:#454545!important;
 }
 
 input#status_div, input.user-status-new-form /* User Page Quote */
 {
-  background-color:transparent;
-  border:none;
-  color:#eee;
+	background-color:transparent;
+	border:none;
+	color:#eee;
 }
 
 input.user-status-new-form-selected, input.user-status-new-form-mouseover, .library-share-link input
 {
-  background-color:#454545;
-  color:#eee;
-  border:none;
+	background-color:#454545;
+	color:#eee;
+	border:none;
 }
 
 .library-tab-widget .tab a, .bbcode-preview-container
 {
-  background-color:#454545;
-  color:#eee;
-  border-color:#666;
+	background-color:#454545;
+	color:#eee;
+	border-color:#666;
 }
 
 .library-tab-widget .tab-container .tab a:hover
 {
-  opacity:1;
-  background-color:#2d2d2d;
+	opacity:1;
+	background-color:#2d2d2d;
 }
 
 .topbar-nav-trail a:hover
 {
-  color:#969696;
+	color:#969696;
 }
 
 a.forum_main-topic-desc-numcomments
 {
-  background-image:none;
-  color:#eee;
+	background-image:none;
+	color:#eee;
 }
 
 a.forum_main-topic-desc-numcomments:after
 {
-  content:"Comments";
-  color:#eee;
-  font-size:70%;
+	content:"Comments";
+	color:#eee;
+	font-size:70%;
 }
 
 .bb-quote
 {
-  color:#eee;
-  background-color:#1b1b1b;
+	color:#eee;
+	background-color:#1b1b1b;
 }
 
 .widget-forumnav-current:before, .widget-forumnav-current:after
 {
-  border-left-color:#454545!important;
+	border-left-color:#454545!important;
 }
 
 .widget-forumnav-ancestor:before
 {
-  border-left-color:#2d2d2d;
+	border-left-color:#2d2d2d;
 }
 
 a.bbtool img
 {
-  background-color:transparent;
-  border-color:#666;
+	background-color:transparent;
+	border-color:#666;
 }
 
 .calendar-month-date-events-today
 {
-  border-color:#619BDF;
+	border-color:#619BDF;
 }
 
 #launch_calendar_legend div
 {
-  color:#000;
+	color:#000;
 }
 
 #launch_calendar_header img
 {
-  display:none;
+	display:none;
 }
 
 ul.search-tabs a:hover, ul.search-tabs .highlight a, .search-results a:hover,
 .acct-guestpass-notice /* Settings -> Guest Pass Page */
 {
-  background-color:#1d1d1d;
+	background-color:#1d1d1d;
 }
 
 .store-items li .price:before
 {
-  border-right-color:#2d2d2d;
+	border-right-color:#2d2d2d;
 }
 
 .white-banner:before
 {
-  border-top-color:#2d2d2d;
-  border-bottom-color:#2d2d2d;
+	border-top-color:#2d2d2d;
+	border-bottom-color:#2d2d2d;
 }
 
 .selectboxit-container .selectboxit, #vendor_informations
 {
-  color:#eee;
-  background-color:#2d2d2d;
+	color:#eee;
+	background-color:#2d2d2d;
 }
 
 .selectboxit-btn.selectboxit-enabled:hover, .selectboxit-btn.selectboxit-enabled:focus, .selectboxit-btn.selectboxit-enabled:active
 {
-  color:#eee;
-  background-color:#3d3d3d;
+	color:#eee;
+	background-color:#3d3d3d;
 }
 
 #source_manga_showview #main_content .landscape-grid li .wrapper
 {
-  background-color:#2d2d2d!important;
+	background-color:#2d2d2d!important;
 }
 
 .detail-heading, .secondary
 {
-  color:#9C9C9C;
+	color:#9C9C9C;
 }
 
 ul.news-top-stories-row li a, ul.news li.news-item
 {
-  color:#eee;
-  background-color:#1d1d1d;
-  border-color:#666;
+	color:#eee;
+	background-color:#1d1d1d;
+	border-color:#666;
 }
 
 ul.news h3 a, ul.news-abbr h2 a, ul.news-abbr .byline, ul.newsfeed .news-date-label, ul.news .news-date-label, .showcrunchynews h2, ul.newsfeed h3 a
 {
-  color:#ABABAB;
+	color:#ABABAB;
 }
 
 .showcrunchynews .top-news
 {
-  color:#eee;
-  border-color:#666;
+	color:#eee;
+	border-color:#666;
 }
 
 #showmedia_about_info_details span
 {
-  color:#eee;
-  font-weight:700;
+	color:#eee;
+	font-weight:700;
 }
 
 .searchbox-focus, .guestbook-list, #paginator_bar a.disabled:hover, .showforumtopic-message-footer, .showforumtopic-message-user-thumblink img, .showforumtopic-message-user
 {
-  border-color:#666;
+	border-color:#666;
 }
 
 #source_showview .season-dropdown.open, #source_showview .season-dropdown, .paginator-lite, .text-input[type="text"], .text-input[type="password"], textarea.text-input, input[type=text], input[type=email], input[type=password], textarea, .user-profile-link, .widget-forumnav .widget-forumnav-children,
 .old-template-body, .old-template-body input, .old-template-body select /* New Forum Post */
 {
-  background-color:#454545!important;
+	background-color:#454545!important;
 }
 
 .user-profile-entity-page-create-container, .bb-spoiler
 {
-  background-color:#454545;
+	background-color:#454545;
 }
 
 .forum_main-topic-desc, .group-card
 {
-  background-image:none;
-  background-color:#454545;
+	background-image:none;
+	background-color:#454545;
 }
 
 .paginator-lite-disabled, .paginator-lite-selected, .paginator-lite:hover, #paginator_bar a.disabled, .calendar-month-days, .calendar-month-date, .selectboxit-list, .store-sub-menu ul li.selectboxit-option
 {
-  background-color:#2d2d2d;
-  color:#eee;
-  border-color:#666;
+	background-color:#2d2d2d;
+	color:#eee;
+	border-color:#666;
 }
 
 #template_action_button a:hover, /* Forum Button */
@@ -297,118 +297,118 @@ a.default-button:hover, span.default-button:hover, input.default-button:hover, .
 .show-all-simulcasts-button, /* Front Page Button */
 .showmedia-submenu .watch-dub-on-vrv /* Watch dub on VRV button on watch page */
 {
-  background-image:none;
-  background-color:#1d1d1d;
-  border-color:#666;
-  color: #eee;
+	background-image:none;
+	background-color:#1d1d1d;
+	border-color:#666;
+	color: #eee;
 }
 
 .showmedia-submenu .watch-dub-on-vrv /* Watch dub on VRV button on watch page */
 {
-  box-shadow: none;
+	box-shadow: none;
 }
 
 .showforumtopic-fblike, #deal_overlay .overlay-button-left:hover, #deal_overlay .overlay-button-right:hover
 {
-  background-color:transparent;
+	background-color:transparent;
 }
 
 .widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover, .widget-forumnav .widget-forumnav-children:hover, #footer, #footer_menu, #main_content_white, .white-wrapper
 {
-  background-color:#2d2d2d!important;
-  color:#eee!important;
+	background-color:#2d2d2d!important;
+	color:#eee!important;
 }
 
 #store_items li, .user-profile-link:hover, .user-profile-link:hover img, .widget-forumnav-current, .showforumtopic-messages td, .bb-spoiler-highlight, .store-sub-menu h2.store-sub-menu-header, .availability-notes-low
 {
-  background-color:#2d2d2d!important;
+	background-color:#2d2d2d!important;
 }
 
 .acct-nav a:hover, .acct-nav a.highlight /* Settings Page */
 {
-  background-color:#1d1d1d;
-  border-color:#666;
+	background-color:#1d1d1d;
+	border-color:#666;
 }
 
 .topbar-nav-trail
 {
-        color: #aaa;
+		color: #aaa;
 }
 
 
 #ecom_deal_img_div  + div.welcome-block div, /* Front Page Welcome-Box message, will probably break pretty quickly, but honestly only way to accuratly select this element */
 .availability-notes-high /* availability notes on anime pages (issue #5) */
 {
-  background-color:#3A3218!important;
+	background-color:#3A3218!important;
 }
 
 .availability-notes-high /* availability notes on anime page (issue #5) */
 {
-  border: 1px solid orange; /* same as the ecom_deal_img_div on the homepage */
+	border: 1px solid orange; /* same as the ecom_deal_img_div on the homepage */
 }
 
 /* Front Page View Count Bubble Transparency Fix */
 .welcome-news-views
 {
-  background-color:transparent;
-  background:url(chrome-extension://__MSG_@@extension_id__/images/views-count-bubble.png) no-repeat;
+	background-color:transparent;
+	background:url(chrome-extension://__MSG_@@extension_id__/images/views-count-bubble.png) no-repeat;
 }
 
 /* New Calandar (http://www.crunchyroll.com/simulcastcalendar) */
 .day.active .calendar-day
 {
-  background-color:#484848;
+	background-color:#484848;
 }
 
 .simulcast-lineup-toggle .mode-button, .calendar .pagination-arrow
 {
-  background-color:#383838;
+	background-color:#383838;
 }
 
 /* Lineup (http://www.crunchyroll.com/lineup) */
 .lineup-container
 {
-  background-color:#2b2b2b;
+	background-color:#2b2b2b;
 }
 
 /* /inbox */
 .tablelist_shadow, .inbox-nav-contents li.highlight a, .inbox-nav-contents li a:hover
 {
-        background-color: #454545;
+		background-color: #454545;
 }
 
 a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 {
-        color:#eee;
+		color:#eee;
 }
 
 .pm-new-subject
 {
-  color: #ccc;
-  font-weight: 800;
+	color: #ccc;
+	font-weight: 800;
 }
 
 /* Login page / new login page */
 .login-or-signup-page .forms
 {
-        background-color:#2d2d2d;
+		background-color:#2d2d2d;
 }
 
 .login-or-signup-page .forms
 {
-        color:#eee;
+		color:#eee;
 }
 
 #RpcApiUser_Login a.submit .right, #RpcApiUser_Signup a.submit .right,
 .login-or-signup-page main
 {
-        background-color:#1b1b1b; /* Background color of the website */
+		background-color:#1b1b1b; /* Background color of the website */
 }
 
 /* "Start your free trial" box on player page */
 #showmedia_free_trial_signup
 {
-        background-color:#2b2b2b;
+		background-color:#2b2b2b;
 }
 
 .showmedia-free-trial-header

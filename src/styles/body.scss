@@ -5,23 +5,23 @@
 /* set entire body's background darker (mostly for login / freetrial page, but it can also somewhat help the white flash that happens on page load) */
 body
 {
-    background-color:$background-color-darker;
+	background-color:$background-color-darker;
 }
 
 /* attempt to fix adblock or privacy badger conflict */
 body.main-page .ad-skin
 {
-    /* inherit images (ads) */
-    background:transparent;
+	/* inherit images (ads) */
+	background:transparent;
 }
 
 body.main-page, #template_container.template-container, #template_body.old-template-body
 {
-    background-color:$background-color;
-    color:$text-color;
+	background-color:$background-color;
+	color:$text-color;
 }
 
 #template_body.old-template-body
 {
-    border:1px solid $border-color;
+	border:1px solid $border-color;
 }

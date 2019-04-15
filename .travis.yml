@@ -10,7 +10,7 @@ ignore:
   - build-check.sh
 
 git:
-    depth: 1
+  depth: 1
 
 install:
   - npm install -g gulp-cli

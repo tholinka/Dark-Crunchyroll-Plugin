@@ -1,49 +1,53 @@
 {
-  "name": "Dark Skin for Crunchyroll",
-  "short_name": "Dark CR",
-  "version": "2.0.0",
-  "description": "Adds a toggleable dark theme to Crunchyroll.com",
-  "manifest_version": 2,
-  "permissions": [
-    "http://www.youtube.com/"
-  ],
-  "content_scripts": [
-    {
-      "matches": ["*://*.crunchyroll.com/*"],
-      "js": ["content_script.js"],
-      "run_at": "document_start",
-      "all_frames" : true
-    }
-  ],
-  "background": {
-    "page": "background_page.html",
-    "persistent": false
-  },
-  "browser_action": {
-    "default_icon": {
-      "16": "images/dark_crunchyroll_16.png",
-      "19": "images/dark_crunchyroll_19.png",
-      "38": "images/dark_crunchyroll_38.png"
-    },
-    "default_title": "Toggle Crunchyroll Dark Skin"
-  },
-  "icons": {
-    "16": "images/dark_crunchyroll_16.png",
-    "19": "images/dark_crunchyroll_19.png",
-    "38": "images/dark_crunchyroll_38.png",
-    "48": "images/dark_crunchyroll_48.png",
-    "64": "images/dark_crunchyroll_64.png",
-    "128": "images/dark_crunchyroll_128.png"
-  },
-  "web_accessible_resources": [
-    "styles.css",
-    "legacy_styles.css",
-    "images/arrows.png",
-    "images/queue_arrow.png",
-    "images/queue_dropdown_arrow.png",
-    "images/quote_start.png",
-    "images/quote_end.png",
-    "images/views-count-bubble.png"
-  ],
-  "homepage_url" : "https://github.com/tholinka/Dark-Crunchyroll-plugin-chrome"
+	"name": "Dark Skin for Crunchyroll",
+	"short_name": "Dark CR",
+	"version": "2.0.0",
+	"description": "Adds a toggleable dark theme to Crunchyroll.com",
+	"manifest_version": 2,
+	"permissions": [
+		"http://www.youtube.com/"
+	],
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.crunchyroll.com/*"
+			],
+			"js": [
+				"content_script.js"
+			],
+			"run_at": "document_start",
+			"all_frames": true
+		}
+	],
+	"background": {
+		"page": "background_page.html",
+		"persistent": false
+	},
+	"browser_action": {
+		"default_icon": {
+			"16": "images/dark_crunchyroll_16.png",
+			"19": "images/dark_crunchyroll_19.png",
+			"38": "images/dark_crunchyroll_38.png"
+		},
+		"default_title": "Toggle Crunchyroll Dark Skin"
+	},
+	"icons": {
+		"16": "images/dark_crunchyroll_16.png",
+		"19": "images/dark_crunchyroll_19.png",
+		"38": "images/dark_crunchyroll_38.png",
+		"48": "images/dark_crunchyroll_48.png",
+		"64": "images/dark_crunchyroll_64.png",
+		"128": "images/dark_crunchyroll_128.png"
+	},
+	"web_accessible_resources": [
+		"styles.css",
+		"legacy_styles.css",
+		"images/arrows.png",
+		"images/queue_arrow.png",
+		"images/queue_dropdown_arrow.png",
+		"images/quote_start.png",
+		"images/quote_end.png",
+		"images/views-count-bubble.png"
+	],
+	"homepage_url": "https://github.com/tholinka/Dark-Crunchyroll-plugin-chrome"
 }
