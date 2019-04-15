@@ -1,8 +1,6 @@
 const configStore = new ConfigStore(), messenger = new Messenger(chrome.runtime);
 
 // get config out of store, and handle undefined cases
-
-
 function toggle() {
     let config = configStore.get();
 
@@ -18,12 +16,12 @@ function toggle() {
     messenger.notify(config.active);
 }
 
-// have messanger respond to requests from crunchyroll pages
+// have messenger respond to requests from crunchyroll pages
 messenger.onMessage((request) => {
     // request isn't bad
     if (typeof request != typeof undefined && typeof request != null) {
         // request is for request for status
-        if (request.method === "notifyActiveStatus") {
+        if (request.method === "requestActiveStatus") {
             // respond to message with active
             messenger.notify(configStore.get().active)
         }

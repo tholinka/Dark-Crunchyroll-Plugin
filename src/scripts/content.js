@@ -10,6 +10,7 @@ class StyleSwitcher {
         this.link.media = 'screen';
 
         this.active = false;
+
     }
 
     activate() {
@@ -41,20 +42,35 @@ class StyleSwitcher {
 
 const port = chrome.runtime.connect({ name: 'dark-crunchyroll' });
 
-const interval = setInterval(() => {
+// wait until page is loaded, because if we apply to soon the theme doesn't get applied
+const bodyInterval = setInterval(() => {
+    // page is loaded (enough for us to load anyway), if the body tag has elements
     if (document.querySelector('body > *')) {
-        try {
-            const styleSwitcher = new StyleSwitcher();
+        // page is loaded, we don't need to repeat anymore
+        clearInterval(bodyInterval);
 
-            port.onMessage.addListener((status) => {
-                if (typeof status !== 'undefined') {
-                    styleSwitcher.switch(status);
-                }
-            });
+        // StyleSwitcher can be successfully constructed since page is loaded
+        const styleSwitcher = new StyleSwitcher();
 
-            port.postMessage({ method: 'notifyActiveStatus', args: {} });
-        } finally {
-            clearInterval(interval);
-        }
+        // assume we're enabled until we hear back
+        styleSwitcher.activate();
+
+        // keep asking until we get a good response
+        const requestInterval = setInterval(() => {
+            // ask background page for our actual status
+            try {
+                port.onMessage.addListener((status) => {
+                    // response is good
+                    if (typeof status != typeof undefined && typeof status != null) {
+                        styleSwitcher.switch(status);
+                    }
+                });
+
+                // request status from background
+                port.postMessage({ method: 'requestActiveStatus', args: {} });
+            } finally {
+                clearInterval(requestInterval);
+            }
+        }, 10);
     }
-}, 100);
+}, 5);
