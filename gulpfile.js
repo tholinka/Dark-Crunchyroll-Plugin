@@ -1,4 +1,4 @@
-const { series, parallel } = require('gulp');
+const { src, dest, series, parallel, watch } = require('gulp');
 const gulp = require('gulp'),
 	zip = require('gulp-zip'),
 	sass = require('gulp-sass'),
@@ -20,73 +20,68 @@ const gulp = require('gulp'),
 	};
 
 function clean() {
-
 	return del(PATHS.build + "/**/*");
 }
 
 function lint() {
-	return gulp
-		.src(PATHS.styles)
+	return src(PATHS.styles)
 		.pipe(sassLint())
 		.pipe(sassLint.format())
 		.pipe(sassLint.failOnError());
 }
 
-function styles() {
-	return gulp
-		.src(PATHS.styles)
+function buildStyles() {
+	return src(PATHS.styles)
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('styles.css', { newLine: "\n" }))
 		.pipe(postcss([require('./add_important.js')()]))
-		.pipe(gulp.dest(PATHS.build));
+		.pipe(dest(PATHS.build));
 }
 
-function scriptsBackground() {
-	return gulp
-		.src(PATHS.content_script)
+function buildBackgroundScripts() {
+	return src(PATHS.content_script)
 		.pipe(babel())
 		.pipe(concat('content_script.js', { newLine: "\n" }))
-		.pipe(gulp.dest(PATHS.build));
+		.pipe(dest(PATHS.build));
 }
 
-function scriptsContent() {
-	return gulp
-		.src([PATHS.background_scripts, PATHS.background_script])
+function buildContentScripts() {
+	return src([PATHS.background_scripts, PATHS.background_script])
 		.pipe(babel())
 		.pipe(concat('background_script.js', { newLine: "\n" }))
-		.pipe(gulp.dest(PATHS.build));
+		.pipe(dest(PATHS.build));
 }
 
-function extensionPrepare() {
-	return gulp
-		.src(PATHS.static + '**/*', { base: PATHS.static })
-		.pipe(gulp.dest(PATHS.build));
+function buildStaticContent() {
+	return src(PATHS.static + '**/*', { base: PATHS.static })
+		.pipe(dest(PATHS.build));
 }
 
 function packageZip() {
-	var zipPaths = [
+	const zipPaths = [
 		PATHS.build + "**/*",
 		"!" + PATHS.zip,
 		"!dark-crunchyroll.zip"
 	];
-	return gulp.src(zipPaths, { base: PATHS.build })
+
+	return src(zipPaths, { base: PATHS.build })
 		.pipe(zip('dark-crunchyroll.zip'))
-		.pipe(gulp.dest(PATHS.build));
+		.pipe(dest(PATHS.build));
 }
 
-exports.scripts = parallel(scriptsBackground, scriptsContent);
-exports.build = series(clean, lint, styles, exports.scripts, extensionPrepare);
+const scripts = parallel(buildBackgroundScripts, buildContentScripts);
+const buildAll = parallel(scripts, buildStyles, buildStaticContent);
+
+exports.build = series(clean, lint, buildAll);
 exports.package = series(exports.build, packageZip);
 
-
-function watch() {
-	gulp.watch([
+exports.watch = series(exports.build, function () {
+	watch([
 		PATHS.content_script,
 		PATHS.background_scripts,
 		PATHS.background_script,
 		PATHS.styles
 	], exports.build);
-}
-exports.watch = series(exports.build, watch);
+});
 
 exports.default = exports.watch;
