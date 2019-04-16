@@ -5,7 +5,7 @@
 	"description": "Adds a toggleable dark theme to Crunchyroll.com",
 	"manifest_version": 2,
 	"permissions": [
-		"http://www.youtube.com/"
+		"http://www.crunchyroll.com/"
 	],
 	"content_scripts": [
 		{
