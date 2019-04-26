@@ -91,8 +91,10 @@ function doPackageFirefox() {
 }
 
 const scripts = parallel(buildBackgroundScripts, buildContentScripts);
-const styles = series(buildStyles/*, buildStylesAddLegacy*/);
+const styles = series(buildStyles, buildStylesAddLegacy);
 const staticContent = buildStaticContent;
+
+exports.buildChromeNoLegacy = parallel(scripts, buildStyles, staticContent);
 
 exports.buildChrome = parallel(scripts, styles, staticContent);
 exports.buildFirefox = parallel(scripts, series(styles, convertStylesURLsToFirefox), staticContent);
@@ -119,6 +121,11 @@ function watchFiles(next) {
 exports.watchChrome = series(exports.buildChrome, function () {
 	watchFiles(exports.buildChrome)
 });
+
+exports.watchChromeNoLegacy = series(exports.buildChromeNoLegacy, function () {
+	watchFiles(exports.buildChromeNoLegacy);
+});
+
 exports.watchFirefox = series(exports.buildFirefox, function () {
 	watchFiles(exports.buildFirefox)
 });
