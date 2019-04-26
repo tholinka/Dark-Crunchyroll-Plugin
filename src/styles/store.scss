@@ -1,11 +1,9 @@
 @import "common";
 
 /* common to all subpages (such as the header) */
-.template-index,
-.template-collection,
-.template-list-collections,
-.template-product {
+%shopify-common {
 	color: $text-color;
+	background-color: $background-color;
 
 	a,
 	p {
@@ -15,14 +13,24 @@
 	/* header section common to all store.crunchyroll.com pages */
 	#shopify-section-header.shopify-section {
 		.header-navbar {
-			background-color: $background-color;
+			background-color: $background-color-darker;
 
 			.site-nav {
-				.site-nav__submenu--child-list {
+				.site-nav__submenu {
 					background-color: $background-color;
-				}
-				.site-nav__submenu--grandchild-list {
-					background-color: $background-color;
+
+					.site-nav__submenu-item {
+						&:hover,
+						&:focus {
+							background-color: $background-color-lighter;
+						}
+						.site-nav__link {
+							&:hover,
+							&:focus {
+								background-color: $background-color-lighter;
+							}
+						}
+					}
 				}
 			}
 
@@ -65,6 +73,10 @@
 		background-color: $background-color;
 
 		.ajaxcart {
+			.btn--link {
+				color: $link-color;
+			}
+
 			.ajaxcart__qty input,
 			.btn--gray {
 				@extend %button;
@@ -73,8 +85,15 @@
 	}
 }
 
+/* frontpage e.g. https://store.crunchyroll.com/ */
+.template-index {
+	@extend %shopify-common;
+}
+
 /* e.g. https://store.crunchyroll.com/collections/all */
 .template-collection {
+	@extend %shopify-common;
+
 	/* collections pages, e.g. https://store.crunchyroll.com/collections/clothing */
 	.shopify-section.section-module {
 		/* sidebar */
@@ -123,6 +142,8 @@
 
 /* e.g. https://store.crunchyroll.com/collections */
 .template-list-collections {
+	@extend %shopify-common;
+
 	.collection-grid-item__image {
 		border-color: $border-color;
 	}
@@ -130,6 +151,8 @@
 
 /* item page e.g. https://store.crunchyroll.com/collections/all/products/spike-spiegel-s-h-figuarts-cowboy-bebop */
 .template-product {
+	@extend %shopify-common;
+
 	.product-form__cart-submit,
 	.js-qty__adjust,
 	.ajaxcart__qty-adjust,
@@ -150,4 +173,32 @@
 	.product-form__item--quantity input {
 		@extend %search-box;
 	}
+}
+
+/* cart page */
+.template-cart {
+	@extend %shopify-common;
+
+	.cart-table__item--quantity .js-qty {
+		@extend %button;
+
+		input {
+			@extend %button;
+		}
+	}
+
+	.grid__item {
+		.cart__footer {
+			background-color: transparent;
+
+			.cart__summary {
+				background-color: $background-color-lighter;
+			}
+		}
+	}
+}
+
+/* search page */
+.template-search {
+	@extend %shopify-common;
 }
