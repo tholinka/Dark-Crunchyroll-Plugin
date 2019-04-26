@@ -2,7 +2,7 @@
 	"name": "Dark-Crunchyroll-Plugin",
 	"description": "Makes Crunchyroll go dark-side",
 	"author": "",
-	"version": "2.0.1",
+	"version": "2.0.2",
 	"license": "LGPL-3.0",
 	"repository": {
 		"type": "git",
