@@ -25,11 +25,10 @@ function clean() {
 	return del(PATHS.build + "/**/*");
 }
 
-function lint() {
+function lintStyles() {
 	return src(PATHS.styles)
 		.pipe(sassLint())
-		.pipe(sassLint.format())
-		.pipe(sassLint.failOnError());
+		.pipe(sassLint.format());
 }
 
 function buildStyles() {
@@ -90,20 +89,21 @@ function doPackageFirefox() {
 	return packageZip("firefox");
 }
 
+exports.clean = clean;
+
 const scripts = parallel(buildBackgroundScripts, buildContentScripts);
-const styles = series(buildStyles, buildStylesAddLegacy);
+const minStyles = series(lintStyles, buildStyles);
+const styles = series(minStyles, buildStylesAddLegacy);
 const staticContent = buildStaticContent;
 
-exports.buildChromeNoLegacy = parallel(scripts, buildStyles, staticContent);
+exports.buildChromeNoLegacy = parallel(scripts, minStyles, staticContent);
 
 exports.buildChrome = parallel(scripts, styles, staticContent);
 exports.buildFirefox = parallel(scripts, series(styles, convertStylesURLsToFirefox), staticContent);
 
+exports.packageChrome = series(exports.clean, exports.buildChrome, doPackageChrome);
 
-exports.packageChrome = series(exports.buildChrome, doPackageChrome);
-
-
-exports.packageFirefox = series(exports.buildFirefox, doPackageFirefox);
+exports.packageFirefox = series(exports.clean, exports.buildFirefox, doPackageFirefox);
 
 // when doing both packages, don't rebuild between packaging, just convert the existing build
 exports.package = series(exports.packageChrome, convertStylesURLsToFirefox, doPackageFirefox);

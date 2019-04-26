@@ -11,11 +11,12 @@
 }
 
 %search-box {
+	@extend %search-box-placeholder;
+
 	background-color: $background-color-input;
 	background-image: none;
 	box-shadow: none;
 	border-color: $border-color;
-	@extend %search-box-placeholder;
 }
 
 %button {
