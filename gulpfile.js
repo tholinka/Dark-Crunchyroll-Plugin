@@ -19,7 +19,6 @@ const gulp = require('gulp'),
 		legacy_styles: 'src/legacy_styles.css',
 		static: 'static/',
 		build: 'build/',
-		zip: 'build/dark-crunchyroll.zip'
 	};
 
 function clean() {
@@ -75,11 +74,9 @@ function buildStaticContent() {
 function packageZip(name) {
 	const zipPaths = [
 		PATHS.build + "**/*",
-		"!" + PATHS.zip,
-		"!dark-crunchyroll*.zip"
+		"!" + PATHS.build + "dark-crunchyroll*.zip"
 	],
 		zipName = "dark-crunchyroll-" + name + ".zip";
-
 	return src(zipPaths, { base: PATHS.build })
 		.pipe(zip(zipName))
 		.pipe(dest(PATHS.build));
