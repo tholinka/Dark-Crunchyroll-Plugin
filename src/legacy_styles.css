@@ -55,12 +55,6 @@ small, .login-or-signup-page .forms, /* login page / general */
 	filter:grayscale(1);
 }
 
-.message-container
-{
-	background-color:hsla(202, 15%, 15%, 1);
-	border-color:hsla(201, 24%, 40%, 1);
-}
-
 #main_content textarea, .features-input input[type=text], .email-subscribe input[type=text] /* Store Page */
 {
 	background-color:#494949;

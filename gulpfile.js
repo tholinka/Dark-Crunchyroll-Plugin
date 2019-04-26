@@ -1,3 +1,5 @@
+'use strict';
+
 const { src, dest, series, parallel, watch } = require('gulp');
 const gulp = require('gulp'),
 	zip = require('gulp-zip'),
@@ -33,7 +35,7 @@ function lint() {
 
 function buildStyles() {
 	return src(PATHS.styles)
-		.pipe(sass().on('error', sass.logError))
+		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 		.pipe(concat('styles.css', { newLine: "\n" }))
 		.pipe(postcss([require('./add_important.js')()]))
 		.pipe(dest(PATHS.build));
