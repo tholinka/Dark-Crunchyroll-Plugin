@@ -1,0 +1,153 @@
+@import "common";
+
+/* common to all subpages (such as the header) */
+.template-index,
+.template-collection,
+.template-list-collections,
+.template-product {
+	color: $text-color;
+
+	a,
+	p {
+		color: $text-color;
+	}
+
+	/* header section common to all store.crunchyroll.com pages */
+	#shopify-section-header.shopify-section {
+		.header-navbar {
+			background-color: $background-color;
+
+			.site-nav {
+				.site-nav__submenu--child-list {
+					background-color: $background-color;
+				}
+				.site-nav__submenu--grandchild-list {
+					background-color: $background-color;
+				}
+			}
+
+			.site-header__search {
+				.site-header__search-input {
+					@extend %search-box;
+				}
+				.site-header__search-input::placeholder {
+					@extend %search-box-placeholder;
+				}
+				.site-header__search-submit {
+					color: $text-color;
+				}
+			}
+		}
+	}
+
+	.page-container {
+		.breadcrumbs {
+			// they have a transparency effect applied, so they are harder to see
+			a,
+			span {
+				&:not(.breadcrumbs__active) {
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+
+	.site-footer__copyright {
+		color: $text-color;
+
+		a {
+			color: $text-color;
+		}
+	}
+
+	/* cart */
+	.cart-drawer {
+		background-color: $background-color;
+
+		.ajaxcart {
+			.ajaxcart__qty input,
+			.btn--gray {
+				@extend %button;
+			}
+		}
+	}
+}
+
+/* e.g. https://store.crunchyroll.com/collections/all */
+.template-collection {
+	/* collections pages, e.g. https://store.crunchyroll.com/collections/clothing */
+	.shopify-section.section-module {
+		/* sidebar */
+		.filter-menu {
+			.collection-sidebar__title {
+				color: $text-color;
+			}
+			.filter-group {
+				.filter-clear {
+					background-color: $background-color-input;
+				}
+
+				h4 {
+					color: $text-color-darker-darker;
+				}
+			}
+		}
+
+		/* sort dropdown */
+		.collection-toolbar__item.collection-toolbar__item--sort {
+			select.collection-toolbar__input {
+				@extend %search-box;
+
+				option {
+					color: $text-color;
+					background-color: $background-color-input;
+				}
+			}
+		}
+	}
+
+	.pagination-wrapper {
+		.pagination__btn--next,
+		.pagination__btn--prev {
+			background-color: $background-color-lighter-lighter;
+		}
+		.pagination__item {
+			background-color: transparent;
+			&:focus,
+			&:hover {
+				background-color: $background-color-lighter-lighter;
+			}
+		}
+	}
+}
+
+/* e.g. https://store.crunchyroll.com/collections */
+.template-list-collections {
+	.collection-grid-item__image {
+		border-color: $border-color;
+	}
+}
+
+/* item page e.g. https://store.crunchyroll.com/collections/all/products/spike-spiegel-s-h-figuarts-cowboy-bebop */
+.template-product {
+	.product-form__cart-submit,
+	.js-qty__adjust,
+	.ajaxcart__qty-adjust,
+	button.wk-remove-product,
+	button.wk-add-product {
+		@extend %search-box;
+
+		&:hover {
+			background-color: $background-color-lighter;
+		}
+	}
+	button.wk-remove-product,
+	button.wk-add-product {
+		svg path {
+			stroke: $text-color;
+		}
+	}
+	.product-form__item--quantity input {
+		@extend %search-box;
+	}
+}

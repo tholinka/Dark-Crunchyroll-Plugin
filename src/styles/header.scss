@@ -1,92 +1,79 @@
-@import 'common';
+@import "common";
 
-@mixin set-fill-and-color-hover
-{
-	fill:$link-color-hover;
-	color:$link-color-hover;
+@mixin set-fill-and-color-hover {
+	fill: $link-color-hover;
+	color: $link-color-hover;
 }
 
-@mixin set-fill-and-color
-{
-	fill:$link-color;
-	color:$link-color;
+@mixin set-fill-and-color {
+	fill: $link-color;
+	color: $link-color;
 }
 
-#header_beta, .site-header, .isolated-page-header
-{
+#header_beta,
+.site-header,
+.isolated-page-header {
 	background-color: $background-color-lighter;
 	color: $text-color;
 }
 
 /* logo */
-#header_beta .header-logo, .interstitial-header .logo-enUS, #logo_beta svg, .isolated-page-header svg
-{
+#header_beta .header-logo,
+.interstitial-header .logo-enUS,
+#logo_beta svg,
+.isolated-page-header svg {
 	@include bright-invert;
 }
 
-.header-navigation
-{
-	li
-	{
-		a, #header_profile_dropdown .caption
-		{
-			color:$text-color;
+.header-navigation {
+	li {
+		a,
+		#header_profile_dropdown .caption {
+			color: $text-color;
 		}
 
-		a:hover, #header_profile_dropdown:hover .caption
-		{
+		a:hover,
+		#header_profile_dropdown:hover .caption {
 			color: $link-color-hover;
 		}
 	}
 
-	.state-selected .header-icon
-	{
+	.state-selected .header-icon {
 		@include set-fill-and-color;
 	}
 
-	.header-icon:hover
-	{
+	.header-icon:hover {
 		@include set-fill-and-color-hover;
 	}
 }
 
-.header-search-form
-{
-	.header-searchbox
-	{
-		background-color:$background-color-input;
-		background-image:none;
-		box-shadow:none;
-		border-color:$border-color;
+.header-search-form {
+	.header-searchbox {
+		@extend %search-box;
 	}
 
-	.header-searchbox, .header-searchbox::placeholder
-	{
-		color:$text-color;
-		text-shadow:0 1px 0 $transparent-black;
+	.header-searchbox::placeholder {
+		@extend %search-box-placeholder;
 	}
 
-	.header-searchbox-submit
-	{
-		background-color:$background-color-lighter-lighter;
+	.header-searchbox-submit {
+		background-color: $background-color-lighter-lighter;
 		border-left: 1px solid $border-color;
 
-		svg
-		{
+		svg {
 			@include bright-invert;
 			@include set-fill-and-color;
 		}
 	}
 
-	:focus .header-searchbox-submit svg, :hover .header-searchbox-submit svg
-	{
+	:focus .header-searchbox-submit svg,
+	:hover .header-searchbox-submit svg {
 		@include set-fill-and-color-hover;
 		filter: none;
 	}
 
-	:active .header-searchbox-submit svg
-	{
+	:active .header-searchbox-submit svg {
 		@include set-fill-and-color;
-		filter:none;
+		filter: none;
 	}
 }

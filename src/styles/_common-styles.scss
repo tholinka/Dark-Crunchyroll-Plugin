@@ -1,6 +1,27 @@
-// used the homepage simulcast lineup box and the notification box, on the availability notice on anime pages, etc
-%message-box
-{
-	background-color:$background-color-message-box;
-	border-color:$border-color-message-box;
+/* used the homepage simulcast lineup box and the notification box, on the availability notice on anime pages, etc */
+%message-box {
+	background-color: $background-color-message-box;
+	border-color: $border-color-message-box;
+}
+
+/* searchbox, in header and in store */
+%search-box-placeholder {
+	color: $text-color;
+	text-shadow: 0 1px 0 $transparent-black;
+}
+
+%search-box {
+	background-color: $background-color-input;
+	background-image: none;
+	box-shadow: none;
+	border-color: $border-color;
+	@extend %search-box-placeholder;
+}
+
+%button {
+	@extend %search-box;
+
+	&:hover {
+		background-color: $background-color-lighter;
+	}
 }

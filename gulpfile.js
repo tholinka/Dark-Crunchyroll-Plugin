@@ -91,7 +91,7 @@ function doPackageFirefox() {
 }
 
 const scripts = parallel(buildBackgroundScripts, buildContentScripts);
-const styles = series(buildStyles, buildStylesAddLegacy);
+const styles = series(buildStyles/*, buildStylesAddLegacy*/);
 const staticContent = buildStaticContent;
 
 exports.buildChrome = parallel(scripts, styles, staticContent);
