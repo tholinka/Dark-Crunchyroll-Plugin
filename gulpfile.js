@@ -14,6 +14,7 @@ const gulp = require('gulp'),
 		background_scripts: 'src/scripts/background/**/*',
 		background_script: 'src/scripts/background.js',
 		styles: 'src/styles/**/*.scss',
+		legacy_styles: 'src/legacy_styles.css',
 		static: 'static/',
 		build: 'build/',
 		zip: 'build/dark-crunchyroll.zip'
@@ -35,6 +36,12 @@ function buildStyles() {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(concat('styles.css', { newLine: "\n" }))
 		.pipe(postcss([require('./add_important.js')()]))
+		.pipe(dest(PATHS.build));
+}
+
+function buildStylesAddLegacy() {
+	return src([PATHS.legacy_styles, PATHS.build + "styles.css"])
+		.pipe(concat('styles.css', { newLine: "\n" }))
 		.pipe(dest(PATHS.build));
 }
 
@@ -70,7 +77,7 @@ function packageZip() {
 }
 
 const scripts = parallel(buildBackgroundScripts, buildContentScripts);
-const buildAll = parallel(scripts, buildStyles, buildStaticContent);
+const buildAll = parallel(scripts, series(buildStyles, buildStylesAddLegacy), buildStaticContent);
 
 exports.build = series(clean, lint, buildAll);
 exports.package = series(exports.build, packageZip);

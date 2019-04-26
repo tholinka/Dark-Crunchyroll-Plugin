@@ -1,3 +1,4 @@
+/**** START LEGACY STYLES ****/
 /*** general ***/
 /* replace all the colors */
 .new-template-body, a.block-link, .old-template-body a.block-link, .new-template-body a.block-link /* Next Episode Links */, .guestbook-spoiler-checkbox, .welcome-simulcasts .welcome-simulcasts-collection a, .welcome-simulcasts .welcome-simulcasts-episode, .welcome-title-list h1 a, .welcome-block h1 a, .welcome-crnews-title, .welcome-news-title, .welcome-latest-videos .name, .welcome-latest-videos .series, .user-profile-header a, a.forum_main-topic-desc-title, .topbar-nav-trail a, .group-card-name, .group-card-headline, .group-card-details, .widget-forumcategory-display-title a, .showforumtopic-message-user-name a, .showforumtopic-message-user-details, #launch_calendar_header, .search-video-thumbs .name, .search-video-thumbs .series, .search-results .name, ul.search-tabs a, .daily-deal a h3, #product_pricing .member-discount, .selectboxit-list .selectboxit-option-anchor, /* Vendor page */
@@ -421,3 +422,5 @@ a.pm-name, a.pm-new-name, .pm-subject, .inbox-nav-contents a
 {
 	color:#eee
 }
+
+/**** END LEGACY STYLES ****/

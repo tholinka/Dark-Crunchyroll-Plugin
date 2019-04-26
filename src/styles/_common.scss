@@ -1,8 +1,2 @@
-/* Import old styles */
-// it'd be much "cleaner" to use gulp to build three different versions of the extension, but this works for now
-@import 'chrome-extension://__MSG_@@extension_id__/legacy_styles.css';
-@import 'moz-extension://__MSG_@@extension_id__/legacy_styles.css';
-@import 'ms-browser-extension://__MSG_@@extension_id__/legacy_styles.css';
-
 @import 'mixins';
 @import 'variables';
