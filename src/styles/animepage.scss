@@ -1,0 +1,7 @@
+@import 'common';
+
+/* e.g. https://www.crunchyroll.com/boruto-naruto-next-generations, has most of the interesting stuff on it, such as an availability notice */
+.availability-notes-high
+{
+	@extend %message-box;
+}

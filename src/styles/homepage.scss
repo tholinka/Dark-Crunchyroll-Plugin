@@ -11,8 +11,7 @@
 		/* specifically that orange box under season simulcast lineup */
 		div
 		{
-			background-color: $background-color-message-box;
-			border-color: $border-color-message-box;
+			@extend %message-box;
 		}
 	}
 }

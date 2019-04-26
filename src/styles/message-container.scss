@@ -3,6 +3,5 @@
 // infobox that sometimes shows up, used on homepage and forums
 .message-container
 {
-	background-color:$background-color-message-box;
-	border-color:$border-color-message-box;
+	@extend %message-box;
 }
