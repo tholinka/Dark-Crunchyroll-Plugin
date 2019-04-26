@@ -10,8 +10,23 @@
 		color: $text-color;
 	}
 
+	.site-header__logo-image {
+		@include bright-invert;
+	}
+
 	/* header section common to all store.crunchyroll.com pages */
-	#shopify-section-header.shopify-section {
+	.shopify-section {
+		header {
+			.site-header__icon-item--account .site-header__icon-dropdown {
+				background-color: $background-color;
+
+				& li:hover,
+				& li:focus {
+					background-color: $background-color-lighter;
+				}
+			}
+		}
+
 		.header-navbar {
 			background-color: $background-color-darker;
 
@@ -201,4 +216,38 @@
 /* search page */
 .template-search {
 	@extend %shopify-common;
+}
+
+/* account page */
+.template-account {
+	@extend %shopify-common;
+}
+
+/* help page */
+.template- {
+	@extend %shopify-common;
+
+	.algolia-autocomplete {
+		input {
+			@extend %search-box;
+		}
+
+		.aa-dataset-1 {
+			background-color: $background-color-input;
+		}
+	}
+
+	.s4com-helpcenter,
+	.s4com-articles a h4 {
+		color: $text-color;
+	}
+}
+
+/* wishlist, https://store.crunchyroll.com/pages/wishlist */
+#wishlist.template-page {
+	@extend %shopify-common;
+
+	.wk-item .wk-price {
+		color: $text-color;
+	}
 }
