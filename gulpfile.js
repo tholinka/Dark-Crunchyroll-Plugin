@@ -8,7 +8,7 @@ const gulp = require('gulp'),
 	concat = require('gulp-concat'),
 	postcss = require('gulp-postcss'),
 	sassLint = require('gulp-sass-lint'),
-
+	replace = require('gulp-replace'),
 	del = require('del'),
 
 	PATHS = {
@@ -47,6 +47,12 @@ function buildStylesAddLegacy() {
 		.pipe(dest(PATHS.build));
 }
 
+function convertStylesURLsToFirefox() {
+	return src(PATHS.build + "styles.css")
+		.pipe(replace("chrome-extension:", "moz-extension:"))
+		.pipe(gulp.dest(PATHS.build));
+}
+
 function buildBackgroundScripts() {
 	return src(PATHS.content_script)
 		.pipe(babel())
@@ -66,31 +72,58 @@ function buildStaticContent() {
 		.pipe(dest(PATHS.build));
 }
 
-function packageZip() {
+function packageZip(name) {
 	const zipPaths = [
 		PATHS.build + "**/*",
 		"!" + PATHS.zip,
-		"!dark-crunchyroll.zip"
-	];
+		"!dark-crunchyroll*.zip"
+	],
+		zipName = "dark-crunchyroll-" + name + ".zip";
 
 	return src(zipPaths, { base: PATHS.build })
-		.pipe(zip('dark-crunchyroll.zip'))
+		.pipe(zip(zipName))
 		.pipe(dest(PATHS.build));
 }
 
+function doPackageChrome() {
+	return packageZip("chrome");
+}
+
+function doPackageFirefox() {
+	return packageZip("firefox");
+}
+
 const scripts = parallel(buildBackgroundScripts, buildContentScripts);
-const buildAll = parallel(scripts, series(buildStyles, buildStylesAddLegacy), buildStaticContent);
+const styles = series(buildStyles, buildStylesAddLegacy);
+const staticContent = buildStaticContent;
 
-exports.build = series(clean, lint, buildAll);
-exports.package = series(exports.build, packageZip);
+exports.buildChrome = parallel(scripts, styles, staticContent);
+exports.buildFirefox = parallel(scripts, series(styles, convertStylesURLsToFirefox), staticContent);
 
-exports.watch = series(exports.build, function () {
-	watch([
+
+exports.packageChrome = series(exports.buildChrome, doPackageChrome);
+
+
+exports.packageFirefox = series(exports.buildFirefox, doPackageFirefox);
+
+// when doing both packages, don't rebuild between packaging, just convert the existing build
+exports.package = series(exports.packageChrome, convertStylesURLsToFirefox, doPackageFirefox);
+
+// watches files and calls next on change
+function watchFiles(next) {
+	return watch([
 		PATHS.content_script,
 		PATHS.background_scripts,
 		PATHS.background_script,
 		PATHS.styles
-	], exports.build);
+	], next);
+}
+
+exports.watchChrome = series(exports.buildChrome, function () {
+	watchFiles(exports.buildChrome)
+});
+exports.watchFirefox = series(exports.buildFirefox, function () {
+	watchFiles(exports.buildFirefox)
 });
 
-exports.default = exports.watch;
+exports.default = exports.watchChrome;
