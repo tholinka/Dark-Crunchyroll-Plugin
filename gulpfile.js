@@ -18,8 +18,6 @@ const gulp = require('gulp'),
 		background_scripts: 'src/scripts/background/**/*',
 		background_script: 'src/scripts/background.js',
 		styles: 'src/styles/**/*.scss',
-		legacy_styles: 'src/legacy_styles.css',
-		manifest: 'src/manifest-base.json',
 		static: 'static/',
 		build: 'build/',
 	};
@@ -43,7 +41,7 @@ function buildStyles() {
 }
 
 function buildStylesAddLegacy() {
-	return src([PATHS.legacy_styles, PATHS.build + "styles.css"])
+	return src(["src/legacy_styles.css", PATHS.build + "styles.css"])
 		.pipe(concat('styles.css', { newLine: "\n" }))
 		.pipe(dest(PATHS.build));
 }
@@ -77,16 +75,30 @@ function buildStaticContent() {
 		.pipe(dest(PATHS.build));
 }
 
-function buildManifest() {
+// common manifest
+function buildManifestCommon() {
 	// use package json to get version
 	var pkg = require("./package.json");
 
-	return src(PATHS.manifest)
-		.pipe(jeditor({ "version": pkg.version }))
+	return src("src/manifest-base.json")
+		.pipe(jeditor(function (json) {
+			json.version = pkg.version;
+			return json;
+		}))
 		.pipe(rename("manifest.json"))
 		.pipe(dest(PATHS.build));
 }
 
+function convertManifestFirefox() {
+	return src(PATHS.build + "manifest.json")
+		.pipe(jeditor(function (json) {
+			// firefox doesn't allow non-persistent addons, this just removes the warning
+			delete json.background.persistent
+			return json;
+		}))
+		.pipe(rename("manifest.json"))
+		.pipe(dest(PATHS.build));
+}
 
 function packageZip(name) {
 	const zipPaths = [
@@ -109,22 +121,23 @@ function doPackageFirefox() {
 
 exports.clean = clean;
 
-const scripts = parallel(buildBackgroundScripts, buildContentScripts, buildManifest);
+const scripts = parallel(buildBackgroundScripts, buildContentScripts);
 const minStyles = series(lintStyles, buildStyles);
 const styles = series(minStyles, buildStylesAddLegacy);
 const staticContent = buildStaticContent;
 
-exports.buildChromeNoLegacy = parallel(scripts, minStyles, staticContent);
+exports.buildChromeNoLegacy = parallel(scripts, minStyles, staticContent, buildManifestCommon);
 
-exports.buildChrome = parallel(scripts, styles, staticContent);
-exports.buildFirefox = parallel(scripts, series(styles, convertStylesURLsToFirefox), staticContent);
+exports.buildChrome = parallel(scripts, styles, staticContent, buildManifestCommon);
+
+exports.buildFirefox = parallel(scripts, series(styles, convertStylesURLsToFirefox), staticContent, series(buildManifestCommon, convertManifestFirefox));
 
 exports.packageChrome = series(exports.clean, exports.buildChrome, doPackageChrome);
 
 exports.packageFirefox = series(exports.clean, exports.buildFirefox, doPackageFirefox);
 
 // when doing both packages, don't rebuild between packaging, just convert the existing build
-exports.package = series(exports.packageChrome, convertStylesURLsToFirefox, doPackageFirefox);
+exports.package = series(exports.packageChrome, parallel(convertStylesURLsToFirefox, convertManifestFirefox), doPackageFirefox);
 
 // watches files and calls next on change
 function watchFiles(next) {
