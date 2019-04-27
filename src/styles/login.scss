@@ -1,0 +1,32 @@
+@import "common";
+
+
+/* login page, https://www.crunchyroll.com/login */
+.login-or-signup-page {
+	.forms {
+		background-color: #2d2d2d;
+		color: #eee;
+	}
+
+	main {
+		background-color: $background-color;
+	}
+
+	.std-form {
+		.label-text {
+			color: $text-color;
+		}
+
+		input,
+		select {
+			@extend %search-box;
+		}
+
+		#login_submit_button,
+		#signup_submit_button {
+			@extend %button;
+			border: $border-color solid 1px;
+			box-shadow: none;
+		}
+	}
+}

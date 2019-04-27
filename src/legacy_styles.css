@@ -551,18 +551,8 @@ a.pm-new-name,
 	font-weight: 800;
 }
 
-/* Login page / new login page */
-.login-or-signup-page .forms {
-	background-color: #2d2d2d;
-}
-
-.login-or-signup-page .forms {
-	color: #eee;
-}
-
 #RpcApiUser_Login a.submit .right,
-#RpcApiUser_Signup a.submit .right,
-.login-or-signup-page main {
+#RpcApiUser_Signup a.submit .right {
 	background-color: #1b1b1b;
 	/* Background color of the website */
 }

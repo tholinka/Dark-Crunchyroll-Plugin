@@ -23,3 +23,7 @@
 #premium_container .membership-crown {
 	background-color: $text-color;
 }
+
+.tooltip-message {
+	@extend %message-box;
+}
