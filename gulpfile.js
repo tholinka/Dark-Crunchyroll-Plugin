@@ -46,7 +46,7 @@ function buildStyles() {
 		.pipe(concat('styles.css', {
 			newLine: "\n"
 		}))
-		.pipe(postcss([require('./lib/add_important.js/index.js')()]))
+		.pipe(postcss([require('./lib/add_important.js')()]))
 		.pipe(dest(PATHS.build));
 }
 
