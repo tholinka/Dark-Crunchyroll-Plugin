@@ -23,7 +23,7 @@ const gulp = require('gulp'),
 	};
 
 function clean() {
-	return del(PATHS.build + "/**/*");
+	return del(PATHS.build + "/**");
 }
 
 function lintStyles() {
