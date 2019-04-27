@@ -1,7 +1,6 @@
-@import 'common';
+@import "common";
 
 // infobox that sometimes shows up, used on homepage and forums
-.message-container
-{
+.message-container {
 	@extend %message-box;
 }

@@ -19,7 +19,9 @@ class ConfigStore {
 	set(config) {
 		var current = this.get();
 
-		Object.keys(config).forEach((key) => { current[key] = config[key]; });
+		Object.keys(config).forEach((key) => {
+			current[key] = config[key];
+		});
 
 		this.replace(config);
 	}

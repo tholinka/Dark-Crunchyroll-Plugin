@@ -1,4 +1,5 @@
-const configStore = new ConfigStore(), messenger = new Messenger(chrome.runtime);
+const configStore = new ConfigStore(),
+	messenger = new Messenger(chrome.runtime);
 
 // get config out of store, and handle undefined cases
 function toggle() {
@@ -9,11 +10,11 @@ function toggle() {
 	configStore.set(config);
 
 	// figure out which icons to use
-	const iconName = "images/" + (config.active ? "dark" : "white") + "_crunchyroll_", iconEnd = ".png";
+	const iconName = "images/" + (config.active ? "dark" : "white") + "_crunchyroll_",
+		iconEnd = ".png";
 	const sizes = ["16", "48", "64", "128"];
 	const icons = {
-		path: {
-		}
+		path: {}
 	}
 
 	// setup icons to be used

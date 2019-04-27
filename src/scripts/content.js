@@ -31,7 +31,7 @@ class StyleSwitcher {
 		this.head.removeChild(this.link);
 	}
 
-	switch(active) {
+	switch (active) {
 		if (active) {
 			this.activate();
 		} else {
@@ -40,7 +40,9 @@ class StyleSwitcher {
 	}
 }
 
-const port = chrome.runtime.connect({ name: 'dark-crunchyroll' });
+const port = chrome.runtime.connect({
+	name: 'dark-crunchyroll'
+});
 
 // wait until page is loaded, because if we apply to soon the theme doesn't get applied
 const bodyInterval = setInterval(() => {
@@ -67,7 +69,10 @@ const bodyInterval = setInterval(() => {
 				});
 
 				// request status from background
-				port.postMessage({ method: 'requestActiveStatus', args: {} });
+				port.postMessage({
+					method: 'requestActiveStatus',
+					args: {}
+				});
 			} finally {
 				clearInterval(requestInterval);
 			}

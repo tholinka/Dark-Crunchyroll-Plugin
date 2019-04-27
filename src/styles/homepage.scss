@@ -1,16 +1,15 @@
-@import 'common';
+@import "common";
 
 /* home page specific styles, e.g. crunchyroll.com/ */
 /* there is no id to know if this is the homepage, .main-page is used elsewhere, e.g. on the forums */
-#welcome_right
-{
+#welcome_right {
+
 	/* target the first welcome block under the featured shows, the simulcast lineup box */
 	/* this will probably break fairly easily */
-	#sidebar + div.welcome-block
-	{
+	#sidebar+div.welcome-block {
+
 		/* specifically that orange box under season simulcast lineup */
-		div
-		{
+		div {
 			@extend %message-box;
 		}
 	}

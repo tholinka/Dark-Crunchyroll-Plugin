@@ -1,56 +1,52 @@
-@import 'common';
+@import "common";
 
 /* http://www.crunchyroll.com/home/queue */
-.queue-sortable
-{
-	.queue-to-top
-	{
-		background:url(chrome-extension://__MSG_@@extension_id__/images/queue_arrow.png) -3px 0 no-repeat;
+.queue-sortable {
+	.queue-to-top {
+		background: url(chrome-extension://__MSG_@@extension_id__/images/queue_arrow.png) -3px 0 no-repeat;
 	}
 
-	.dropdown-collection
-	{
+	.dropdown-collection {
 		background: url(chrome-extension://__MSG_@@extension_id__/images/queue_dropdown_arrow.png) 0 0 no-repeat;
 	}
 
-	.collection-carousel-arrow
-	{
-		background:url(chrome-extension://__MSG_@@extension_id__/images/arrows.png) no-repeat -40px 42px;
+	.collection-carousel-arrow {
+		background: url(chrome-extension://__MSG_@@extension_id__/images/arrows.png) no-repeat -40px 42px;
 	}
 
-	.queue-wrapper, .landscape-element, .more-options
-	{
+	.queue-wrapper,
+	.landscape-element,
+	.more-options {
 		background-color: $background-color-lighter;
 	}
 
-	.short-desc, .series-info, .collection-carousel-overlay-top, .collection-carousel-overlay-bottom
-	{
-		color:$text-color;
+	.short-desc,
+	.series-info,
+	.collection-carousel-overlay-top,
+	.collection-carousel-overlay-bottom {
+		color: $text-color;
 	}
 
-	.series-data
-	{
-		color:$text-color-darker-darker;
+	.series-data {
+		color: $text-color-darker-darker;
 	}
 
-	.short-desc
-	{
+	.short-desc {
 		color: $text-color-darker;
 	}
 
-	.collection-carousel-media-link .link, .queue-controls .text-link
-	{
-		color:$link-color;
+	.collection-carousel-media-link .link,
+	.queue-controls .text-link {
+		color: $link-color;
 	}
 
-	.collection-carousel-media-link .link:hover, .queue-controls .text-link:hover
-	{
-		color:$link-color-hover;
+	.collection-carousel-media-link .link:hover,
+	.queue-controls .text-link:hover {
+		color: $link-color-hover;
 	}
 }
 
 /* this looks dumb, but crunchyroll has this set to !important, so the only way to override it is to have a more specific selector then they do */
-body .queue-sortable .wrapper .landscape-element:active
-{
-	background-color:$background-color-lighter-lighter;
+body .queue-sortable .wrapper .landscape-element:active {
+	background-color: $background-color-lighter-lighter;
 }

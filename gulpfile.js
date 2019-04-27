@@ -1,6 +1,12 @@
 'use strict';
 
-const { src, dest, series, parallel, watch } = require('gulp');
+const {
+	src,
+	dest,
+	series,
+	parallel,
+	watch
+} = require('gulp');
 const gulp = require('gulp'),
 	zip = require('gulp-zip'),
 	sass = require('gulp-sass'),
@@ -34,15 +40,21 @@ function lintStyles() {
 
 function buildStyles() {
 	return src(PATHS.styles)
-		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
-		.pipe(concat('styles.css', { newLine: "\n" }))
+		.pipe(sass({
+			outputStyle: 'compressed'
+		}).on('error', sass.logError))
+		.pipe(concat('styles.css', {
+			newLine: "\n"
+		}))
 		.pipe(postcss([require('./lib/add_important.js/index.js')()]))
 		.pipe(dest(PATHS.build));
 }
 
 function buildStylesAddLegacy() {
 	return src(["src/legacy_styles.css", PATHS.build + "styles.css"])
-		.pipe(concat('styles.css', { newLine: "\n" }))
+		.pipe(concat('styles.css', {
+			newLine: "\n"
+		}))
 		.pipe(dest(PATHS.build));
 }
 
@@ -55,14 +67,18 @@ function convertStylesURLsToFirefox() {
 function buildBackgroundScripts() {
 	return src(PATHS.content_script)
 		.pipe(babel())
-		.pipe(concat('content_script.js', { newLine: "\n" }))
+		.pipe(concat('content_script.js', {
+			newLine: "\n"
+		}))
 		.pipe(dest(PATHS.build));
 }
 
 function buildContentScripts() {
 	return src([PATHS.background_scripts, PATHS.background_script])
 		.pipe(babel())
-		.pipe(concat('background_script.js', { newLine: "\n" }))
+		.pipe(concat('background_script.js', {
+			newLine: "\n"
+		}))
 		.pipe(dest(PATHS.build));
 }
 
@@ -71,7 +87,9 @@ function buildStaticContent() {
 		PATHS.static + "**/*",
 		"!" + PATHS.static + "*square.png" // don't include unused template image
 	];
-	return src(PATHS.static + '**/*', { base: PATHS.static })
+	return src(PATHS.static + '**/*', {
+			base: PATHS.static
+		})
 		.pipe(dest(PATHS.build));
 }
 
@@ -109,11 +127,13 @@ function convertManifestFirefox() {
 
 function packageZip(name) {
 	const zipPaths = [
-		PATHS.build + "**/*",
-		"!" + PATHS.build + "dark-crunchyroll*.zip" // don't include other zips
-	],
+			PATHS.build + "**/*",
+			"!" + PATHS.build + "dark-crunchyroll*.zip" // don't include other zips
+		],
 		zipName = "dark-crunchyroll-" + name + ".zip";
-	return src(zipPaths, { base: PATHS.build })
+	return src(zipPaths, {
+			base: PATHS.build
+		})
 		.pipe(zip(zipName))
 		.pipe(dest(PATHS.build));
 }

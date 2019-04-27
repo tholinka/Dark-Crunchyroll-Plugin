@@ -35,11 +35,14 @@
 					background-color: $background-color;
 
 					.site-nav__submenu-item {
+
 						&:hover,
 						&:focus {
 							background-color: $background-color-lighter;
 						}
+
 						.site-nav__link {
+
 							&:hover,
 							&:focus {
 								background-color: $background-color-lighter;
@@ -53,9 +56,11 @@
 				.site-header__search-input {
 					@extend %search-box;
 				}
+
 				.site-header__search-input::placeholder {
 					@extend %search-box-placeholder;
 				}
+
 				.site-header__search-submit {
 					color: $text-color;
 				}
@@ -65,6 +70,7 @@
 
 	.page-container {
 		.breadcrumbs {
+
 			// they have a transparency effect applied, so they are harder to see
 			a,
 			span {
@@ -111,11 +117,13 @@
 
 	/* collections pages, e.g. https://store.crunchyroll.com/collections/clothing */
 	.shopify-section.section-module {
+
 		/* sidebar */
 		.filter-menu {
 			.collection-sidebar__title {
 				color: $text-color;
 			}
+
 			.filter-group {
 				.filter-clear {
 					background-color: $background-color-input;
@@ -141,12 +149,15 @@
 	}
 
 	.pagination-wrapper {
+
 		.pagination__btn--next,
 		.pagination__btn--prev {
 			background-color: $background-color-lighter-lighter;
 		}
+
 		.pagination__item {
 			background-color: transparent;
+
 			&:focus,
 			&:hover {
 				background-color: $background-color-lighter-lighter;
@@ -179,12 +190,14 @@
 			background-color: $background-color-lighter;
 		}
 	}
+
 	button.wk-remove-product,
 	button.wk-add-product {
 		svg path {
 			stroke: $text-color;
 		}
 	}
+
 	.product-form__item--quantity input {
 		@extend %search-box;
 	}

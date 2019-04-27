@@ -1,35 +1,39 @@
-@import 'common';
+@import "common";
 
 /* crunchyroll.com/freetrial */
-.freetrial-page
-{
-	.form-area, .premium-value-props, main>footer
-	{
+.freetrial-page {
+
+	.form-area,
+	.premium-value-props,
+	main>footer {
 		color: #eee;
-		background:#3b3b3b;
+		background: #3b3b3b;
 	}
 
-	input.validated-input:invalid, textarea.validated-input:invalid
-	{
+	input.validated-input:invalid,
+	textarea.validated-input:invalid {
 		background: none;
 	}
 
-	.std-form
-	{
-		input, select, textarea
-		{
-			background-color:$background-color-input;
-			color:$text-color;
+	.std-form {
+
+		input,
+		select,
+		textarea {
+			background-color: $background-color-input;
+			color: $text-color;
 		}
 
-		fieldset, p, input, select, textarea
-		{
-			color:$text-color;
+		fieldset,
+		p,
+		input,
+		select,
+		textarea {
+			color: $text-color;
 		}
 	}
 
-	small
-	{
+	small {
 		color: #eee;
 	}
 }
