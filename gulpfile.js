@@ -36,7 +36,7 @@ function buildStyles() {
 	return src(PATHS.styles)
 		.pipe(sass({ outputStyle: 'compressed' }).on('error', sass.logError))
 		.pipe(concat('styles.css', { newLine: "\n" }))
-		.pipe(postcss([require('./add_important.js')()]))
+		.pipe(postcss([require('./lib/add_important.js/index.js')()]))
 		.pipe(dest(PATHS.build));
 }
 
@@ -78,11 +78,18 @@ function buildStaticContent() {
 // common manifest
 function buildManifestCommon() {
 	// use package json to get version
-	var pkg = require("./package.json");
+	const pkg = require("./package.json");
 
 	return src("src/manifest-base.json")
 		.pipe(jeditor(function (json) {
 			json.version = pkg.version;
+			json.homepage_url = pkg.homepage;
+			json.description = pkg.description;
+
+			// use name, but convert from "all-lower-case-with-dashes" format to "All Lower Case With Dashes"
+			json.name = pkg.name.split("-")
+				.map((s) => s.charAt(0).toUpperCase() + s.substring(1))
+				.join(' ');
 			return json;
 		}))
 		.pipe(rename("manifest.json"))

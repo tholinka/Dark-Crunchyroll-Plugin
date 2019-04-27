@@ -1,7 +1,5 @@
 {
-	"name": "Dark Skin for Crunchyroll",
 	"short_name": "Dark CR",
-	"description": "Adds a toggleable dark theme to Crunchyroll.com",
 	"manifest_version": 2,
 	"permissions": [
 		"http://www.crunchyroll.com/"
@@ -45,6 +43,5 @@
 		"images/quote_start.png",
 		"images/quote_end.png",
 		"images/views-count-bubble.png"
-	],
-	"homepage_url": "https://github.com/tholinka/Dark-Crunchyroll-Plugin"
+	]
 }

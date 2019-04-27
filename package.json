@@ -1,31 +1,48 @@
 {
-	"name": "Dark-Crunchyroll-Plugin",
-	"description": "Makes Crunchyroll go dark-side",
-	"author": "",
+	"name": "dark-skin-for-crunchyroll",
 	"version": "2.1.0",
+	"description": "Adds a toggleable dark theme to Crunchyroll.com",
+	"homepage": "https://github.com/tholinka/Dark-Crunchyroll-Plugin",
+	"bugs": "https: //github.com/tholinka/Dark-Crunchyroll-Plugin/issues",
 	"license": "LGPL-3.0",
+	"author": {
+		"name": "Tyler Holinka",
+		"url": "https://github.com/tholinka"
+	},
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/tholinka/Dark-Crunchyroll-Plugin"
 	},
 	"scripts": {
-		"start": "brunch watch --server",
-		"build": "brunch build --production"
+		"package": "gulp package",
+		"buildChrome": "gulp buildChrome",
+		"buildFirefox": "gulp buildFirefox",
+		"clean": "gulp clean"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@babel/core": "^7.4.3",
-		"@babel/preset-env": "^7.4.3",
-		"del": "^4.1.0",
-		"gulp": "^4.0.1",
-		"gulp-babel": "^8.0.0",
-		"gulp-concat": "^2.6.1",
-		"gulp-postcss": "^8.0.0",
-		"gulp-sass": "^4.0.2",
-		"gulp-sass-lint": "^1.4.0",
-		"gulp-zip": "^4.2.0",
-		"gulp-replace": "^1.0.0",
-		"gulp-rename": "^1.4.0",
-		"gulp-json-editor": "^2.5.1"
-	}
+		"@babel/core": "~7.4.3",
+		"@babel/preset-env": "~7.4.3",
+		"del": "~4.1.0",
+		"gulp": "~4.0.1",
+		"gulp-babel": "~8.0.0",
+		"gulp-concat": "~2.6.1",
+		"gulp-postcss": "~8.0.0",
+		"gulp-sass": "~4.0.2",
+		"gulp-sass-lint": "~1.4.0",
+		"gulp-zip": "~4.2.0",
+		"gulp-replace": "~1.0.0",
+		"gulp-rename": "~1.4.0",
+		"gulp-json-editor": "~2.5.1"
+	},
+	"babel": {
+		"presets": [
+			"@babel/preset-env"
+		]
+	},
+	"browserslist": [
+		"Firefox >= 54",
+		"Chrome >= 58",
+		"Edge >= 14"
+	]
 }
