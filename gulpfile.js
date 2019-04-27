@@ -9,6 +9,8 @@ const gulp = require('gulp'),
 	postcss = require('gulp-postcss'),
 	sassLint = require('gulp-sass-lint'),
 	replace = require('gulp-replace'),
+	rename = require('gulp-rename'),
+	jeditor = require('gulp-json-editor'),
 	del = require('del'),
 
 	PATHS = {
@@ -17,6 +19,7 @@ const gulp = require('gulp'),
 		background_script: 'src/scripts/background.js',
 		styles: 'src/styles/**/*.scss',
 		legacy_styles: 'src/legacy_styles.css',
+		manifest: 'src/manifest-base.json',
 		static: 'static/',
 		build: 'build/',
 	};
@@ -66,14 +69,29 @@ function buildContentScripts() {
 }
 
 function buildStaticContent() {
+	const path = [
+		PATHS.static + "**/*",
+		"!" + PATHS.static + "*square.png" // don't include unused template image
+	];
 	return src(PATHS.static + '**/*', { base: PATHS.static })
 		.pipe(dest(PATHS.build));
 }
 
+function buildManifest() {
+	// use package json to get version
+	var pkg = require("./package.json");
+
+	return src(PATHS.manifest)
+		.pipe(jeditor({ "version": pkg.version }))
+		.pipe(rename("manifest.json"))
+		.pipe(dest(PATHS.build));
+}
+
+
 function packageZip(name) {
 	const zipPaths = [
 		PATHS.build + "**/*",
-		"!" + PATHS.build + "dark-crunchyroll*.zip"
+		"!" + PATHS.build + "dark-crunchyroll*.zip" // don't include other zips
 	],
 		zipName = "dark-crunchyroll-" + name + ".zip";
 	return src(zipPaths, { base: PATHS.build })
@@ -91,7 +109,7 @@ function doPackageFirefox() {
 
 exports.clean = clean;
 
-const scripts = parallel(buildBackgroundScripts, buildContentScripts);
+const scripts = parallel(buildBackgroundScripts, buildContentScripts, buildManifest);
 const minStyles = series(lintStyles, buildStyles);
 const styles = series(minStyles, buildStylesAddLegacy);
 const staticContent = buildStaticContent;

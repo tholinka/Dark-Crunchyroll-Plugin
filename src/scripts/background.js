@@ -8,9 +8,21 @@ function toggle() {
 
 	configStore.set(config);
 
-	// set icon
-	let icon = config.active ? 'images/dark_crunchyroll_128.png' : 'images/white_crunchyroll_128.png';
-	chrome.browserAction.setIcon({ path: icon });
+	// figure out which icons to use
+	const iconName = "images/" + (config.active ? "dark" : "white") + "_crunchyroll_", iconEnd = ".png";
+	const sizes = ["16", "48", "64", "128"];
+	const icons = {
+		path: {
+		}
+	}
+
+	// setup icons to be used
+	for (var i = 0; i < sizes.length; i++) {
+		icons.path[sizes[i]] = iconName + sizes[i] + iconEnd;
+	}
+
+	// tell chrome to pick an icon
+	chrome.browserAction.setIcon(icons);
 
 	// notify existing pages
 	messenger.notify(config.active);
