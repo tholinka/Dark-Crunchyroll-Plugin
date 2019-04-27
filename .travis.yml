@@ -16,4 +16,4 @@ install:
   - npm install -g gulp-cli
   - npm install
 
-script: gulp build && ./build-check.sh
+script: gulp package && ./.travis-build-check.sh
