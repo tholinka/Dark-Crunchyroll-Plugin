@@ -1,9 +1,9 @@
 # Dark Crunchyroll Plugin
 [![Build Status](https://travis-ci.org/tholinka/Dark-Crunchyroll-Plugin.svg?branch=master)](https://travis-ci.org/tholinka/Dark-Crunchyroll-Plugin)
 
-This project is originally based off of the [Dark Youtube Plugin](https://github.com/stormbreakerbg/Dark-youtube-plugin-chrome).
+This project is originally based off of the [Dark Youtube Plugin](https://github.com/stormbreakerbg/Dark-youtube-plugin-chrome), though a lot has been rewritten.
 
-This plugin is currently available on the [Firefox Addon Store](https://addons.mozilla.org/en-US/firefox/addon/dark-skin-crunchyroll), the [Chrome Web Store](https://chrome.google.com/webstore/detail/dark-skin-for-crunchyroll/agjiicokbioponboibkfhfgmhcacafph), and the [Microsoft Edge Extension Store](https://www.microsoft.com/en-us/store/p/dark-skin-for-crunchyroll/9nv1zg95rh2d)
+This plugin is currently available on the [Firefox Addon Store](https://addons.mozilla.org/en-US/firefox/addon/dark-skin-crunchyroll), the [Chrome Web Store](https://chrome.google.com/webstore/detail/dark-skin-for-crunchyroll/agjiicokbioponboibkfhfgmhcacafph), and the [Microsoft Edge Extension Store](https://www.microsoft.com/en-us/store/p/dark-skin-for-crunchyroll/9nv1zg95rh2d).
 
 This plugin aims to provide a quality dark theme for [Crunchyroll.com](https://crunchyroll.com).  This is primarly because dark themes are easier on the eye when in a darker environment.
 It also leaves a button in the addon bar to quickly disable and reenable the theme.
@@ -16,11 +16,11 @@ See [Releases](https://github.com/tholinka/Dark-Crunchyroll-Plugin/releases) for
 
 ## Setup
 
-1. Install latest stable `Node.js`
-2. `npm install -g gulp-cli`
-3. `npm install`
-4. Run `gulp` for automatic build-on-change and css lint
-5. Load the plugin in Chrome from the `build` directory
+1. Install latest stable `yarn` and `gulp-cli` globally (either through your package manager, or through npm, etc)
+2. run `yarn install`
+3. Run `gulp` for automatic build-on-change and css lint
+   1. by default `gulp watchCrhome` is run, see `gulp --tasks` to view all available
+4. Load the plugin in Chrome/Firefox from the `build` directory
 
 ## CSS processing
 
