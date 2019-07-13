@@ -1,0 +1,11 @@
+/* used on at least the queue and watch pages */
+.collection-carousel {
+	.collection-carousel-arrow {
+		background-image: url(chrome-extension://__MSG_@@extension_id__/images/arrows.png);
+	}
+}
+
+/* used at least on the queue page */
+.dropdown-collection {
+	background-image: url(chrome-extension://__MSG_@@extension_id__/images/queue_dropdown_arrow.png);
+}
