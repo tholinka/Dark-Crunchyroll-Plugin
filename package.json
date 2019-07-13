@@ -1,6 +1,6 @@
 {
 	"name": "dark-skin-for-crunchyroll",
-	"version": "2.1.1",
+	"version": "2.1.2",
 	"description": "Adds a toggleable dark theme to Crunchyroll.com",
 	"homepage": "https://github.com/tholinka/Dark-Crunchyroll-Plugin",
 	"bugs": "https: //github.com/tholinka/Dark-Crunchyroll-Plugin/issues",
@@ -17,12 +17,14 @@
 		"package": "gulp package",
 		"buildChrome": "gulp buildChrome",
 		"buildFirefox": "gulp buildFirefox",
+		"watchChrome": "gulp watchChrome",
+		"watchFirefox": "gulp watchFirefox",
 		"clean": "gulp clean"
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@babel/core": "^7.4.5",
-		"@babel/preset-env": "^7.4.5",
+		"@babel/core": "^7.5.4",
+		"@babel/preset-env": "^7.5.4",
 		"del": "^5.0.0",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
