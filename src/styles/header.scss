@@ -15,66 +15,79 @@
 .isolated-page-header {
 	background-color: $background-color-lighter;
 	color: $text-color;
-}
 
-/* logo */
-#header_beta .header-logo,
-.interstitial-header .logo-enUS,
-#logo_beta svg,
-.isolated-page-header svg {
-	@include bright-invert;
-}
+	/* logo */
+	#header_beta .header-logo,
+	.interstitial-header .logo-enUS,
+	#logo_beta svg,
+	.isolated-page-header svg {
+		@include bright-invert;
+	}
 
-.header-navigation {
-	li {
+	.header-navigation {
+		li {
+			background-color: transparent;
 
-		a,
-		#header_profile_dropdown .caption {
-			color: $text-color;
+			a,
+			#header_profile_dropdown .caption,
+			#store_button {
+				color: $text-color;
+			}
+
+			a:hover,
+			#header_profile_dropdown:hover .caption,
+			#store_button:hover {
+				color: $link-color-hover;
+			}
 		}
 
-		a:hover,
-		#header_profile_dropdown:hover .caption {
-			color: $link-color-hover;
-		}
-	}
-
-	.state-selected .header-icon {
-		@include set-fill-and-color;
-	}
-
-	.header-icon:hover {
-		@include set-fill-and-color-hover;
-	}
-}
-
-.header-search-form {
-	.header-searchbox {
-		@extend %search-box;
-	}
-
-	.header-searchbox::placeholder {
-		@extend %search-box-placeholder;
-	}
-
-	.header-searchbox-submit {
-		background-color: $background-color-lighter-lighter;
-		border-left: 1px solid $border-color;
-
-		svg {
-			@include bright-invert;
+		.state-selected .header-icon {
 			@include set-fill-and-color;
 		}
+
+		.header-icon:hover {
+			@include set-fill-and-color-hover;
+		}
+
+		// this only displays on small screens  - it moves all the buttons into a hamburger menu
+		.header-menubar ul {
+			// this needs to  be the same as the #header_beta/.site_header color
+			// otherwise it looks bad in desktop size windows
+			background-color: $background-color-lighter
+		}
 	}
 
-	:focus .header-searchbox-submit svg,
-	:hover .header-searchbox-submit svg {
-		@include set-fill-and-color-hover;
-		filter: none;
-	}
+	.header-search-form {
+		// the background only shows on small screen
+		background: $background-color;
 
-	:active .header-searchbox-submit svg {
-		@include set-fill-and-color;
-		filter: none;
+		.header-searchbox {
+			@extend %search-box;
+		}
+
+		.header-searchbox::placeholder {
+			@extend %search-box-placeholder;
+		}
+
+		.header-searchbox-submit {
+			background-color: $background-color-lighter-lighter;
+			border-left: 1px solid $border-color;
+
+			svg {
+				@include bright-invert;
+				@include set-fill-and-color;
+			}
+		}
+
+		:focus .header-searchbox-submit svg,
+		:hover .header-searchbox-submit svg {
+			@include set-fill-and-color-hover;
+			filter: none;
+		}
+
+		:active .header-searchbox-submit svg {
+			@include set-fill-and-color;
+			filter: none;
+		}
 	}
 }
