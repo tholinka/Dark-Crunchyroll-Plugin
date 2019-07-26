@@ -85,9 +85,9 @@ function buildContentScripts() {
 function buildStaticContent() {
 	const path = [
 		PATHS.static + "**/*",
-		"!" + PATHS.static + "*square.png" // don't include unused template image
+		"!" + PATHS.static + "**/*square.png" // don't include unused template image
 	];
-	return src(PATHS.static + '**/*', {
+	return src(path, {
 			base: PATHS.static
 		})
 		.pipe(dest(PATHS.build));
