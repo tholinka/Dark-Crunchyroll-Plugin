@@ -36,6 +36,15 @@
 	.queue-controls .text-link:hover {
 		color: $link-color-hover;
 	}
+	.queue-item {
+		background-color: $background-color-lighter;
+		.series-title {
+			color: $link-color;
+		}
+		.series-title:hover {
+			color: $link-color-hover
+		}
+	}
 }
 
 /* this looks dumb, but crunchyroll has this set to !important, so the only way to override it is to have a more specific selector then they do */
