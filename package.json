@@ -1,6 +1,6 @@
 {
 	"name": "dark-skin-for-crunchyroll",
-	"version": "2.1.3",
+	"version": "2.1.4",
 	"description": "Adds a toggleable dark theme to Crunchyroll.com",
 	"homepage": "https://github.com/tholinka/Dark-Crunchyroll-Plugin",
 	"bugs": "https: //github.com/tholinka/Dark-Crunchyroll-Plugin/issues",
@@ -23,19 +23,19 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@babel/core": "^7.5.4",
-		"@babel/preset-env": "^7.5.5",
-		"del": "^5.0.0",
+		"@babel/core": "^7.8.x",
+		"@babel/preset-env": "^7.8.x",
+		"del": "^5.1.x",
 		"gulp": "^4.0.2",
 		"gulp-babel": "^8.0.0",
 		"gulp-concat": "^2.6.1",
-		"gulp-json-editor": "^2.5.3",
+		"gulp-json-editor": "^2.5.x",
 		"gulp-postcss": "^8.0.0",
-		"gulp-rename": "^1.4.0",
+		"gulp-rename": "^2.0.0",
 		"gulp-replace": "^1.0.0",
 		"gulp-sass": "^4.0.2",
 		"gulp-sass-lint": "^1.4.0",
-		"gulp-zip": "^5.0.0"
+		"gulp-zip": "^5.0.x"
 	},
 	"babel": {
 		"presets": [
@@ -43,8 +43,9 @@
 		]
 	},
 	"browserslist": [
-		"Firefox >= 54",
-		"Chrome >= 58",
-		"Edge >= 14"
+		"last 2 Firefox versions",
+		"last 2 Chrome versions",
+		"last 2 Edge versions",
+		"Firefox ESR"
 	]
 }
