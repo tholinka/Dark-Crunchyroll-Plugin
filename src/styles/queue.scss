@@ -36,13 +36,18 @@
 	.queue-controls .text-link:hover {
 		color: $link-color-hover;
 	}
+
 	.queue-item {
 		background-color: $background-color-lighter;
+
 		.series-title {
 			color: $link-color;
 		}
-		.series-title:hover {
-			color: $link-color-hover
+
+		:hover {
+			.series-title {
+				color: $link-color-hover
+			}
 		}
 	}
 }
