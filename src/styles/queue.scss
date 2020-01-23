@@ -41,15 +41,18 @@
 		background-color: $background-color-lighter;
 
 		.series-title {
-			color: $link-color;
+			color: $text-color;
 		}
 
-		:hover {
-			.series-title {
-				color: $link-color-hover
-			}
+		:hover .series-title {
+			color: $link-color-hover
 		}
 	}
+}
+
+/* "Show Favorites Only" label */
+.filter-favorite-section {
+	color: $text-color;
 }
 
 /* this looks dumb, but crunchyroll has this set to !important, so the only way to override it is to have a more specific selector then they do */
