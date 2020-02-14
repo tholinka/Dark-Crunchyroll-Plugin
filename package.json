@@ -23,19 +23,19 @@
 	},
 	"dependencies": {},
 	"devDependencies": {
-		"@babel/core": "^7.8.x",
-		"@babel/preset-env": "^7.8.x",
-		"del": "^5.1.x",
-		"gulp": "^4.0.2",
-		"gulp-babel": "^8.0.0",
-		"gulp-concat": "^2.6.1",
-		"gulp-json-editor": "^2.5.x",
-		"gulp-postcss": "^8.0.0",
-		"gulp-rename": "^2.0.0",
-		"gulp-replace": "^1.0.0",
-		"gulp-sass": "^4.0.2",
-		"gulp-sass-lint": "^1.4.0",
-		"gulp-zip": "^5.0.x"
+		"@babel/core": "^7.x.x",
+		"@babel/preset-env": "^7.x.x",
+		"del": "^5.x.x",
+		"gulp": "^4.x.x",
+		"gulp-babel": "^8.x.x",
+		"gulp-concat": "^2.x.x",
+		"gulp-json-editor": "^2.x.x",
+		"gulp-postcss": "^8.x.x",
+		"gulp-rename": "^2.x.x",
+		"gulp-replace": "^1.x.x",
+		"gulp-sass": "^4.x.x",
+		"gulp-sass-lint": "^1.x.x",
+		"gulp-zip": "^5.x.x"
 	},
 	"babel": {
 		"presets": [
