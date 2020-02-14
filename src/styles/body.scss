@@ -1,23 +1,80 @@
 @import "common";
 
+%set-both-colors {
+	background-color: $background-color;
+	color: $text-color;
+}
+
 /* overall body tag for most pages */
 html {
 	background-color: $background-color;
 }
 
-// attempt to fix adblock or privacy badger conflict
-body.main-page .ad-skin {
-	/* inherit images (ads) */
-	background: transparent;
+/* attempt to fix adblock or privacy badger conflict */
+body.main-page {
+	@extend %set-both-colors;
+
+	.ad-skin {
+		/* inherit images (ads) */
+		background: transparent;
+	}
 }
 
-body.main-page,
-#template_container.template-container,
-#template_body.old-template-body {
-	background-color: $background-color;
-	color: $text-color;
+#template_container.template-container {
+	@extend %set-both-colors;
 }
 
 #template_body.old-template-body {
+	@extend %set-both-colors;
 	border: 1px solid $border-color;
+}
+
+.new-template-body {
+	color: $text-color;
+
+	// recently aired thing on main page
+	// not 100% sure we still need this (or the :hover variant)
+	// since we also have a global (non-.new-template-body) version
+	// it is in elements.scss
+	a.block-link {
+		color: $text-color;
+	}
+
+	.wrapper a:hover a,
+	a:hover h4,
+	a.block-link:hover {
+		color: $link-color-hover;
+	}
+
+	/*
+	 * various links, directly copied from original css
+	 * (with .new-template-body extracted out to minimize repeat)
+ 	 */
+	.block-link:hover,
+	.pagination a,
+	.para-div a,
+	.sub-tabs .selectors a.text-link,
+	.text-link,
+	.wrapper a:hover a,
+	a:hover h4,
+	li a,
+	p a,
+	span a {
+		color: $link-color;
+	}
+}
+
+.old-template-body {
+	color: $text-color;
+	background-color: $background-color-darker;
+
+	a.block-link {
+		color: $text-color;
+	}
+
+	input,
+	select {
+		color: $text-color;
+		background-color: $background-color-darker;
+	}
 }

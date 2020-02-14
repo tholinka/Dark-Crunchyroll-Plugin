@@ -1,12 +1,6 @@
 /**** START LEGACY STYLES ****/
 /*** general ***/
-/* replace all the colors */
-.new-template-body,
-a.block-link,
-.old-template-body a.block-link,
-.new-template-body a.block-link
 /* Next Episode Links */
-,
 .guestbook-spoiler-checkbox,
 .welcome-simulcasts .welcome-simulcasts-collection a,
 .welcome-simulcasts .welcome-simulcasts-episode,
@@ -34,9 +28,8 @@ ul.search-tabs a,
 #product_pricing .member-discount,
 .selectboxit-list .selectboxit-option-anchor,
 /* Vendor page */
-.selectboxit-list>.selectboxit-focus>.selectboxit-option-anchor
+.selectboxit-list>.selectboxit-focus>.selectboxit-option-anchor,
 /* Vendor page current selected */
-,
 ul.news h2 a,
 .news-header-right a,
 .showcrunchynews h1 a,
@@ -64,7 +57,6 @@ div.acct-nav a,
 small,
 .login-or-signup-page .forms,
 /* login page / general */
-#footer .footer-column h6,
 #source_showview .season-dropdown.open,
 #source_showview .season-dropdown,
 .paginator-lite,
@@ -76,39 +68,15 @@ input[type=email],
 input[type=password],
 textarea,
 .user-profile-link,
-.widget-forumnav .widget-forumnav-children,
-.old-template-body,
-.old-template-body input,
-.old-template-body select
-
-/* New Forum Post */
-	{
+.widget-forumnav .widget-forumnav-children {
 	color: #eee !important;
 }
 
 /* replace links with a slightly ligher color */
 /* - non hover - */
 /* -- for links that have to have !important -- */
-#footer a,
-/* footer */
-.welcome-recent-link a
-
-/* main page recently aired show box thing (at the bottom) */
-	{
+.welcome-recent-link a {
 	color: #0d91d9 !important;
-}
-
-/* -- all other links -- */
-.new-template-body .pagination a,
-.new-template-body .para-div a,
-,
-.new-template-body .text-link,
-.new-template-body li a,
-.new-template-body p a,
-.new-template-body span a,
-.membership-price-picker .membership-price,
-a {
-	color: #0d91d9;
 }
 
 /* -- subsections, slightly darker color -- */
@@ -119,23 +87,10 @@ a {
 
 /* - hover - */
 /* -- for links that have to have !important -- */
-#footer .footer-language .selected,
-#footer .footer-column a:hover,
-/* footer */
 .welcome-recent-link a:hover,
 .welcome-recent-ep a:hover,
-/* main page recently aired show box thing (at the bottom) */
-.new-template-body a.block-link:hover,
 .welcome-block h1 a:hover {
 	color: #68c9fd !important;
-}
-
-/* -- all other links -- */
-.new-template-body .block-link:hover,
-.new-template-body .wrapper a:hover a,
-.new-template-body a:hover h4,
-a.block-link:hover {
-	color: #68c9fd;
 }
 
 /* forums */
@@ -180,8 +135,7 @@ a.block-link:hover {
 
 .bb-smilie-smile,
 .bb-smilie-sad,
-.bb-static-smilie,
-#footer .footer-column .icon {
+.bb-static-smilie {
 	border: none;
 }
 
@@ -193,9 +147,8 @@ span.default-button,
 input.default-button,
 /* General Buttons */
 .default-button,
-.submitbtn
+.submitbtn,
 /* User Page */
-,
 .big-btn
 
 /* New Forum Post */
@@ -380,13 +333,7 @@ input[type=email],
 input[type=password],
 textarea,
 .user-profile-link,
-.widget-forumnav .widget-forumnav-children,
-.old-template-body,
-.old-template-body input,
-.old-template-body select
-
-/* New Forum Post */
-	{
+.widget-forumnav .widget-forumnav-children {
 	background-color: #454545 !important;
 }
 
@@ -479,8 +426,6 @@ input.default-button:hover,
 
 .widget-forumcategory-display-title .widget-forumcategory-display-firstfewpage:hover,
 .widget-forumnav .widget-forumnav-children:hover,
-#footer,
-#footer_menu,
 #main_content_white,
 .white-wrapper {
 	background-color: #2d2d2d !important;

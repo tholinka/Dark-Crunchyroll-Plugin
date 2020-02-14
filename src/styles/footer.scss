@@ -4,3 +4,43 @@
 	background-color: $background-color-lighter;
 	color: $text-color;
 }
+
+%footer-style {
+	background-color: $background-color-lighter;
+	color: $text-color;
+}
+
+#footer_menu {
+	@extend %footer-style;
+}
+
+#footer {
+	@extend %footer-style;
+
+	a {
+		color: $link-color;
+	}
+
+	.footer-language .selected {
+		color: $link-color-hover;
+	}
+
+	.footer-column {
+		a.optanon-show-settings {
+			color: $link-color-darker;
+		}
+
+		a:hover {
+			color: $link-color-hover;
+		}
+
+		#footer_country_flag,
+		.icon {
+			border: none;
+		}
+
+		h6 {
+			color: $text-color;
+		}
+	}
+}

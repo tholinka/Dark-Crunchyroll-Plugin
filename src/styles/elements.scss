@@ -1,0 +1,10 @@
+@import 'common';
+
+/* common elements */
+a.block-link {
+	color: $text-color;
+
+	&:hover {
+		color: $link-color-hover;
+	}
+}
