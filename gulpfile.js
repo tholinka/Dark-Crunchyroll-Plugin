@@ -65,9 +65,16 @@ function convertStylesURLsToFirefox() {
 }
 
 function convertStylesURLsToUserCSS() {
-	return src(PATHS.build + "styles.css")
+	// use package json to get version
+	const pkg = require("./package.json");
+
+	return src(['src/usercss-header.css', PATHS.build + 'styles.css', 'src/usercss-footer.css'])
+		.pipe(concat('dark-crunchroll.user.css', {
+			newline: "\n"
+		}))
 		// replace the chrome-extension path to a github pages link
 		.pipe(replace("chrome-extension://__MSG_@@extension_id__", "https://tholinka.github.io/Dark-Crunchyroll-Plugin/static"))
+		.pipe(replace('@@@VERSION@@@', pkg.version))
 		.pipe(gulp.dest(PATHS.build));
 }
 
