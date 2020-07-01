@@ -10,7 +10,6 @@ class StyleSwitcher {
 		this.link.media = 'screen';
 
 		this.active = false;
-
 	}
 
 	activate() {
@@ -32,50 +31,41 @@ class StyleSwitcher {
 	}
 
 	switch (active) {
-		if (active) {
-			this.activate();
-		} else {
-			this.deactivate();
-		}
+		active ? this.activate() : this.deactivate();
 	}
 }
+
+
+// StyleSwitcher can be successfully constructed since page is loaded
+const styleSwitcher = new StyleSwitcher();
+
+// assume we're enabled until we hear back
+styleSwitcher.activate();
 
 const port = chrome.runtime.connect({
 	name: 'dark-crunchyroll'
 });
 
-// wait until page is loaded, because if we apply to soon the theme doesn't get applied
-const bodyInterval = setInterval(() => {
-	// page is loaded (enough for us to load anyway), if the body tag has elements
-	if (document.querySelector('body > *')) {
-		// page is loaded, we don't need to repeat anymore
-		clearInterval(bodyInterval);
+// send ask
+function message() {
+	// request status from background
+	port.postMessage({
+		method: 'requestActiveStatus',
+		args: {}
+	});
+}
 
-		// StyleSwitcher can be successfully constructed since page is loaded
-		const styleSwitcher = new StyleSwitcher();
+port.onMessage.addListener((status) => {
+	// response is good
+	if (typeof status === 'boolean') {
+		styleSwitcher.switch(status);
 
-		// assume we're enabled until we hear back
-		styleSwitcher.activate();
-
+	} else {
+		console.error('Dark-Crunchyroll: bad response', status);
 		// keep asking until we get a good response
-		const requestInterval = setInterval(() => {
-			// ask background page for our actual status
-			try {
-				port.onMessage.addListener((status) => {
-					// response is good
-					if (typeof status != typeof undefined && typeof status != null) {
-						styleSwitcher.switch(status);
-					}
-				});
-
-				// request status from background
-				port.postMessage({
-					method: 'requestActiveStatus',
-					args: {}
-				});
-			} finally {
-				clearInterval(requestInterval);
-			}
-		}, 10);
+		message();
 	}
-}, 5);
+});
+
+// actually send ask
+message();

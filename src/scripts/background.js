@@ -1,29 +1,36 @@
 const configStore = new ConfigStore(),
 	messenger = new Messenger(chrome.runtime);
 
+const ICONS = Object.freeze({
+	white: {
+		path: {
+			'16': 'images/white_crunchyroll_16.png',
+			'48': 'images/white_crunchyroll_48.png',
+			'64': 'images/white_crunchyroll_64.png',
+			'128': 'images/white_crunchyroll_128.png',
+		},
+	},
+	dark: {
+		path: {
+			'16': 'images/dark_crunchyroll_16.png',
+			'48': 'images/dark_crunchyroll_48.png',
+			'64': 'images/dark_crunchyroll_64.png',
+			'128': 'images/dark_crunchyroll_128.png',
+		},
+	},
+})
+
+
 // get config out of store, and handle undefined cases
 function toggle() {
-	let config = configStore.get();
+	const config = configStore.get();
 
 	config.active = !config.active
 
 	configStore.set(config);
 
-	// figure out which icons to use
-	const iconName = "images/" + (config.active ? "dark" : "white") + "_crunchyroll_",
-		iconEnd = ".png";
-	const sizes = ["16", "48", "64", "128"];
-	const icons = {
-		path: {}
-	}
-
-	// setup icons to be used
-	for (var i = 0; i < sizes.length; i++) {
-		icons.path[sizes[i]] = iconName + sizes[i] + iconEnd;
-	}
-
 	// tell chrome to pick an icon
-	chrome.browserAction.setIcon(icons);
+	chrome.browserAction.setIcon(config.active ? ICONS.dark : ICONS.white);
 
 	// notify existing pages
 	messenger.notify(config.active);
@@ -31,14 +38,8 @@ function toggle() {
 
 // have messenger respond to requests from crunchyroll pages
 messenger.onMessage((request) => {
-	// request isn't bad
-	if (typeof request != typeof undefined && typeof request != null) {
-		// request is for request for status
-		if (request.method === "requestActiveStatus") {
-			// respond to message with active
-			messenger.notify(configStore.get().active)
-		}
-	}
+	// respond to message with active
+	messenger.notify(configStore.get().active)
 });
 
 // have chrome notify on icon click
