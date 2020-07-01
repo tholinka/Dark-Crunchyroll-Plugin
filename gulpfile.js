@@ -64,6 +64,13 @@ function convertStylesURLsToFirefox() {
 		.pipe(gulp.dest(PATHS.build));
 }
 
+function convertStylesURLsToUserCSS() {
+	return src(PATHS.build + "styles.css")
+		// replace the chrome-extension path to a github pages link
+		.pipe(replace("chrome-extension://__MSG_@@extension_id__", "https://tholinka.github.io/Dark-Crunchyroll-Plugin/static"))
+		.pipe(gulp.dest(PATHS.build));
+}
+
 function buildBackgroundScripts() {
 	return src(PATHS.content_script)
 		.pipe(babel())
@@ -187,5 +194,7 @@ exports.watchChromeNoLegacy = series(exports.buildChromeNoLegacy, function () {
 exports.watchFirefox = series(exports.buildFirefox, function () {
 	watchFiles(exports.buildFirefox)
 });
+
+exports.usercss = series(exports.clean, styles, convertStylesURLsToUserCSS)
 
 exports.default = exports.watchChrome;
