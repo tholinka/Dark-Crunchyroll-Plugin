@@ -11,6 +11,7 @@
 }
 
 #header,
+#header-beta,
 .erc-header,
 .site-header,
 .isolated-page-header {
@@ -19,6 +20,7 @@
 
 	/* logo */
 	#header,
+	#header-beta .header-logo,
 	.erc-header,
 	.header-logo,
 	.interstitial-header .logo-enUS,
@@ -50,22 +52,22 @@
 	.erc-account-menu__user-meta::before{
 		opacity: 0;
 	}
+	.header-navigation {
+		li {
+			background-color: transparent;
 
-	.erc-header__content {
-		a,
-		#header_profile_dropdown .caption,
-		#store_button,
-		.erc-header__tile {
-			color: $text-color;
-		}
-		a:hover,
-		#header_profile_dropdown:hover .caption,
-		#store_button:hover,
-		.erc-header__tile:hover {
-			color: $link-color-hover;
-		}
-		
+			a,
+			#header_profile_dropdown .caption,
+			#store_button {
+				color: $text-color;
+			}
 
+			a:hover,
+			#header_profile_dropdown:hover .caption,
+			#store_button:hover {
+				color: $link-color-hover;
+			}
+		}
 		.state-selected .header-icon {
 			@include set-fill-and-color;
 		}
@@ -79,6 +81,21 @@
 			// this needs to  be the same as the #header_beta/.site_header color
 			// otherwise it looks bad in desktop size windows
 			background-color: $background-color-lighter
+		}
+	}
+
+	.erc-header__content {
+		a,
+		#header_profile_dropdown .caption,
+		#store_button,
+		.erc-header__tile {
+			color: $text-color;
+		}
+		a:hover,
+		#header_profile_dropdown:hover .caption,
+		#store_button:hover,
+		.erc-header__tile:hover {
+			color: $link-color-hover;
 		}
 	}
 
