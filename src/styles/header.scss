@@ -11,7 +11,7 @@
 }
 
 #header,
-#header-beta,
+#header_beta,
 .erc-header,
 .site-header,
 .isolated-page-header {
@@ -19,9 +19,8 @@
 	color: $text-color;
 
 	/* logo */
-	#header,
-	#header-beta .header-logo,
-	.erc-header,
+	.header-logo,
+	.erc-header__logo,
 	.header-logo,
 	.interstitial-header .logo-enUS,
 	#logo_beta svg,
