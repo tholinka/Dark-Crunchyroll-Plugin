@@ -10,20 +10,47 @@
 	color: $link-color;
 }
 
+#header,
 #header_beta,
+.erc-header,
 .site-header,
 .isolated-page-header {
 	background-color: $background-color-lighter;
 	color: $text-color;
 
 	/* logo */
-	#header_beta .header-logo,
+	.header-logo,
+	.erc-header__logo,
+	.header-logo,
 	.interstitial-header .logo-enUS,
 	#logo_beta svg,
 	.isolated-page-header svg {
 		@include bright-invert;
 	}
 
+	.erc-browse-dropdown__content,
+	.erc-events-dropdown__links {
+		background-color: $background-color-lighter;	
+	}
+	
+	.erc-account-menu {
+		background-color: $background-color-lighter;	
+	}
+	
+	.erc-account-menu--authenticated .erc-account-menu__user-email {
+		color: $text-color;
+	}
+	.erc-user-actions__profile:hover,
+	.erc-user-actions__profile.state-open,
+	.erc-account-menu__link:hover {
+		background-color: $background-color-darker;
+		color: $link-color-hover;
+	}
+	
+
+	.erc-account-menu__user-meta::before{
+		opacity: 0;
+	}
 	.header-navigation {
 		li {
 			background-color: transparent;
@@ -40,7 +67,6 @@
 				color: $link-color-hover;
 			}
 		}
-
 		.state-selected .header-icon {
 			@include set-fill-and-color;
 		}
@@ -54,6 +80,21 @@
 			// this needs to  be the same as the #header_beta/.site_header color
 			// otherwise it looks bad in desktop size windows
 			background-color: $background-color-lighter
+		}
+	}
+
+	.erc-header__content {
+		a,
+		#header_profile_dropdown .caption,
+		#store_button,
+		.erc-header__tile {
+			color: $text-color;
+		}
+		a:hover,
+		#header_profile_dropdown:hover .caption,
+		#store_button:hover,
+		.erc-header__tile:hover {
+			color: $link-color-hover;
 		}
 	}
 
